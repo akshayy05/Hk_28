@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<style>
+  /* Base styles */
+  body {
+    font-family: 'Times New Roman', serif;
+    background-image: url('photo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+  .search-container {
+    position: relative;
+    width: 600px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    padding: 9px;
+  }
+  .logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px; 
+  }
+  .search-container input[type="text"] {
+    border: none;
+    outline: none; 
+    flex: 1; 
+    border-radius: 20px;
+    padding: 9px;
+  }
+  
+  .searchbutton {
+    border: none;
+    background-color: #007bff;
+    color: #fff; 
+    border-radius: 20px;
+    padding: 20px 35px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="search-container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <input type="text" id="DrugName" name="DrugName" placeholder="Search for a Drug...">
+  </div>
+  <button type="button" id="searchBtn" class="searchbutton">Search</button>
+
+  <script>
+    document.getElementById('searchBtn').addEventListener('click', () => {
+      const DrugName = document.getElementById('DrugName').value.trim();
+      if (DrugName) {
+        location.href = `Data.html?DrugName=${encodeURIComponent(DrugName)}`;
+      } else {
+        alert('Please enter a Drug name.');
+      }
+    });
+  </script>
+  
+  
+</body>
+</html>
