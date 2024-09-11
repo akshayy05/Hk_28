@@ -1,0 +1,2282 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="Data.css">
+</html>
+<body>
+    <h1>Drug Information :</h1>
+    <div id="DrugInfo"></div>
+    <script>
+        const Drugs=[
+{
+    title: "ATRACURIUM BESYLATE",
+informationInEnglish: `
+<strong>Uses :</strong>
+Atracurium causes release of histamine when given rapidly in the intubating doses and can result in hypotension and may precipitate bronchospasm.
+Therefore, atracuriumbolus should be injected slowly.
+<strong>Availability :</strong>
+INJECTION-2.5 and 5 ml ampoule (10 mg/ml)
+<strong>Dosage :</strong>
+Intravenous injection
+Adult and child over 1 month- Surgery or intubation: 300 to 600 µg/kg body weight, maintenance by 100 to 200 µg as required. Intensive care: 300 to 600 µg/kg body weight.
+Intravenous infusion
+Adult and child- 5 to 10 µg/kg body weight/min (300 to 600 µg/kg/h).
+`,
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಅಟ್ರಾಕ್ಯುರಿಯಮ್ ಅನ್ನು ಇಂಟ್ಯೂಬೇಟಿಂಗ್ ಡೋಸ್‌ಗಳಲ್ಲಿ ತ್ವರಿತವಾಗಿ ನೀಡಿದಾಗ ಹಿಸ್ಟಮಿನ್ ಬಿಡುಗಡೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ ಮತ್ತು ಹೈಪೊಟೆನ್ಷನ್‌ಗೆ ಕಾರಣವಾಗಬಹುದು ಮತ್ತು ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ ಅನ್ನು ಪ್ರಚೋದಿಸಬಹುದು.
+ಆದ್ದರಿಂದ, ಅಟ್ರಾಕ್ಯುರಿಯಂಬೋಲಸ್ ಅನ್ನು ನಿಧಾನವಾಗಿ ಚುಚ್ಚಬೇಕು.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-2.5 ಮತ್ತು 5 ಮಿಲಿ ಆಂಪೋಲ್ (10 ಮಿಗ್ರಾಂ/ಮಿಲಿ)
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+1 ತಿಂಗಳ ಮೇಲ್ಪಟ್ಟ ವಯಸ್ಕ ಮತ್ತು ಮಗು- ಶಸ್ತ್ರಚಿಕಿತ್ಸೆ ಅಥವಾ ಇಂಟ್ಯೂಬೇಶನ್: 300 ರಿಂದ 600 µg/kg ದೇಹದ ತೂಕ, ಅಗತ್ಯವಿರುವಂತೆ 100 ರಿಂದ 200 µg ವರೆಗೆ ನಿರ್ವಹಣೆ. ತೀವ್ರ ನಿಗಾ: 300 ರಿಂದ 600 μg/kg ದೇಹದ ತೂಕ.
+ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+ವಯಸ್ಕ ಮತ್ತು ಮಗು- 5 ರಿಂದ 10 µg/kg ದೇಹದ ತೂಕ/ನಿಮಿಷ (300 ರಿಂದ 600 µg/kg/h).
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+इंटुबैटिंग खुराक में तेजी से दिए जाने पर एट्राक्यूरियम हिस्टामाइन जारी करता है और इसके परिणामस्वरूप हाइपोटेंशन हो सकता है और ब्रोंकोस्पज़म हो सकता है।
+इसलिए, एट्राक्यूरियमबोलस को धीरे-धीरे इंजेक्ट किया जाना चाहिए।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-2.5 और 5 मिली एम्पौल (10 मिलीग्राम/एमएल)<strong>मात्रा :</strong>
+अंतःशिरा इंजेक्शन
+वयस्क और 1 महीने से अधिक का बच्चा - सर्जरी या इंटुबैषेण: 300 से 600 माइक्रोग्राम/किग्रा शरीर का वजन, आवश्यकतानुसार 100 से 200 माइक्रोग्राम का रखरखाव। गहन देखभाल: 300 से 600 माइक्रोग्राम/किग्रा शरीर का वजन।
+अंतःशिरा आसव
+वयस्क और बच्चे- 5 से 10 माइक्रोग्राम/किग्रा शरीर का वजन/मिनट (300 से 600 माइक्रोग्राम/किग्रा/घंटा)।
+
+`},
+{
+    title: "ADRENALINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1. As a vasoconstrictor to delay absorption and thereby increasing the duration of action, reducing the toxicity and raising the maximum dose of local anaesthetic that can 
+be used. 
+2. As a component of epidural test dose (to identify accidental intravascular injection of local anaesthetic). 
+3. To reduce bleeding at the site of surgical incision.
+<strong>Availability :</strong>
+INJECTION-1 ml ampoule (1 mg/ml).
+<strong>Dosage :</strong>
+Intramuscular injection
+Anaphylaxis: preferable site is the midpoint in anterior thigh [1:1000 solution]. This route should be used by specialists only with extreme care.
+Slow intravenous injection
+When there is doubt regarding adequacy of circulation and absorption from the intramuscular site; slow intravenous injection of 1:10000 (10 mg/ml) solution be injected in severely ill patients only.
+`,
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1. ವಾಸೊಕಾನ್ಸ್ಟ್ರಿಕ್ಟರ್ ಆಗಿ ಹೀರಿಕೊಳ್ಳುವಿಕೆಯನ್ನು ವಿಳಂಬಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಆ ಮೂಲಕ ಕ್ರಿಯೆಯ ಅವಧಿಯನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ, ವಿಷತ್ವವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ ಮತ್ತು ಸ್ಥಳೀಯ ಅರಿವಳಿಕೆ ಗರಿಷ್ಠ ಪ್ರಮಾಣವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ 
+ಬಳಸಲಾಗುವುದು. 
+2. ಎಪಿಡ್ಯೂರಲ್ ಪರೀಕ್ಷೆಯ ಡೋಸ್ನ ಒಂದು ಅಂಶವಾಗಿ (ಸ್ಥಳೀಯ ಅರಿವಳಿಕೆಯ ಆಕಸ್ಮಿಕ ಇಂಟ್ರಾವಾಸ್ಕುಲರ್ ಇಂಜೆಕ್ಷನ್ ಅನ್ನು ಗುರುತಿಸಲು). 
+3. ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ಛೇದನದ ಸ್ಥಳದಲ್ಲಿ ರಕ್ತಸ್ರಾವವನ್ನು ಕಡಿಮೆ ಮಾಡಲು.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-1 ಮಿಲಿ ಆಂಪೋಲ್ (1 ಮಿಗ್ರಾಂ / ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಇಂಜೆಕ್ಷನ್
+ಅನಾಫಿಲ್ಯಾಕ್ಸಿಸ್: ಮುಂಭಾಗದ ತೊಡೆಯ [1:1000 ಪರಿಹಾರ] ಮಧ್ಯಭಾಗವು ಆದ್ಯತೆಯ ತಾಣವಾಗಿದೆ. ಈ ಮಾರ್ಗವನ್ನು ವಿಶೇಷ ಕಾಳಜಿಯಿಂದ ಮಾತ್ರ ಬಳಸಬೇಕು.
+ನಿಧಾನವಾದ ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಸೈಟ್‌ನಿಂದ ರಕ್ತಪರಿಚಲನೆ ಮತ್ತು ಹೀರಿಕೊಳ್ಳುವಿಕೆಯ ಸಮರ್ಪಕತೆಯ ಬಗ್ಗೆ ಸಂದೇಹವಿದ್ದಲ್ಲಿ; 1:10000 (10 mg/ml) ದ್ರಾವಣದ ನಿಧಾನಗತಿಯ ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್ ಅನ್ನು ತೀವ್ರವಾಗಿ ಅನಾರೋಗ್ಯ ಪೀಡಿತ ರೋಗಿಗಳಿಗೆ ಮಾತ್ರ ಚುಚ್ಚಲಾಗುತ್ತದೆ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. अवशोषण में देरी करने के लिए वैसोकॉन्स्ट्रिक्टर के रूप में और इस तरह कार्रवाई की अवधि बढ़ जाती है, विषाक्तता कम हो जाती है और स्थानीय संवेदनाहारी की अधिकतम खुराक बढ़ जाती है 
+इस्तेमाल किया गया। 
+2. एपिड्यूरल परीक्षण खुराक के एक घटक के रूप में (स्थानीय एनेस्थेटिक के आकस्मिक इंट्रावास्कुलर इंजेक्शन की पहचान करने के लिए)। 
+3. सर्जिकल चीरे की जगह पर रक्तस्राव को कम करने के लिए। एमपीओएल (10 एलपी/वॉल्यूम)
+<strong>उपलब्धता :</strong>
+इंजेक्शन-1 मिली एम्पौल (1 मिग्रा/मिलीलीटर)।
+<strong>मात्रा :</strong>
+इंट्रामस्क्युलर इंजेक्शन
+एनाफिलेक्सिस: बेहतर स्थान पूर्वकाल जांघ में मध्यबिंदु है [1:1000 समाधान]। इस मार्ग का उपयोग विशेषज्ञों द्वारा अत्यधिक सावधानी के साथ ही किया जाना चाहिए।
+धीमा अंतःशिरा इंजेक्शन
+जब इंट्रामस्क्युलर साइट से परिसंचरण और अवशोषण की पर्याप्तता के बारे में संदेह हो; 1:10000 (10 मिलीग्राम/एमएल) घोल का धीमा अंतःशिरा इंजेक्शन केवल गंभीर रूप से बीमार रोगियों में इंजेक्ट किया जाना चाहिए।
+`},
+{
+    title: "AMIODARONE",
+informationInEnglish: `
+<strong>Uses :</strong>
+Cardiovascular system: It slows conduction across AV node, prolongs the action potential duration and reduces heart rate. It can cause hypotension although it is safe to use it in patients with reduced left ventricular function
+<strong>Availability :</strong>
+TABLETS- 100 and 200 mg. 
+INJECTION- 3 ml ampoule (50 mg/ml).
+<strong>Dosage :</strong>
+Oral:-200 mg three times a day for one week, reduced to 200 mg twice daily for further one week. Maintenance 200 mg daily or reduced to minimum required to control arrhythmia.
+Intravenous infusion
+(with central venous catheter).
+Initially 5 mg/kg body weight over 20 to 120 min with ECG monitoring, subsequent infusion given if necessary according to response (up to max 1.2g in 24 h).
+`,
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು AV ನೋಡ್‌ನಾದ್ಯಂತ ವಹನವನ್ನು ನಿಧಾನಗೊಳಿಸುತ್ತದೆ, ಕ್ರಿಯೆಯ ಸಂಭಾವ್ಯ ಅವಧಿಯನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ ಮತ್ತು ಹೃದಯ ಬಡಿತವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಕಡಿಮೆ ಎಡ ಕುಹರದ ಕಾರ್ಯವನ್ನು ಹೊಂದಿರುವ ರೋಗಿಗಳಲ್ಲಿ ಇದನ್ನು ಬಳಸಲು ಸುರಕ್ಷಿತವಾಗಿದ್ದರೂ ಇದು ಹೈಪೊಟೆನ್ಷನ್‌ಗೆ ಕಾರಣವಾಗಬಹುದು
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 100 ಮತ್ತು 200 ಮಿಗ್ರಾಂ. 
+ಇಂಜೆಕ್ಷನ್ - 3 ಮಿಲಿ ಆಂಪೋಲ್ (50 ಮಿಗ್ರಾಂ / ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ: - 200 ಮಿಗ್ರಾಂ ಒಂದು ವಾರಕ್ಕೆ ದಿನಕ್ಕೆ ಮೂರು ಬಾರಿ, ಮುಂದಿನ ಒಂದು ವಾರದವರೆಗೆ ದಿನಕ್ಕೆ ಎರಡು ಬಾರಿ 200 ಮಿಗ್ರಾಂಗೆ ಕಡಿಮೆಯಾಗಿದೆ. ದೈನಂದಿನ ನಿರ್ವಹಣೆ 200 ಮಿಗ್ರಾಂ ಅಥವಾ ಆರ್ಹೆತ್ಮಿಯಾವನ್ನು ನಿಯಂತ್ರಿಸಲು ಅಗತ್ಯವಿರುವ ಕನಿಷ್ಠಕ್ಕೆ ಇಳಿಸಿ.
+ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+(ಕೇಂದ್ರ ಸಿರೆಯ ಕ್ಯಾತಿಟರ್ನೊಂದಿಗೆ).
+ಆರಂಭದಲ್ಲಿ 5 mg/kg ದೇಹದ ತೂಕವನ್ನು 20 ರಿಂದ 120 ನಿಮಿಷಗಳವರೆಗೆ ಇಸಿಜಿ ಮೇಲ್ವಿಚಾರಣೆಯೊಂದಿಗೆ, ಪ್ರತಿಕ್ರಿಯೆಯ ಪ್ರಕಾರ ಅಗತ್ಯವಿದ್ದಲ್ಲಿ ನಂತರದ ಕಷಾಯವನ್ನು ನೀಡಲಾಗುತ್ತದೆ (24 ಗಂಟೆಗಳಲ್ಲಿ ಗರಿಷ್ಠ 1.2 ಗ್ರಾಂ ವರೆಗೆ).
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+हृदय प्रणाली: यह एवी नोड में चालन को धीमा कर देता है, कार्य क्षमता की अवधि को बढ़ाता है और हृदय गति को कम करता है। यह हाइपोटेंशन का कारण बन सकता है, हालांकि बाएं वेंट्रिकुलर फ़ंक्शन में कमी वाले रोगियों में इसका उपयोग करना सुरक्षित है
+<strong>उपलब्धता :</strong>
+गोलियाँ- 100 और 200 मिलीग्राम। 
+इंजेक्शन- 3 मिली एम्पुल (50 मिग्रा/मिलीलीटर)।
+<strong>मात्रा :</strong>
+मौखिक: - एक सप्ताह के लिए दिन में तीन बार 200 मिलीग्राम, अगले एक सप्ताह के लिए प्रतिदिन दो बार 200 मिलीग्राम तक कम करें। अतालता को नियंत्रित करने के लिए प्रतिदिन 200 मिलीग्राम का रखरखाव या आवश्यक न्यूनतम तक कम करें।
+अंतःशिरा आसव
+(केंद्रीय शिरापरक कैथेटर के साथ)।
+प्रारंभ में ईसीजी निगरानी के साथ 20 से 120 मिनट तक 5 मिलीग्राम/किलो शरीर का वजन, बाद में प्रतिक्रिया के अनुसार यदि आवश्यक हो तो जलसेक दिया जाता है (24 घंटे में अधिकतम 1.2 ग्राम तक)।
+`},
+{
+    title: "ADENOSINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Cardiovascular system: It slows down the heart rate and reduces blood pressure. It slows down conduction and acts as an antiarrhythmic agent (useful for supraventricular tacycardia). 
+2.It can cause flushing (due to vasodilation) and transient chest pain. The conscious patient must be warned and reassured about these symptoms before administration of adenosine.
+3.Respiratory system: It may cause bronchospasm in a susceptible patient. Even though adenosine has a very short duration of action, bronchospasm induced by it may last as long as half an hour. Hence, it is best avoided in asthmatics.
+<strong>Availability :</strong>
+TABLETS- 40, 80 and 120 mg (DT).
+INJECTION- 2 ml ampoule (3 mg/ml).
+<strong>Dosage :</strong>
+Oral
+40 to 80 mg, 3 to 4 times daily (Max. 480 mg/ day).
+Rapid intravenous injection (into central or large peripheral vein)
+3mg every 2 seconds with regular cardiac monitoring, if necessary, followed by 6 mg every 1 to 2 min. Increment should not be given if higher level AV block occurs at any particular dose.
+`,
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಹೃದಯ ಬಡಿತವನ್ನು ನಿಧಾನಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ರಕ್ತದೊತ್ತಡವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಇದು ವಹನವನ್ನು ನಿಧಾನಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಆಂಟಿಅರಿಥಮಿಕ್ ಏಜೆಂಟ್ ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ (ಸುಪ್ರಾವೆಂಟ್ರಿಕ್ಯುಲರ್ ಟಾಸಿಕಾರ್ಡಿಯಾಕ್ಕೆ ಉಪಯುಕ್ತವಾಗಿದೆ). 
+2.ಇದು ಫ್ಲಶಿಂಗ್ (ವಾಸೋಡಿಲೇಷನ್ ಕಾರಣ) ಮತ್ತು ಅಸ್ಥಿರ ಎದೆನೋವಿಗೆ ಕಾರಣವಾಗಬಹುದು. ಅಡೆನೊಸಿನ್ ನೀಡುವ ಮೊದಲು ಜಾಗೃತ ರೋಗಿಗೆ ಈ ರೋಗಲಕ್ಷಣಗಳ ಬಗ್ಗೆ ಎಚ್ಚರಿಕೆ ನೀಡಬೇಕು ಮತ್ತು ಭರವಸೆ ನೀಡಬೇಕು.
+3.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ಒಳಗಾಗುವ ರೋಗಿಯಲ್ಲಿ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ ಅನ್ನು ಉಂಟುಮಾಡಬಹುದು. ಅಡೆನೊಸಿನ್ ಬಹಳ ಕಡಿಮೆ ಅವಧಿಯ ಕ್ರಿಯೆಯನ್ನು ಹೊಂದಿದ್ದರೂ, ಅದರಿಂದ ಉಂಟಾಗುವ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ ಅರ್ಧ ಘಂಟೆಯವರೆಗೆ ಇರುತ್ತದೆ. ಆದ್ದರಿಂದ, ಅಸ್ತಮಾ ರೋಗಿಗಳಲ್ಲಿ ಇದನ್ನು ತಪ್ಪಿಸುವುದು ಉತ್ತಮ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 40, 80 ಮತ್ತು 120 ಮಿಗ್ರಾಂ (ಡಿಟಿ).
+ಇಂಜೆಕ್ಷನ್ - 2 ಮಿಲಿ ಆಂಪೋಲ್ (3 ಮಿಗ್ರಾಂ / ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+40 ರಿಂದ 80 ಮಿಗ್ರಾಂ, ದಿನಕ್ಕೆ 3 ರಿಂದ 4 ಬಾರಿ (ಗರಿಷ್ಠ. 480 ಮಿಗ್ರಾಂ / ದಿನ).
+ತ್ವರಿತ ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್ (ಕೇಂದ್ರ ಅಥವಾ ದೊಡ್ಡ ಬಾಹ್ಯ ಅಭಿಧಮನಿಯೊಳಗೆ)
+ನಿಯಮಿತ ಹೃದಯದ ಮೇಲ್ವಿಚಾರಣೆಯೊಂದಿಗೆ ಪ್ರತಿ 2 ಸೆಕೆಂಡಿಗೆ 3mg, ಅಗತ್ಯವಿದ್ದರೆ, ನಂತರ 6 mg ಪ್ರತಿ 1 ರಿಂದ 2 ನಿಮಿಷಗಳು. ಯಾವುದೇ ನಿರ್ದಿಷ್ಟ ಡೋಸ್‌ನಲ್ಲಿ ಹೆಚ್ಚಿನ ಮಟ್ಟದ AV ಬ್ಲಾಕ್ ಸಂಭವಿಸಿದಲ್ಲಿ ಹೆಚ್ಚಳವನ್ನು ನೀಡಬಾರದು.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.हृदय प्रणाली: यह हृदय गति को धीमा कर देता है और रक्तचाप को कम कर देता है। यह चालन को धीमा कर देता है और एक एंटीरैडमिक एजेंट के रूप में कार्य करता है (सुप्रावेंट्रिकुलर टैसीकार्डिया के लिए उपयोगी)। 
+2. इससे फ्लशिंग (वासोडिलेशन के कारण) और क्षणिक सीने में दर्द हो सकता है। एडेनोसिन देने से पहले जागरूक रोगी को इन लक्षणों के बारे में चेतावनी और आश्वस्त किया जाना चाहिए।
+3. श्वसन प्रणाली: यह अतिसंवेदनशील रोगी में ब्रोंकोस्पज़म का कारण बन सकता है। भले ही एडेनोसिन की क्रिया की अवधि बहुत कम होती है, लेकिन इससे प्रेरित ब्रोंकोस्पज़म आधे घंटे तक रह सकता है। इसलिए, अस्थमा के मरीजों को इससे बचना चाहिए।
+<strong>उपलब्धता :</strong>
+गोलियाँ- 40, 80 और 120 मिलीग्राम (डीटी)।
+इंजेक्शन- 2 मिली एम्पुल (3 मिलीग्राम/एमएल)।
+<strong>मात्रा :</strong>
+मौखिक
+40 से 80 मिलीग्राम, प्रतिदिन 3 से 4 बार (अधिकतम 480 मिलीग्राम/दिन)।
+तीव्र अंतःशिरा इंजेक्शन (केंद्रीय या बड़ी परिधीय नस में)
+यदि आवश्यक हो तो नियमित हृदय निगरानी के साथ हर 2 सेकंड में 3 मिलीग्राम, इसके बाद हर 1 से 2 मिनट में 6 मिलीग्राम। यदि किसी विशेष खुराक पर उच्च स्तर का एवी ब्लॉक होता है तो वेतन वृद्धि नहीं दी जानी चाहिए।
+`},
+{
+    title: "ATROPINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Cardiovascular system: The main effect of atropine is on the heart. It increases heart rate by a vagolytic effect on the SA node and the AV node. It may increase cardiac output through
+an increase in heart rate. It has no effect on myocardial contractility.
+2.Respiratory system: It produces bronchodilatation through its inhibitory action on the muscarinic receptors situated in the bronchi.
+3.Gastrointestinal system: It delays gastric emptying by reducing GI motility through its parasympatholytic action.
+4.Central nervous system: It crosses blood-brain barrier and can cause confusion, irritability and restlessness particularly when given in high doses, as for treatment of organophosphorus poisoning. It can also inhibit sweating and cause a rise in body temperature. It causes mydriasis and its analogues such as homatropine are used by ophthalmologists for this purpose.
+<strong>Availability :</strong>
+INJECTION- 1 ml ampoules and 50 ml vial (0.6mg/ml).
+<strong>Dosage :</strong>
+Intramuscular and intravenous injection
+Adult: 1.8 - 3.0 mg intravenous bolus followed by doubling dose every 3 to 5 minutes depending upon response. End-point for atropinization include clear chest with no wheeze, systolic BP >80mm Hg, pulse >80 beats/min., pupils no longer pinpoint and dry axillae. Following that infusion of atropine at 10-20 % of total initial dose required/hour; may require boluses during infusion.
+Child:20-30 µg/kg initially with same schedule as above.
+`,
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಅಟ್ರೊಪಿನ್ನ ಮುಖ್ಯ ಪರಿಣಾಮವು ಹೃದಯದ ಮೇಲೆ ಇರುತ್ತದೆ. ಇದು SA ನೋಡ್ ಮತ್ತು AV ನೋಡ್‌ನಲ್ಲಿ ವ್ಯಾಗೋಲಿಟಿಕ್ ಪರಿಣಾಮದಿಂದ ಹೃದಯ ಬಡಿತವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ. ಇದು ಹೃದಯದ ಉತ್ಪಾದನೆಯನ್ನು ಹೆಚ್ಚಿಸಬಹುದು
+ಹೃದಯ ಬಡಿತದಲ್ಲಿ ಹೆಚ್ಚಳ. ಮಯೋಕಾರ್ಡಿಯಲ್ ಸಂಕೋಚನದ ಮೇಲೆ ಯಾವುದೇ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ.
+2.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ಶ್ವಾಸನಾಳದಲ್ಲಿ ನೆಲೆಗೊಂಡಿರುವ ಮಸ್ಕರಿನಿಕ್ ಗ್ರಾಹಕಗಳ ಮೇಲೆ ಅದರ ಪ್ರತಿಬಂಧಕ ಕ್ರಿಯೆಯ ಮೂಲಕ ಬ್ರಾಂಕೋಡಿಲೇಟೇಶನ್ ಅನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ.
+3.ಜಠರಗರುಳಿನ ವ್ಯವಸ್ಥೆ: ಇದು ಪ್ಯಾರಾಸಿಂಪಥೋಲಿಟಿಕ್ ಕ್ರಿಯೆಯ ಮೂಲಕ GI ಚಲನಶೀಲತೆಯನ್ನು ಕಡಿಮೆ ಮಾಡುವ ಮೂಲಕ ಗ್ಯಾಸ್ಟ್ರಿಕ್ ಖಾಲಿಯಾಗುವುದನ್ನು ವಿಳಂಬಗೊಳಿಸುತ್ತದೆ.
+4.ಕೇಂದ್ರ ನರಮಂಡಲ: ಇದು ರಕ್ತ-ಮಿದುಳಿನ ತಡೆಗೋಡೆ ದಾಟುತ್ತದೆ ಮತ್ತು ಆರ್ಗನೊಫಾಸ್ಫರಸ್ ವಿಷದ ಚಿಕಿತ್ಸೆಗಾಗಿ ವಿಶೇಷವಾಗಿ ಹೆಚ್ಚಿನ ಪ್ರಮಾಣದಲ್ಲಿ ನೀಡಿದಾಗ ಗೊಂದಲ, ಕಿರಿಕಿರಿ ಮತ್ತು ಚಡಪಡಿಕೆಗೆ ಕಾರಣವಾಗಬಹುದು. ಇದು ಬೆವರುವಿಕೆಯನ್ನು ತಡೆಯುತ್ತದೆ ಮತ್ತು ದೇಹದ ಉಷ್ಣತೆಯ ಏರಿಕೆಗೆ ಕಾರಣವಾಗಬಹುದು. ಇದು ಮೈಡ್ರಿಯಾಸಿಸ್ ಅನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ ಮತ್ತು ಹೋಮಾಟ್ರೋಪಿನ್ ನಂತಹ ಅದರ ಸಾದೃಶ್ಯಗಳನ್ನು ನೇತ್ರಶಾಸ್ತ್ರಜ್ಞರು ಈ ಉದ್ದೇಶಕ್ಕಾಗಿ ಬಳಸುತ್ತಾರೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್ - 1 ಮಿಲಿ ಆಂಪೂಲ್ಗಳು ಮತ್ತು 50 ಮಿಲಿ ಸೀಸೆ (0.6 ಮಿಗ್ರಾಂ / ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಮತ್ತು ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು: 1.8 - 3.0 ಮಿಗ್ರಾಂ ಇಂಟ್ರಾವೆನಸ್ ಬೋಲಸ್ ನಂತರ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಅವಲಂಬಿಸಿ ಪ್ರತಿ 3 ರಿಂದ 5 ನಿಮಿಷಗಳವರೆಗೆ ಡೋಸ್ ಅನ್ನು ದ್ವಿಗುಣಗೊಳಿಸುವುದು. ಅಟ್ರೊಪಿನೈಸೇಶನ್‌ನ ಅಂತಿಮ ಬಿಂದುವು ಉಬ್ಬಸ ಇಲ್ಲದ ಸ್ಪಷ್ಟ ಎದೆ, ಸಂಕೋಚನ BP>80mm Hg, ನಾಡಿ>80 ಬೀಟ್ಸ್/ನಿಮಿ., ವಿದ್ಯಾರ್ಥಿಗಳು ಇನ್ನು ಮುಂದೆ ಪಿನ್‌ಪಾಯಿಂಟ್ ಮತ್ತು ಒಣ ಅಕ್ಷಾಕಂಕುಳಿನ ಹೊಂದಿರುವುದಿಲ್ಲ. ಅಗತ್ಯವಿರುವ ಒಟ್ಟು ಆರಂಭಿಕ ಡೋಸ್‌ನ 10-20%/ಗಂಟೆಗೆ ಅಟ್ರೊಪಿನ್‌ನ ಕಷಾಯವನ್ನು ಅನುಸರಿಸಿ; ಇನ್ಫ್ಯೂಷನ್ ಸಮಯದಲ್ಲಿ ಬೋಲಸ್ಗಳು ಬೇಕಾಗಬಹುದು.
+ಮಗು: 20-30 µg/kg ಆರಂಭದಲ್ಲಿ ಮೇಲಿನ ಅದೇ ವೇಳಾಪಟ್ಟಿಯೊಂದಿಗೆ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.हृदय तंत्र: एट्रोपिन का मुख्य प्रभाव हृदय पर पड़ता है। यह एसए नोड और एवी नोड पर वैगोलिटिक प्रभाव से हृदय गति को बढ़ाता है। इसके माध्यम से कार्डियक आउटपुट बढ़ सकता है
+हृदय गति में वृद्धि. इसका मायोकार्डियल सिकुड़न पर कोई प्रभाव नहीं पड़ता है।
+2.श्वसन तंत्र: यह ब्रांकाई में स्थित मस्कैरेनिक रिसेप्टर्स पर अपनी निरोधात्मक कार्रवाई के माध्यम से ब्रोन्कोडायलेटेशन पैदा करता है।
+3. गैस्ट्रोइंटेस्टाइनल सिस्टम: यह अपनी पैरासिम्पेथोलिटिक क्रिया के माध्यम से जीआई गतिशीलता को कम करके गैस्ट्रिक खाली करने में देरी करता है।
+4.केंद्रीय तंत्रिका तंत्र: यह रक्त-मस्तिष्क बाधा को पार करता है और भ्रम, चिड़चिड़ापन और बेचैनी पैदा कर सकता है, खासकर जब उच्च खुराक में दिया जाता है, जैसे कि ऑर्गनोफॉस्फोरस विषाक्तता के उपचार के लिए। यह पसीने को भी रोक सकता है और शरीर के तापमान में वृद्धि का कारण बन सकता है। यह मायड्रायसिस का कारण बनता है और इसके एनालॉग्स जैसे होमैट्रोपिन का उपयोग इस उद्देश्य के लिए नेत्र रोग विशेषज्ञों द्वारा किया जाता है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन- 1 मिली एम्पौल और 50 मिली शीशी (0.6मिलीग्राम/मिलीग्राम)।
+<strong>मात्रा :</strong>
+इंट्रामस्क्युलर और अंतःशिरा इंजेक्शन
+वयस्क: 1.8 - 3.0 मिलीग्राम अंतःशिरा बोलस, जिसके बाद प्रतिक्रिया के आधार पर हर 3 से 5 मिनट में खुराक दोगुनी हो जाती है। एट्रोपिनाइजेशन के लिए अंतिम बिंदु में घरघराहट के बिना स्पष्ट छाती, सिस्टोलिक बीपी> 80 मिमी एचजी, पल्स> 80 बीट्स / मिनट, पुतलियाँ अब पिनपॉइंट नहीं हैं और सूखी कांख शामिल हैं। इसके बाद आवश्यक कुल प्रारंभिक खुराक का 10-20%/घंटे पर एट्रोपिन का जलसेक; जलसेक के दौरान बोल्यूज़ की आवश्यकता हो सकती है।
+बच्चा: प्रारंभ में उपरोक्त के समान शेड्यूल के साथ 20-30 माइक्रोग्राम/किग्रा।
+`},
+{
+    title: "AMINOPHYLLINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+It is a phosphodiesterase inhibitor, increases intracellular cyclic AMP by reducing its breakdown and causes bronchodilatation.
+<strong>Availability :</strong>
+TABLETS- 100, 200, 225, and 350 mg.
+INJECTION- 10 ml (250 mg/2 ml, 25 mg/ml);
+ORAL LIQUID- 105 mg/5 ml;
+SUPPOSITORY-250 mg, 500 mg.
+<strong>Dosage :</strong>
+Parenteral/Oral
+Adult: 250-500 mg orally or by slow i.v injection. Loading dose- 5 mg/kg.
+Maintainance dose: 0.5 mg/kg/h.
+Child: (6 months – 9 years) 1 mg/kg/h.(10 – 16 years) 800 µg/kg/h
+`,
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಇದು ಫಾಸ್ಫೋಡಿಸ್ಟರೇಸ್ ಪ್ರತಿಬಂಧಕವಾಗಿದೆ, ಅದರ ಸ್ಥಗಿತವನ್ನು ಕಡಿಮೆ ಮಾಡುವ ಮೂಲಕ ಅಂತರ್ಜೀವಕೋಶದ ಸೈಕ್ಲಿಕ್ AMP ಅನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ ಮತ್ತು ಬ್ರಾಂಕೋಡಿಲೇಟೇಶನ್ ಅನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 100, 200, 225 ಮತ್ತು 350 ಮಿಗ್ರಾಂ.
+ಇಂಜೆಕ್ಷನ್- 10 ಮಿಲಿ (250 ಮಿಗ್ರಾಂ / 2 ಮಿಲಿ, 25 ಮಿಗ್ರಾಂ / ಮಿಲಿ);
+ಮೌಖಿಕ ದ್ರವ - 105 ಮಿಗ್ರಾಂ / 5 ಮಿಲಿ;
+ಸಪೋಸಿಟರಿ-250 ಮಿಗ್ರಾಂ, 500 ಮಿಗ್ರಾಂ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಪೇರೆಂಟೆರಲ್/ಮೌಖಿಕ
+ವಯಸ್ಕ: 250-500 ಮಿಗ್ರಾಂ ಮೌಖಿಕವಾಗಿ ಅಥವಾ ನಿಧಾನವಾದ ಐವಿ ಇಂಜೆಕ್ಷನ್ ಮೂಲಕ. ಲೋಡಿಂಗ್ ಡೋಸ್ - 5 ಮಿಗ್ರಾಂ / ಕೆಜಿ.
+ನಿರ್ವಹಣೆ ಪ್ರಮಾಣ: 0.5 mg/kg/h.
+ಮಗು: (6 ತಿಂಗಳುಗಳು - 9 ವರ್ಷಗಳು) 1 mg/kg/h.(10 - 16 ವರ್ಷಗಳು) 800 µg/kg/h
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+यह एक फॉस्फोडिएस्टरेज़ अवरोधक है, इसके टूटने को कम करके इंट्रासेल्युलर चक्रीय एएमपी को बढ़ाता है और ब्रोन्कोडायलेटेशन का कारण बनता है।
+<strong>उपलब्धता :</strong>
+गोलियाँ- 100, 200, 225 और 350 मिलीग्राम।
+इंजेक्शन- 10 मिली (250 मिग्रा/2 मिली, 25 मिग्रा/मिली);
+मौखिक तरल- 105 मिलीग्राम/5 मिली;
+सपोसिटरी-250 मिलीग्राम, 500 मिलीग्राम।
+<strong>मात्रा :</strong>
+पैरेंट्रल/मौखिक
+वयस्क: 250-500 मिलीग्राम मौखिक रूप से या धीमे आई.वी. इंजेक्शन द्वारा। लोडिंग खुराक- 5 मिलीग्राम/किग्रा.
+रखरखाव खुराक: 0.5 मिलीग्राम/किग्रा/घंटा।
+बच्चा: (6 महीने - 9 वर्ष) 1 मिलीग्राम/किग्रा/घंटा। (10 - 16 वर्ष) 800 माइक्रोग्राम/किग्रा/घंटा
+`},
+{
+    title: "BUPIVACAINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+It inhibits the sodium channels and prevents depolarization and propagation of nerve impulse.
+<strong>Availability :</strong>
+INJECTION-20 ml vial (0.25%; 0.5% and 1%).
+<strong>Dosage :</strong>
+Adult-Local: Infiltration using 2.5 mg/ml solution (max. 60 ml).
+Peripheral nerve block: 2.5 mg/ml solution (max. 20 ml) or 5.0 mg/ml solution (max. 30 ml).
+Epidural block: Lubricant surgery 5 mg/ml solution (max. 20 ml).
+Sympathetic nerve block: 2.5 mg/ml solution (max. 50 ml).
+`,
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಇದು ಸೋಡಿಯಂ ಚಾನಲ್‌ಗಳನ್ನು ಪ್ರತಿಬಂಧಿಸುತ್ತದೆ ಮತ್ತು ನರಗಳ ಪ್ರಚೋದನೆಯ ಡಿಪೋಲರೈಸೇಶನ್ ಮತ್ತು ಪ್ರಸರಣವನ್ನು ತಡೆಯುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-20 ಮಿಲಿ ಸೀಸೆ (0.25%; 0.5% ಮತ್ತು 1%).
+<strong>ಪ್ರಮಾಣ :</strong>
+ವಯಸ್ಕ-ಸ್ಥಳೀಯ: 2.5 ಮಿಗ್ರಾಂ/ಮಿಲೀ ದ್ರಾವಣವನ್ನು (ಗರಿಷ್ಠ 60 ಮಿಲಿ) ಬಳಸಿ ಒಳನುಸುಳುವಿಕೆ.
+ಪೆರಿಫೆರಲ್ ನರ್ವ್ ಬ್ಲಾಕ್: 2.5 mg/ml ದ್ರಾವಣ (ಗರಿಷ್ಠ. 20 ml) ಅಥವಾ 5.0 mg/ml ದ್ರಾವಣ (ಗರಿಷ್ಠ 30 ಮಿಲಿ).
+ಎಪಿಡ್ಯೂರಲ್ ಬ್ಲಾಕ್: ಲೂಬ್ರಿಕಂಟ್ ಸರ್ಜರಿ 5 mg/ml ಪರಿಹಾರ (ಗರಿಷ್ಠ 20 ಮಿಲಿ).
+ಸಹಾನುಭೂತಿಯ ನರಗಳ ಬ್ಲಾಕ್: 2.5 ಮಿಗ್ರಾಂ / ಮಿಲಿ ದ್ರಾವಣ (ಗರಿಷ್ಠ 50 ಮಿಲಿ).
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+यह सोडियम चैनलों को रोकता है और तंत्रिका आवेग के विध्रुवण और प्रसार को रोकता है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-20 मिली शीशी (0.25%; 0.5% और 1%)।
+<strong>मात्रा :</strong>
+वयस्क-स्थानीय: 2.5 मिलीग्राम/मिलीलीटर घोल (अधिकतम 60 मिली) का उपयोग करके घुसपैठ।
+परिधीय तंत्रिका ब्लॉक: 2.5 मिलीग्राम/मिलीलीटर घोल (अधिकतम 20 मिली) या 5.0 मिलीग्राम/मिलीलीटर घोल (अधिकतम 30 मिली)।
+एपिड्यूरल ब्लॉक: स्नेहक सर्जरी 5 मिलीग्राम/एमएल समाधान (अधिकतम 20 मिलीलीटर)।
+सहानुभूति तंत्रिका ब्लॉक: 2.5 मिलीग्राम/मिलीलीटर घोल (अधिकतम 50 मिली)।
+`},
+{
+    title: "BUDESONIDE",
+informationInEnglish: `
+<strong>Uses :</strong>
+It produces bronchodilatation by reducing mucosal inflammation (anti-inflammatory effects help in reducing the oedema of the airway thus contributing to relief of bronchospasm). 
+It is a glucocorticoid with mild mineralocorticoid effects.
+<strong>Availability :</strong>
+INHALER-100 and 200 µg, 
+ROTACAP 100, 200 and 400 µg, 
+NASAL SPRAY 0.02% w/v.
+<strong>Dosage :</strong>
+Asthma
+Adult- 200-400 µg Meter Dose Inhaler twice daily by inhalation, as dry powder inhaler 200-800 µg in single or two divided doses, as nebulised solution 0.5-1 mg twice daily.
+Child- 50-400 µg Meter Dose Inhaler twice daily, as nebulised solution 0.25-0.5 mg twice daily.
+Nasal polyps and allergic rhinitis- 200-400 µg/day by intranasal spray.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಇದು ಲೋಳೆಪೊರೆಯ ಉರಿಯೂತವನ್ನು ಕಡಿಮೆ ಮಾಡುವ ಮೂಲಕ ಬ್ರಾಂಕೋಡಿಲೇಟೇಶನ್ ಅನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ (ಉರಿಯೂತ-ವಿರೋಧಿ ಪರಿಣಾಮಗಳು ಶ್ವಾಸನಾಳದ ಎಡಿಮಾವನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ ಮತ್ತು ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ನ ಪರಿಹಾರಕ್ಕೆ ಕೊಡುಗೆ ನೀಡುತ್ತದೆ). 
+ಇದು ಸೌಮ್ಯವಾದ ಮಿನರಲ್ಕಾರ್ಟಿಕಾಯ್ಡ್ ಪರಿಣಾಮಗಳನ್ನು ಹೊಂದಿರುವ ಗ್ಲುಕೊಕಾರ್ಟಿಕಾಯ್ಡ್ ಆಗಿದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇನ್ಹೇಲರ್ -100 ಮತ್ತು 200 μg, 
+ROTACAP 100, 200 ಮತ್ತು 400 μg, 
+ನಾಸಲ್ ಸ್ಪ್ರೇ 0.02% w/v.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಅಸ್ತಮಾ
+ವಯಸ್ಕರು- 200-400 µg ಮೀಟರ್ ಡೋಸ್ ಇನ್ಹೇಲರ್ ಅನ್ನು ದಿನಕ್ಕೆ ಎರಡು ಬಾರಿ ಇನ್ಹಲೇಷನ್ ಮೂಲಕ, ಒಣ ಪುಡಿ ಇನ್ಹೇಲರ್ 200-800 µg ಅನ್ನು ಏಕ ಅಥವಾ ಎರಡು ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ, ನೆಬ್ಯುಲೈಸ್ಡ್ ದ್ರಾವಣವಾಗಿ ದಿನಕ್ಕೆ ಎರಡು ಬಾರಿ 0.5-1 ಮಿಗ್ರಾಂ.
+ಮಗು - 50-400 μg ಮೀಟರ್ ಡೋಸ್ ಇನ್ಹೇಲರ್ ಅನ್ನು ದಿನಕ್ಕೆ ಎರಡು ಬಾರಿ, ನೆಬ್ಯುಲೈಸ್ಡ್ ಪರಿಹಾರವಾಗಿ ದಿನಕ್ಕೆ ಎರಡು ಬಾರಿ 0.25-0.5 ಮಿಗ್ರಾಂ.
+ಮೂಗಿನ ಪಾಲಿಪ್ಸ್ ಮತ್ತು ಅಲರ್ಜಿಕ್ ರಿನಿಟಿಸ್ - ಇಂಟ್ರಾನಾಸಲ್ ಸ್ಪ್ರೇ ಮೂಲಕ ದಿನಕ್ಕೆ 200-400 μg.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+यह म्यूकोसल सूजन को कम करके ब्रोन्कोडायलेटेशन पैदा करता है (एंटी-इंफ्लेमेटरी प्रभाव वायुमार्ग की सूजन को कम करने में मदद करता है जिससे ब्रोंकोस्पज़म से राहत मिलती है)। 
+यह हल्के मिनरलोकॉर्टिकॉइड प्रभाव वाला एक ग्लुकोकोर्तिकोइद है।
+<strong>उपलब्धता :</strong>
+इनहेलर-100 और 200 माइक्रोग्राम, 
+रोटाकैप 100, 200 और 400 माइक्रोग्राम, 
+नेज़ल स्प्रे 0.02% w/v.
+<strong>मात्रा :</strong>
+दमा
+वयस्क- 200-400 माइक्रोग्राम मीटर खुराक इनहेलर दिन में दो बार, सूखे पाउडर इनहेलर के रूप में 200-800 माइक्रोग्राम एकल या दो विभाजित खुराक में, नेबुलाइज्ड घोल के रूप में 0.5-1 मिलीग्राम दिन में दो बार।
+बच्चा- 50-400 माइक्रोग्राम मीटर खुराक इनहेलर दिन में दो बार, नेबुलाइज्ड घोल के रूप में 0.25-0.5 मिलीग्राम दिन में दो बार।
+नाक के पॉलीप्स और एलर्जिक राइनाइटिस- 200-400 माइक्रोग्राम/दिन इंट्रानैसल स्प्रे द्वारा।
+`},
+{
+    title: "CLONIDINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Central nervous system: It causes drowsiness and dryness of mouth. It reduces MAC of inhalation anaesthetics. It produces analgesia. It reduces the MAC of volatile anaesthetic agents
+2.Cardiovascular system: It causes bradycardia, hypotension and decrease in cardiac output.
+Lower doses of clonidine when given as a bolus might cause initial transient hypertension due to its alpha-1 stimulant activity. This will soon be followed by hypotension, sedation and analgesia. After chronic use, if discontinued, can cause rebound hyperte
+<strong>Availability :</strong>
+EYE DROPS- 0.125%, 0.2%, 0.25% and 0.5%w/v.
+
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಕೇಂದ್ರ ನರಮಂಡಲ: ಇದು ಅರೆನಿದ್ರಾವಸ್ಥೆ ಮತ್ತು ಬಾಯಿಯ ಶುಷ್ಕತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಇದು ಇನ್ಹಲೇಷನ್ ಅರಿವಳಿಕೆಗಳ MAC ಅನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಇದು ನೋವು ನಿವಾರಕವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಇದು ಬಾಷ್ಪಶೀಲ ಅರಿವಳಿಕೆ ಏಜೆಂಟ್‌ಗಳ MAC ಅನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ
+2.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಬ್ರಾಡಿಕಾರ್ಡಿಯಾ, ಹೈಪೊಟೆನ್ಷನ್ ಮತ್ತು ಹೃದಯದ ಉತ್ಪಾದನೆಯಲ್ಲಿ ಇಳಿಕೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ.
+ಕಡಿಮೆ ಪ್ರಮಾಣದ ಕ್ಲೋನಿಡಿನ್ ಅನ್ನು ಬೋಲಸ್ ಆಗಿ ನೀಡಿದಾಗ ಅದರ ಆಲ್ಫಾ-1 ಉತ್ತೇಜಕ ಚಟುವಟಿಕೆಯಿಂದಾಗಿ ಆರಂಭಿಕ ಅಸ್ಥಿರ ಅಧಿಕ ರಕ್ತದೊತ್ತಡವನ್ನು ಉಂಟುಮಾಡಬಹುದು. ಇದು ಶೀಘ್ರದಲ್ಲೇ ಹೈಪೊಟೆನ್ಷನ್, ನಿದ್ರಾಜನಕ ಮತ್ತು ನೋವು ನಿವಾರಕದಿಂದ ಅನುಸರಿಸುತ್ತದೆ. ದೀರ್ಘಕಾಲದ ಬಳಕೆಯ ನಂತರ, ನಿಲ್ಲಿಸಿದರೆ, ಮರುಕಳಿಸುವ ಹೈಪರ್ಟೆಗೆ ಕಾರಣವಾಗಬಹುದು
+<strong>ಲಭ್ಯತೆ :</strong>
+ಕಣ್ಣಿನ ಹನಿಗಳು- 0.125%, 0.2%, 0.25% ಮತ್ತು 0.5% w/v.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.केंद्रीय तंत्रिका तंत्र: यह उनींदापन और मुंह में सूखापन का कारण बनता है। यह इनहेलेशन एनेस्थेटिक्स के एमएसी को कम करता है। यह पीड़ाशून्यता उत्पन्न करता है। यह अस्थिर संवेदनाहारी एजेंटों के एमएसी को कम करता है
+2.हृदय प्रणाली: यह ब्रैडीकार्डिया, हाइपोटेंशन और कार्डियक आउटपुट में कमी का कारण बनता है।
+क्लोनिडाइन की कम खुराक जब बोलस के रूप में दी जाती है तो इसकी अल्फा-1 उत्तेजक गतिविधि के कारण प्रारंभिक क्षणिक उच्च रक्तचाप हो सकता है। इसके बाद जल्द ही हाइपोटेंशन, बेहोशी और एनाल्जेसिया होगा। लंबे समय तक उपयोग के बाद, अगर बंद कर दिया जाए, तो रिबाउंड हाइपरटे का कारण बन सकता है
+<strong>उपलब्धता :</strong>
+आई ड्रॉप्स- 0.125%, 0.2%, 0.25% और 0.5%w/v।
+`},
+{
+    title: "CALCIUM GLUCONATE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.To treat hypocalcaemia
+2.To treat life-threatening hyperkalaemia
+3.To counter the effect of calcium channel blockers
+4.To treat citrate toxicity after massive transfusion 
+<strong>Availability :</strong>
+TABLETS- 250 and 500 mg; 
+INJECTION 10 ml(1g/10 ml).
+<strong>Dosage :</strong>
+Slow intravenous injection and continuous intravenous infusion
+Adult- Hypocalcaemic tetany: 1g (2.2 mmol) by slow intravenous injection, followed by continuous intravenous infusion of about 4g (8.8 mmol) daily.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1. ಹೈಪೋಕಾಲ್ಸೆಮಿಯಾ ಚಿಕಿತ್ಸೆಗಾಗಿ
+2. ಮಾರಣಾಂತಿಕ ಹೈಪರ್‌ಕೆಲೆಮಿಯಾ ಚಿಕಿತ್ಸೆಗಾಗಿ
+3.ಕ್ಯಾಲ್ಸಿಯಂ ಚಾನಲ್ ಬ್ಲಾಕರ್‌ಗಳ ಪರಿಣಾಮವನ್ನು ಎದುರಿಸಲು
+4.ಬೃಹತ್ ವರ್ಗಾವಣೆಯ ನಂತರ ಸಿಟ್ರೇಟ್ ವಿಷತ್ವಕ್ಕೆ ಚಿಕಿತ್ಸೆ ನೀಡಲು
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 250 ಮತ್ತು 500 ಮಿಗ್ರಾಂ; 
+ಇಂಜೆಕ್ಷನ್ 10 ಮಿಲಿ (1g/10 ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ನಿಧಾನವಾದ ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್ ಮತ್ತು ನಿರಂತರ ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+ವಯಸ್ಕರು- ಹೈಪೋಕಾಲ್ಸೆಮಿಕ್ ಟೆಟನಿ: ನಿಧಾನವಾದ ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್ ಮೂಲಕ 1 ಗ್ರಾಂ (2.2 ಎಂಎಂಒಎಲ್), ನಂತರ ಪ್ರತಿದಿನ ಸುಮಾರು 4 ಗ್ರಾಂ (8.8 ಎಂಎಂಒಎಲ್) ನಿರಂತರ ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. हाइपोकैल्सीमिया का इलाज करने के लिए
+2.जानलेवा हाइपरकेलेमिया का इलाज करने के लिए
+3.कैल्शियम चैनल ब्लॉकर्स के प्रभाव का मुकाबला करने के लिए
+4.बड़े पैमाने पर आधान के बाद साइट्रेट विषाक्तता का इलाज करने के लिए
+<strong>उपलब्धता :</strong>
+गोलियाँ- 250 और 500 मिलीग्राम; 
+इंजेक्शन 10 मिली(1 ग्राम/10 मिली)।
+<strong>मात्रा :</strong>
+धीमा अंतःशिरा इंजेक्शन और निरंतर अंतःशिरा जलसेक
+`},
+{
+    title: "DIAZEPAM",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.It activates the chloride channels of GABA receptor thus enhancing inhibitory synaptic transmission
+2.Central nervous system (CNS): It produces dose-dependent depression of the CNS. It can be used as an anticonvulsant. It is a centrally acting skeletal muscle relaxant and this effect is quite useful in reducing the intensity and frequency of spasm associated with tetanus and lumbar disc disease.
+3.Cardiovascular system: It is relatively cardiostable and does not affect blood pressure or heart rate. 
+4.Respiratory system: It does not produce any change in respiration.
+<strong>Availability :</strong>
+TABLETS-2.5, 5 and 10 mg; 
+INJECTION 10mg/2 ml
+CAPSULES-10 and 15 mg.
+<strong>Dosage :</strong>
+Oral
+Adult- 5 mg on night before surgery or minor procedure; thereafter 5 mg for 2h before procedures.
+Elderly- Half of adult dose.
+Intravenous injection
+10 to 20 mg over 2 to 4 min immediately before procedure. Premedication: 100 to 200 µg/kg.
+Child- 2.5 to 10 mg over 2 to 4 min.
+0.1 to 0.3 mg/kg in divided doses over 24 h; every 4 to 8 h (adjust according to response).
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಇದು GABA ರಿಸೆಪ್ಟರ್‌ನ ಕ್ಲೋರೈಡ್ ಚಾನಲ್‌ಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ ಹೀಗಾಗಿ ಪ್ರತಿಬಂಧಕ ಸಿನಾಪ್ಟಿಕ್ ಪ್ರಸರಣವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ
+2.ಸೆಂಟ್ರಲ್ ನರವ್ಯೂಹ (ಸಿಎನ್ಎಸ್): ಇದು ಸಿಎನ್ಎಸ್ನ ಡೋಸ್-ಅವಲಂಬಿತ ಖಿನ್ನತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಇದನ್ನು ಆಂಟಿಕಾನ್ವಲ್ಸೆಂಟ್ ಆಗಿ ಬಳಸಬಹುದು. ಇದು ಕೇಂದ್ರೀಯವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ಅಸ್ಥಿಪಂಜರದ ಸ್ನಾಯುವಿನ ವಿಶ್ರಾಂತಿಕಾರಕವಾಗಿದೆ ಮತ್ತು ಟೆಟನಸ್ ಮತ್ತು ಸೊಂಟದ ಡಿಸ್ಕ್ ಕಾಯಿಲೆಗೆ ಸಂಬಂಧಿಸಿದ ಸೆಳೆತದ ತೀವ್ರತೆ ಮತ್ತು ಆವರ್ತನವನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಈ ಪರಿಣಾಮವು ಸಾಕಷ್ಟು ಉಪಯುಕ್ತವಾಗಿದೆ.
+3.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ತುಲನಾತ್ಮಕವಾಗಿ ಕಾರ್ಡಿಯೋಸ್ಟಬಲ್ ಮತ್ತು ರಕ್ತದೊತ್ತಡ ಅಥವಾ ಹೃದಯ ಬಡಿತದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ.
+4.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ಉಸಿರಾಟದಲ್ಲಿ ಯಾವುದೇ ಬದಲಾವಣೆಯನ್ನು ಉಂಟುಮಾಡುವುದಿಲ್ಲ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 2.5, 5 ಮತ್ತು 10 ಮಿಗ್ರಾಂ;
+ಇಂಜೆಕ್ಷನ್ 10mg/2 ml
+ಕ್ಯಾಪ್ಸುಲ್ಗಳು - 10 ಮತ್ತು 15 ಮಿಗ್ರಾಂ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ವಯಸ್ಕ - ಶಸ್ತ್ರಚಿಕಿತ್ಸೆ ಅಥವಾ ಸಣ್ಣ ಕಾರ್ಯವಿಧಾನದ ಮೊದಲು ರಾತ್ರಿ 5 ಮಿಗ್ರಾಂ; ಕಾರ್ಯವಿಧಾನಗಳ ಮೊದಲು 2 ಗಂಟೆಗಳ ಕಾಲ 5 ಮಿಗ್ರಾಂ.
+ವಯಸ್ಸಾದವರು - ವಯಸ್ಕ ಡೋಸ್ನ ಅರ್ಧದಷ್ಟು.
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ಕಾರ್ಯವಿಧಾನದ ಮೊದಲು 2 ರಿಂದ 4 ನಿಮಿಷಗಳ ಮೊದಲು 10 ರಿಂದ 20 ಮಿಗ್ರಾಂ. ಪೂರ್ವಭಾವಿ ಚಿಕಿತ್ಸೆ: 100 ರಿಂದ 200 μg/kg.
+ಮಗು - 2 ರಿಂದ 4 ನಿಮಿಷಗಳಲ್ಲಿ 2.5 ರಿಂದ 10 ಮಿಗ್ರಾಂ.
+0.1 ರಿಂದ 0.3 ಮಿಗ್ರಾಂ/ಕೆಜಿ 24 ಗಂಟೆಗಳಲ್ಲಿ ವಿಂಗಡಿಸಲಾದ ಪ್ರಮಾಣದಲ್ಲಿ; ಪ್ರತಿ 4 ರಿಂದ 8 ಗಂ (ಪ್ರತಿಕ್ರಿಯೆಗೆ ಅನುಗುಣವಾಗಿ ಹೊಂದಿಸಿ).
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. यह GABA रिसेप्टर के क्लोराइड चैनलों को सक्रिय करता है, जिससे निरोधात्मक सिनैप्टिक ट्रांसमिशन में वृद्धि होती है
+2. केंद्रीय तंत्रिका तंत्र (CNS): यह CNS के खुराक-निर्भर अवसाद का उत्पादन करता है। इसका उपयोग एक एंटीकॉन्वल्सेंट के रूप में किया जा सकता है। यह एक केंद्रीय रूप से कार्य करने वाला कंकाल की मांसपेशियों को आराम देने वाला है और यह प्रभाव टेटनस और काठ का डिस्क रोग से जुड़ी ऐंठन की तीव्रता और आवृत्ति को कम करने में काफी उपयोगी है।
+3. कार्डियोवैस्कुलर सिस्टम: यह अपेक्षाकृत कार्डियोस्टेबल है और रक्तचाप या हृदय गति को प्रभावित नहीं करता है।
+4. श्वसन प्रणाली: यह श्वसन में कोई परिवर्तन नहीं करता है।
+<strong>उपलब्धता :</strong>
+गोलियाँ-2.5, 5 और 10 मिग्रा; इंजेक्शन 10मिग्रा/2 मिग्रा कैप्सूल-10 और 15 मिग्रा.
+<strong>मात्रा :</strong>
+मौखिक
+वयस्क- सर्जरी या छोटी प्रक्रिया से पहले रात में 5 मिलीग्राम; उसके बाद प्रक्रियाओं से पहले 2 घंटे के लिए 5 मिलीग्राम।
+बुजुर्ग- वयस्क खुराक का आधा।
+अंतःशिरा इंजेक्शन
+प्रक्रिया से तुरंत पहले 2 से 4 मिनट में 10 से 20 मिलीग्राम। प्रीमेडिकेशन: 100 से 200 µg/kg।
+बच्चे- 2 से 4 मिनट में 2.5 से 10 मिलीग्राम।
+24 घंटे में विभाजित खुराकों में 0.1 से 0.3 मिलीग्राम/किग्रा; हर 4 से 8 घंटे (प्रतिक्रिया के अनुसार समायोजित करें)।
+`},
+
+
+
+{
+    title: "DICLOFENAC",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Central nervous system (CNS): It is a good analgesic. It has no effect on the CNS. 
+2.Cardiovascular system: It is cardiostable.
+3.Respiratory system: It can cause bronchospasm in susceptible individuals. NSAIDS should be avoided in asthmatics.
+4.Gastrointestinal system: It can cause gastric irritation, ulcers, bleeding or perforation.  
+<strong>Availability :</strong>
+TABLETS-25 and 50 mg Plain; 75 and 100mg SR
+CAPSULES-100 mg, 100 mg CR 
+INJECTION-3 ml ampoule (25 mg/ml)
+EYE/EAR DROPS-0.1% w/v
+SUPPOSITORIES-25, 50 and 100mg
+GEL-1%w/w.
+<strong>Dosage :</strong>
+oral
+100 to 150 mg daily in 2 to 3 divided doses,(max 150 mg/day) maintenance by 50 to 100 mg in divided doses.
+Intramuscular injection
+75 mg, 2 to 3 times daily.
+Topically
+Adult- Apply 1% w/w gel on to affected area 3 to 4 times daily.
+Instill to eye
+Post-operative ocular inflammation:
+Adult- as sodium (1% w/v), 4 times daily starting 24 h after surgery for up to 28 days.
+Rectal
+Post-operative pain.
+Adult- 75 to 150 mg daily in divided doses (max. 150 mg/day, inclusive of diclofenac administered through other routes). Child- 6 to 12 year: 1 to 2 mg/kg/day in divided doses for max. of 4 days.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಕೇಂದ್ರ ನರಮಂಡಲ (CNS): ಇದು ಉತ್ತಮ ನೋವು ನಿವಾರಕವಾಗಿದೆ. ಇದು ಕೇಂದ್ರ ನರಮಂಡಲದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ.
+2.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಕಾರ್ಡಿಯೋಸ್ಟಬಲ್ ಆಗಿದೆ.
+3.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ಒಳಗಾಗುವ ವ್ಯಕ್ತಿಗಳಲ್ಲಿ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ ಅನ್ನು ಉಂಟುಮಾಡಬಹುದು. ಆಸ್ತಮಾ ರೋಗಿಗಳಲ್ಲಿ NSADS ಅನ್ನು ತಪ್ಪಿಸಬೇಕು.
+4.ಜಠರಗರುಳಿನ ವ್ಯವಸ್ಥೆ: ಇದು ಗ್ಯಾಸ್ಟ್ರಿಕ್ ಕೆರಳಿಕೆ, ಹುಣ್ಣುಗಳು, ರಕ್ತಸ್ರಾವ ಅಥವಾ ರಂಧ್ರವನ್ನು ಉಂಟುಮಾಡಬಹುದು.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 25 ಮತ್ತು 50 ಮಿಗ್ರಾಂ ಸರಳ; 75 ಮತ್ತು 100mg SR
+ಕ್ಯಾಪ್ಸುಲ್ಗಳು-100 ಮಿಗ್ರಾಂ, 100 ಮಿಗ್ರಾಂ ಸಿಆರ್
+ಇಂಜೆಕ್ಷನ್-3 ಮಿಲಿ ಆಂಪೋಲ್ (25 ಮಿಗ್ರಾಂ/ಮಿಲಿ)
+ಕಣ್ಣು/ಕಿವಿ ಹನಿಗಳು-0.1% w/v
+ಸಪೊಸಿಟರಿಗಳು - 25, 50 ಮತ್ತು 100 ಮಿಗ್ರಾಂ
+GEL-1%w/w.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+100 ರಿಂದ 150 ಮಿಗ್ರಾಂ ದೈನಂದಿನ 2 ರಿಂದ 3 ವಿಭಜಿತ ಡೋಸ್‌ಗಳಲ್ಲಿ, (ಗರಿಷ್ಠ 150 ಮಿಗ್ರಾಂ/ದಿನ) 50 ರಿಂದ 100 ಮಿಗ್ರಾಂ ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ ನಿರ್ವಹಣೆ.
+ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಇಂಜೆಕ್ಷನ್
+75 ಮಿಗ್ರಾಂ, ದಿನಕ್ಕೆ 2 ರಿಂದ 3 ಬಾರಿ.
+ಪ್ರಾಸಂಗಿಕವಾಗಿ
+ವಯಸ್ಕರು- ಪೀಡಿತ ಪ್ರದೇಶಕ್ಕೆ ದಿನಕ್ಕೆ 3 ರಿಂದ 4 ಬಾರಿ 1% w/w ಜೆಲ್ ಅನ್ನು ಅನ್ವಯಿಸಿ.
+ಕಣ್ಣಿಗೆ ಹಚ್ಚಿ
+ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ನಂತರದ ಕಣ್ಣಿನ ಉರಿಯೂತ:
+ವಯಸ್ಕರು- ಸೋಡಿಯಂನಂತೆ (1% w/v), ದಿನಕ್ಕೆ 4 ಬಾರಿ ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ನಂತರ 24 ಗಂಟೆಗಳವರೆಗೆ 28 ​​ದಿನಗಳವರೆಗೆ.
+ಗುದನಾಳ
+ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ನಂತರದ ನೋವು.
+ವಯಸ್ಕರು- 75 ರಿಂದ 150 ಮಿಗ್ರಾಂ ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ ಪ್ರತಿದಿನ (ಗರಿಷ್ಠ. 150 ಮಿಗ್ರಾಂ / ದಿನ, ಇತರ ಮಾರ್ಗಗಳ ಮೂಲಕ ನಿರ್ವಹಿಸುವ ಡಿಕ್ಲೋಫೆನಾಕ್ ಸೇರಿದಂತೆ). ಮಗು- 6 ರಿಂದ 12 ವರ್ಷ: 1 ರಿಂದ 2 ಮಿಗ್ರಾಂ/ಕೆಜಿ/ದಿನಕ್ಕೆ ಗರಿಷ್ಠ ಪ್ರಮಾಣದಲ್ಲಿ ವಿಂಗಡಿಸಲಾಗಿದೆ. 4 ದಿನಗಳ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. केंद्रीय तंत्रिका तंत्र (सीएनएस): यह एक अच्छा एनाल्जेसिक है। इसका सीएनएस पर कोई प्रभाव नहीं पड़ता है। 2. कार्डियोवैस्कुलर सिस्टम: यह कार्डियोस्टेबल है। 3. श्वसन प्रणाली: यह अतिसंवेदनशील व्यक्तियों में ब्रोन्कोस्पास्म का कारण बन सकता है। अस्थमा के रोगियों को NSAIDS से बचना चाहिए। 4. गैस्ट्रोइंटेस्टाइनल सिस्टम: यह गैस्ट्रिक जलन, अल्सर, रक्तस्राव या छिद्र का कारण बन सकता है।
+<strong>उपलब्धता :</strong>
+टेबलेट-25 और 50 मिलीग्राम सादा; 75 और 100 मिलीग्राम एसआर
+कैप्सूल-100 मिलीग्राम, 100 मिलीग्राम सीआर
+इंजेक्शन-3 मिली एम्पुल (25 मिलीग्राम/एमएल)
+आंख/कान की बूंदें-0.1% w/v
+सपोसिटरी-25, 50 और 100 मिलीग्राम
+जेल-1% w/w.
+<strong>मात्रा :</strong>
+मौखिक
+100 से 150 मिलीग्राम प्रतिदिन 2 से 3 विभाजित खुराकों में, (अधिकतम 150 मिलीग्राम/दिन) रखरखाव 50 से 100 मिलीग्राम विभाजित खुराकों में।
+इंट्रामस्क्युलर इंजेक्शन
+75 मिलीग्राम, प्रतिदिन 2 से 3 बार।
+स्थानिक रूप से
+वयस्क- प्रभावित क्षेत्र पर 1% w/w जेल प्रतिदिन 3 से 4 बार लगाएँ।
+आँख में डालें
+ऑपरेशन के बाद नेत्र सूजन:
+वयस्क- सोडियम के रूप में (1% w/v), सर्जरी के 24 घंटे बाद से 28 दिनों तक प्रतिदिन 4 बार।
+मलाशय
+ऑपरेशन के बाद दर्द।
+वयस्क- विभाजित खुराकों में प्रतिदिन 75 से 150 मिलीग्राम (अधिकतम 150 मिलीग्राम/दिन, अन्य मार्गों से प्रशासित डाइक्लोफेनाक सहित)। बच्चा- 6 से 12 वर्ष: विभाजित खुराकों में 1 से 2 मिलीग्राम/किलोग्राम/दिन अधिकतम 4 दिनों के लिए।
+`},
+
+
+{
+    title: "DOPAMINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+This drug is used to treat low cardiac output, and low blood pressure and to enhance blood flow in the kidneys. This drug helps to reduce anxiety and depression, heal wounds, trigger nausea and maintain bone health. Dopamine is an excitatory neurotransmitter. Serotonin is an inhibitory neurotransmitter.
+<strong>Availability :</strong>
+INJECTIONS- 5 ml vial (40 mg/ml), 5 and 10ml ampoule (200 mg/5 ml).
+<strong>Dosage :</strong>
+Intravenous infusion
+Adult- Cardiogenic shock: into large vein, initially 2 to 5 µg/kg/min; gradually increased by 5 to 10 µg/kg/min according to blood pressure, cardiac output and urine output; seriously ill patients up to 20 to 50 µg/kg/ min. By intravenous route initially 1 to 5 µg/ kg/min can be increased gradually to 5 to 10 µg/kg/min. max 20 to 50 µg/kg/min in serious patients.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಈ ಔಷಧವನ್ನು ಕಡಿಮೆ ಹೃದಯದ ಉತ್ಪಾದನೆ, ಮತ್ತು ಕಡಿಮೆ ರಕ್ತದೊತ್ತಡ ಮತ್ತು ಮೂತ್ರಪಿಂಡದಲ್ಲಿ ರಕ್ತದ ಹರಿವನ್ನು ಹೆಚ್ಚಿಸಲು ಚಿಕಿತ್ಸೆ ನೀಡಲು ಬಳಸಲಾಗುತ್ತದೆ. ಈ ಔಷಧವು ಆತಂಕ ಮತ್ತು ಖಿನ್ನತೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಲು, ಗಾಯಗಳನ್ನು ಗುಣಪಡಿಸಲು, ವಾಕರಿಕೆಯನ್ನು ಪ್ರಚೋದಿಸಲು ಮತ್ತು ಮೂಳೆಯ ಆರೋಗ್ಯವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಡೋಪಮೈನ್ ಒಂದು ಪ್ರಚೋದಕ ನರಪ್ರೇಕ್ಷಕವಾಗಿದೆ. ಸಿರೊಟೋನಿನ್ ಪ್ರತಿಬಂಧಕ ನರಪ್ರೇಕ್ಷಕವಾಗಿದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಚುಚ್ಚುಮದ್ದು- 5 ಮಿಲಿ ಸೀಸೆ (40 ಮಿಗ್ರಾಂ/ಮಿಲಿ), 5 ಮತ್ತು 10 ಮಿಲಿ ಆಂಪೋಲ್ (200 ಮಿಗ್ರಾಂ/5 ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+ವಯಸ್ಕ- ಕಾರ್ಡಿಯೋಜೆನಿಕ್ ಆಘಾತ: ದೊಡ್ಡ ರಕ್ತನಾಳಕ್ಕೆ, ಆರಂಭದಲ್ಲಿ 2 ರಿಂದ 5 µg/kg/min; ರಕ್ತದೊತ್ತಡ, ಹೃದಯದ ಉತ್ಪಾದನೆ ಮತ್ತು ಮೂತ್ರದ ಉತ್ಪಾದನೆಗೆ ಅನುಗುಣವಾಗಿ ಕ್ರಮೇಣ 5 ರಿಂದ 10 µg/kg/min ವರೆಗೆ ಹೆಚ್ಚಾಗುತ್ತದೆ; 20 ರಿಂದ 50 μg/kg/ ನಿಮಿಷದವರೆಗೆ ತೀವ್ರವಾಗಿ ಅಸ್ವಸ್ಥಗೊಂಡ ರೋಗಿಗಳು. ಅಭಿದಮನಿ ಮಾರ್ಗದಿಂದ ಆರಂಭದಲ್ಲಿ 1 ರಿಂದ 5 µg/ kg/min ಅನ್ನು ಕ್ರಮೇಣ 5 ರಿಂದ 10 µg/kg/min ಗೆ ಹೆಚ್ಚಿಸಬಹುದು. ಗಂಭೀರ ರೋಗಿಗಳಲ್ಲಿ ಗರಿಷ್ಠ 20 ರಿಂದ 50 µg/kg/min.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+इस दवा का उपयोग कम हृदय उत्पादन और निम्न रक्तचाप के उपचार तथा गुर्दे में रक्त प्रवाह को बढ़ाने के लिए किया जाता है। यह दवा चिंता और अवसाद को कम करने, घावों को भरने, मतली को ट्रिगर करने और हड्डियों के स्वास्थ्य को बनाए रखने में मदद करती है। डोपामाइन एक उत्तेजक न्यूरोट्रांसमीटर है। सेरोटोनिन एक निरोधात्मक न्यूरोट्रांसमीटर है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन- 5 मिली शीशी (40 मिग्रा/मि.ली.), 5 और 10 मिली एम्पुल (200 मिग्रा/5 मि.ली.)।
+<strong>मात्रा :</strong>
+अंतःशिरा जलसेक
+वयस्क- कार्डियोजेनिक शॉक: बड़ी नस में, शुरू में 2 से 5 µg/kg/min; रक्तचाप, हृदय उत्पादन और मूत्र उत्पादन के अनुसार धीरे-धीरे 5 से 10 µg/kg/min तक बढ़ाया जाता है; गंभीर रूप से बीमार रोगियों में 20 से 50 µg/kg/min तक। अंतःशिरा मार्ग द्वारा शुरू में 1 से 5 µg/kg/min को धीरे-धीरे 5 से 10 µg/kg/min तक बढ़ाया जा सकता है। गंभीर रोगियों में अधिकतम 20 से 50 µg/kg/min।
+`},
+
+
+
+{
+    title: "DOBUTAMINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+It is very useful to improve cardiac output in patients with low ejection fraction.
+<strong>Availability :</strong>
+INJECTION-250 mg/20 ml, 40 mg/ml, 12.5mg/ml, 5 ml ampoule (50 mg/ml), vial 250 mg/20 ml, 50 mg/4 ml; 250 mg dry sterile lyophilised powder.
+<strong>Dosage :</strong>
+2.5 to 10 µg/kg/min which can be titrated to 40 µg/kg/min as per the individual requirement.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಕಡಿಮೆ ಎಜೆಕ್ಷನ್ ಭಾಗ ಹೊಂದಿರುವ ರೋಗಿಗಳಲ್ಲಿ ಹೃದಯದ ಉತ್ಪಾದನೆಯನ್ನು ಸುಧಾರಿಸಲು ಇದು ತುಂಬಾ ಉಪಯುಕ್ತವಾಗಿದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-250 mg/20 ml, 40 mg/ml, 12.5mg/ml, 5 ml ampoule (50 mg/ml), ಸೀಸೆ 250 mg/20 ml, 50 mg/4 ml; 250 ಮಿಗ್ರಾಂ ಒಣ ಬರಡಾದ ಲೈಯೋಫಿಲೈಸ್ಡ್ ಪುಡಿ.
+<strong>ಪ್ರಮಾಣ :</strong>
+2.5 ರಿಂದ 10 µg/kg/min ವೈಯಕ್ತಿಕ ಅವಶ್ಯಕತೆಗೆ ಅನುಗುಣವಾಗಿ 40 µg/kg/min ಗೆ ಟೈಟ್ರೇಟ್ ಮಾಡಬಹುದು.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+यह कम इजेक्शन अंश वाले रोगियों में हृदय उत्पादन में सुधार करने के लिए बहुत उपयोगी है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-250 मिलीग्राम/20 मिली, 40 मिलीग्राम/मिली, 12.5 मिलीग्राम/मिली, 5 मिली एम्पुल (50 मिलीग्राम/मिली), शीशी 250 मिलीग्राम/20 मिली, 50 मिलीग्राम/4 मिली; 250 मिलीग्राम सूखा स्टेराइल लियोफिलाइज्ड पाउडर।
+<strong>मात्रा :</strong>
+2.5 से 10 µg/kg/min जिसे व्यक्तिगत आवश्यकता के अनुसार 40 µg/kg/min तक बढ़ाया जा सकता है।
+`},
+
+
+
+{
+    title: "DIGOXIN",
+informationInEnglish: `
+<strong>Uses :</strong>
+Digoxin is a useful inotrope in cardiac failure. It improves contractility but does not cause tachycardia. It acts on the atrioventricular node and slows conduction. Thus, it is useful to treat supraventricular tachyarrhythmias.
+<strong>Availability :</strong>
+TABLET 0.25 mg;
+INJECTION 2 ml (0.5 mg/2ml);
+ELIXIR 0.05 mg/ml (paediatric use);
+SYRUP 1.5 mg/30 ml.
+<strong>Dosage :</strong>
+Oral
+Adult- Atrial fibrillation and heart failure: 1 to 1.5 mg in divided doses over 24 h for rapid digitalization or 250 µg 1 to 2 times daily if digitalization less urgent; maintenance 62.5 to 500 µg daily (higher dose may be divided), according to renal function and heart rate response; usual range 125 to 250 µg daily.
+Elderly- Lower dose more appropriate.
+Intravenous infusion
+Emergency control of atrial fibrillation, over at least 2 h: 0.75 to 1 mg.
+Emergency loading dose for heart failure, over at least 2 h: 0.75 to 1 mg.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಡಿಗೋಕ್ಸಿನ್ ಹೃದಯ ವೈಫಲ್ಯದಲ್ಲಿ ಉಪಯುಕ್ತ ಐನೋಟ್ರೋಪ್ ಆಗಿದೆ. ಇದು ಸಂಕೋಚನವನ್ನು ಸುಧಾರಿಸುತ್ತದೆ ಆದರೆ ಟಾಕಿಕಾರ್ಡಿಯಾವನ್ನು ಉಂಟುಮಾಡುವುದಿಲ್ಲ. ಇದು ಆಟ್ರಿಯೊವೆಂಟ್ರಿಕ್ಯುಲರ್ ನೋಡ್ನಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ ಮತ್ತು ವಹನವನ್ನು ನಿಧಾನಗೊಳಿಸುತ್ತದೆ. ಹೀಗಾಗಿ, ಸುಪ್ರಾವೆಂಟ್ರಿಕ್ಯುಲರ್ ಟಾಕಿಯಾರಿಥ್ಮಿಯಾಗಳಿಗೆ ಚಿಕಿತ್ಸೆ ನೀಡಲು ಇದು ಉಪಯುಕ್ತವಾಗಿದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಟ್ಯಾಬ್ಲೆಟ್ 0.25 ಮಿಗ್ರಾಂ;
+ಇಂಜೆಕ್ಷನ್ 2 ಮಿಲಿ (0.5 mg/2ml);
+ELIXIR 0.05 mg/ml (ಮಕ್ಕಳ ಬಳಕೆ);
+ಸಿರಪ್ 1.5 ಮಿಗ್ರಾಂ/30 ಮಿಲಿ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ವಯಸ್ಕರು- ಹೃತ್ಕರ್ಣದ ಕಂಪನ ಮತ್ತು ಹೃದಯಾಘಾತ: ಕ್ಷಿಪ್ರ ಡಿಜಿಟಲೀಕರಣಕ್ಕಾಗಿ 24 ಗಂಟೆಗಳಲ್ಲಿ 1 ರಿಂದ 1.5 ಮಿಗ್ರಾಂ ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ ಅಥವಾ ಡಿಜಿಟಲೀಕರಣವು ಕಡಿಮೆ ತುರ್ತು ವೇಳೆ ದಿನಕ್ಕೆ 250 µg 1 ರಿಂದ 2 ಬಾರಿ; ನಿರ್ವಹಣೆ 62.5 ರಿಂದ 500 µg ದೈನಂದಿನ (ಹೆಚ್ಚಿನ ಪ್ರಮಾಣವನ್ನು ವಿಂಗಡಿಸಬಹುದು), ಮೂತ್ರಪಿಂಡದ ಕಾರ್ಯ ಮತ್ತು ಹೃದಯ ಬಡಿತದ ಪ್ರತಿಕ್ರಿಯೆಯ ಪ್ರಕಾರ; ಸಾಮಾನ್ಯ ಶ್ರೇಣಿ 125 ರಿಂದ 250 μg ದೈನಂದಿನ.
+ವಯಸ್ಸಾದವರು - ಕಡಿಮೆ ಡೋಸ್ ಹೆಚ್ಚು ಸೂಕ್ತವಾಗಿದೆ.
+ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+ಹೃತ್ಕರ್ಣದ ಕಂಪನದ ತುರ್ತು ನಿಯಂತ್ರಣ, ಕನಿಷ್ಠ 2 ಗಂ: 0.75 ರಿಂದ 1 ಮಿಗ್ರಾಂ.
+ಹೃದಯಾಘಾತಕ್ಕೆ ತುರ್ತು ಲೋಡಿಂಗ್ ಡೋಸ್, ಕನಿಷ್ಠ 2 ಗಂ: 0.75 ರಿಂದ 1 ಮಿಗ್ರಾಂ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+डिगोक्सिन हृदय विफलता में एक उपयोगी इनोट्रोप है। यह सिकुड़न को बेहतर बनाता है लेकिन क्षिप्रहृदयता का कारण नहीं बनता है। यह एट्रियोवेंट्रीकुलर नोड पर कार्य करता है और चालन को धीमा कर देता है। इस प्रकार, यह सुप्रावेंट्रीकुलर क्षिप्रहृदयता के उपचार के लिए उपयोगी है।
+<strong>उपलब्धता :</strong>
+टैबलेट 0.25 मिग्रा; इंजेक्शन 2 मिली (0.5 मिग्रा/2 मिग्रा); अमृत 0.05 मिग्रा/मिग्रा (बाल चिकित्सा उपयोग); सिरप 1.5 मिग्रा/30 मिग्रा.
+<strong>मात्रा :</strong>
+मौखिक
+वयस्क- आलिंद फिब्रिलेशन और हृदय विफलता: तीव्र डिजिटलीकरण के लिए 24 घंटे में विभाजित खुराकों में 1 से 1.5 मिलीग्राम या यदि डिजिटलीकरण कम जरूरी हो तो प्रतिदिन 1 से 2 बार 250 µg; रखरखाव 62.5 से 500 µg प्रतिदिन (उच्च खुराक को विभाजित किया जा सकता है), गुर्दे के कार्य और हृदय गति प्रतिक्रिया के अनुसार; सामान्य सीमा 125 से 250 µg प्रतिदिन।
+बुजुर्ग- कम खुराक अधिक उपयुक्त है।
+अंतःशिरा जलसेक
+आलिंद फिब्रिलेशन का आपातकालीन नियंत्रण, कम से कम 2 घंटे में: 0.75 से 1 मिलीग्राम।
+हृदय विफलता के लिए आपातकालीन लोडिंग खुराक, कम से कम 2 घंटे में: 0.75 से 1 मिलीग्राम।
+`},
+
+
+
+{
+    title: "DILTIAZEM",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.It is a calcium channel blocker. 
+2.Cardiovascular system: It reduces the heart rate, contractility and produces peripheral vasodilatation. 
+3.It has no effects on other organ systems of the body.
+<strong>Availability :</strong>
+TABLETS/TABLETS- (SR) 30, 60, 90, 120, 180 and 240 mg
+CAPSULE-60, 90, 120, 180 and240 mg. 
+INJECTION-5 ml (25 mg/5 ml).
+<strong>Dosage :</strong>
+Oral
+Adult-30 mg 2 to 5 times a day before food and at night (bed time), increase gradually to 240 mg in 3 to 4 divided doses daily.
+Child- Not recommended.
+Cardiac arrhythmia
+Adult-Initially 250 µg/kg by i.v. bolus over 2 min.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಇದು ಕ್ಯಾಲ್ಸಿಯಂ ಚಾನಲ್ ಬ್ಲಾಕರ್ ಆಗಿದೆ.
+2.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಹೃದಯ ಬಡಿತ, ಸಂಕೋಚನವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ ಮತ್ತು ಬಾಹ್ಯ ವಾಸೋಡಿಲೇಟೇಶನ್ ಅನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ.
+3.ಇದು ದೇಹದ ಇತರ ಅಂಗ ವ್ಯವಸ್ಥೆಗಳ ಮೇಲೆ ಯಾವುದೇ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು/ಮಾತ್ರೆಗಳು- (SR) 30, 60, 90, 120, 180 ಮತ್ತು 240 mg
+ಕ್ಯಾಪ್ಸುಲ್-60, 90, 120, 180 ಮತ್ತು 240 ಮಿಗ್ರಾಂ.
+ಇಂಜೆಕ್ಷನ್-5 ಮಿಲಿ (25 ಮಿಗ್ರಾಂ/5 ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ವಯಸ್ಕರು - ದಿನಕ್ಕೆ 30 ಮಿಗ್ರಾಂ 2 ರಿಂದ 5 ಬಾರಿ ಆಹಾರದ ಮೊದಲು ಮತ್ತು ರಾತ್ರಿಯಲ್ಲಿ (ಮಲಗುವ ಸಮಯ), ದಿನಕ್ಕೆ 3 ರಿಂದ 4 ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ ಕ್ರಮೇಣ 240 ಮಿಗ್ರಾಂಗೆ ಹೆಚ್ಚಿಸಿ.
+ಮಗು - ಶಿಫಾರಸು ಮಾಡಲಾಗಿಲ್ಲ.
+ಕಾರ್ಡಿಯಾಕ್ ಆರ್ಹೆತ್ಮಿಯಾ
+ವಯಸ್ಕರು-ಆರಂಭದಲ್ಲಿ 250 µg/kg i.v. 2 ನಿಮಿಷಗಳ ಮೇಲೆ ಬೋಲಸ್.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.यह कैल्शियम चैनल अवरोधक है।
+2.हृदय प्रणाली: यह हृदय गति, सिकुड़न को कम करता है और परिधीय वासोडिलेशन पैदा करता है।
+3.इसका शरीर के अन्य अंग प्रणालियों पर कोई प्रभाव नहीं पड़ता है।
+<strong>उपलब्धता :</strong>
+गोलियाँ/गोलियाँ- (एसआर) 30, 60, 90, 120, 180 और 240 मिलीग्राम
+कैप्सूल-60, 90, 120, 180 और 240 मिलीग्राम।
+इंजेक्शन-5 मिली (25 मिलीग्राम/5 मिली)।
+<strong>मात्रा :</strong>
+मौखिक
+वयस्क-30 मिलीग्राम दिन में 2 से 5 बार भोजन से पहले और रात में (सोते समय), धीरे-धीरे 3 से 4 विभाजित खुराकों में 240 मिलीग्राम तक बढ़ाएँ।
+बच्चे- अनुशंसित नहीं है।
+कार्डियक अतालता
+वयस्क-शुरू में 2 मिनट में 250 µg/kg i.v. बोलस द्वारा।
+`},
+
+
+
+{
+    title: "DEXAMETHASONE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.It is a steroid and exerts its antiemetic effect by acting on receptors in the chemoreceptor trigger zone of the medulla.
+2.It exerts the same effects as any other steroid on the body. It may stimulate gluconeogenesis and produce hyperglycaemia, particularly in diabetics. Prolonged use may cause myopathies, especially in critically ill patients. It may cause hypokalaemia. It may predispose patients to infection. It can also cause gastric / peptic ulcers and upper gastro-intestinal tract bleeding.
+<strong>Availability :</strong>
+TABLETS- 0.5 mg. 
+INJECTION- 2 ml vial (4 mg/ml). 
+CREAM- 5 and 15 g (0.1% w/w).
+<strong>Dosage :</strong>
+Oral
+Adult- 0.5 to 10 mg daily in divided doses, repeat if necessary.
+Child- 0.02 to 0.3 mg/kg in three or four divided doses daily.
+Intravenous injection
+4 to 10mg every 6 h.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಇದು ಸ್ಟೀರಾಯ್ಡ್ ಆಗಿದೆ ಮತ್ತು ಮೆಡುಲ್ಲಾದ ಕೆಮೊರೆಸೆಪ್ಟರ್ ಟ್ರಿಗರ್ ವಲಯದಲ್ಲಿ ಗ್ರಾಹಕಗಳ ಮೇಲೆ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ಮೂಲಕ ಅದರ ಆಂಟಿಮೆಟಿಕ್ ಪರಿಣಾಮವನ್ನು ಬೀರುತ್ತದೆ.
+2.ಇದು ದೇಹದ ಮೇಲೆ ಯಾವುದೇ ಇತರ ಸ್ಟೀರಾಯ್ಡ್‌ಗಳಂತೆಯೇ ಅದೇ ಪರಿಣಾಮಗಳನ್ನು ಬೀರುತ್ತದೆ. ಇದು ಗ್ಲುಕೋನೋಜೆನೆಸಿಸ್ ಅನ್ನು ಉತ್ತೇಜಿಸುತ್ತದೆ ಮತ್ತು ಹೈಪರ್ಗ್ಲೈಸೀಮಿಯಾವನ್ನು ಉಂಟುಮಾಡಬಹುದು, ವಿಶೇಷವಾಗಿ ಮಧುಮೇಹಿಗಳಲ್ಲಿ. ದೀರ್ಘಕಾಲದ ಬಳಕೆಯು ಮಯೋಪತಿಗೆ ಕಾರಣವಾಗಬಹುದು, ವಿಶೇಷವಾಗಿ ತೀವ್ರ ಅನಾರೋಗ್ಯದ ರೋಗಿಗಳಲ್ಲಿ. ಇದು ಹೈಪೋಕಾಲೆಮಿಯಾಕ್ಕೆ ಕಾರಣವಾಗಬಹುದು. ಇದು ರೋಗಿಗಳಿಗೆ ಸೋಂಕಿಗೆ ಒಳಗಾಗಬಹುದು. ಇದು ಗ್ಯಾಸ್ಟ್ರಿಕ್ / ಪೆಪ್ಟಿಕ್ ಹುಣ್ಣುಗಳು ಮತ್ತು ಮೇಲಿನ ಜಠರ-ಕರುಳಿನ ರಕ್ತಸ್ರಾವಕ್ಕೆ ಕಾರಣವಾಗಬಹುದು.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 0.5 ಮಿಗ್ರಾಂ.
+ಇಂಜೆಕ್ಷನ್ - 2 ಮಿಲಿ ಸೀಸೆ (4 ಮಿಗ್ರಾಂ / ಮಿಲಿ).
+CREAM- 5 ಮತ್ತು 15 ಗ್ರಾಂ (0.1% w/w).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ವಯಸ್ಕರು - 0.5 ರಿಂದ 10 ಮಿಗ್ರಾಂ ದೈನಂದಿನ ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ, ಅಗತ್ಯವಿದ್ದರೆ ಪುನರಾವರ್ತಿಸಿ.
+ಮಗು- 0.02 ರಿಂದ 0.3 ಮಿಗ್ರಾಂ/ಕೆಜಿ ದಿನಕ್ಕೆ ಮೂರು ಅಥವಾ ನಾಲ್ಕು ಭಾಗಗಳಾಗಿ ವಿಂಗಡಿಸಲಾಗಿದೆ.
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ಪ್ರತಿ 6 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ 4 ರಿಂದ 10 ಮಿಗ್ರಾಂ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. यह एक स्टेरॉयड है और मेडुला के कीमोरिसेप्टर ट्रिगर ज़ोन में रिसेप्टर्स पर कार्य करके अपना एंटीमैटिक प्रभाव डालता है।
+
+2. यह शरीर पर किसी भी अन्य स्टेरॉयड के समान ही प्रभाव डालता है। यह ग्लूकोनेोजेनेसिस को उत्तेजित कर सकता है और विशेष रूप से मधुमेह रोगियों में हाइपरग्लाइकेमिया पैदा कर सकता है। लंबे समय तक उपयोग से मायोपैथी हो सकती है, खासकर गंभीर रूप से बीमार रोगियों में। यह हाइपोकैलिमिया का कारण बन सकता है। यह रोगियों को संक्रमण के लिए प्रवण कर सकता है। यह गैस्ट्रिक / पेप्टिक अल्सर और ऊपरी गैस्ट्रो-आंत्र पथ से रक्तस्राव भी पैदा कर सकता है।
+<strong>उपलब्धता :</strong>
+गोलियाँ- 0.5 मि.ग्रा.
+इंजेक्शन- 2 मिली शीशी (4 मि.ग्रा./मि.ली.)
+क्रीम- 5 और 15 ग्राम (0.1% w/w).
+<strong>मात्रा :</strong>
+मौखिक
+वयस्क- विभाजित खुराकों में प्रतिदिन 0.5 से 10 मिलीग्राम, यदि आवश्यक हो तो दोहराएँ।
+बच्चे- प्रतिदिन तीन या चार विभाजित खुराकों में 0.02 से 0.3 मिलीग्राम/किग्रा।
+अंतःशिरा इंजेक्शन
+हर 6 घंटे में 4 से 10 मिलीग्राम।
+`},
+
+
+
+{
+    title: "ESMOLOL",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Cardiovascular system: It slows down the heart rate and reduces blood pressure. It slows down conduction and acts as an antiarrhythmic agent (useful for supraventricular arrhythmias). 
+2.Respiratory system: It may cause bronchospasm in a susceptible patient.
+<strong>Availability :</strong>
+INJECTION:- 10 ml (100 and 250 mg).
+<strong>Dosage :</strong>
+Intravenous infusion
+Usually with a range of 50 to 200 µg/kg body weight/min under strict professional supervision of cardiologist.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಹೃದಯ ಬಡಿತವನ್ನು ನಿಧಾನಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ರಕ್ತದೊತ್ತಡವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಇದು ವಹನವನ್ನು ನಿಧಾನಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಆಂಟಿಅರಿಥಮಿಕ್ ಏಜೆಂಟ್ ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ (ಸುಪ್ರಾವೆಂಟ್ರಿಕ್ಯುಲರ್ ಆರ್ಹೆತ್ಮಿಯಾಗಳಿಗೆ ಉಪಯುಕ್ತವಾಗಿದೆ).
+2. ಉಸಿರಾಟದ ವ್ಯವಸ್ಥೆ: ಇದು ಒಳಗಾಗುವ ರೋಗಿಯಲ್ಲಿ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ಗೆ ಕಾರಣವಾಗಬಹುದು.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್: - 10 ಮಿಲಿ (100 ಮತ್ತು 250 ಮಿಗ್ರಾಂ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+ಸಾಮಾನ್ಯವಾಗಿ ಹೃದ್ರೋಗ ತಜ್ಞರ ಕಟ್ಟುನಿಟ್ಟಾದ ವೃತ್ತಿಪರ ಮೇಲ್ವಿಚಾರಣೆಯಲ್ಲಿ 50 ರಿಂದ 200 μg/kg ದೇಹದ ತೂಕ/ನಿಮಿಷದ ವ್ಯಾಪ್ತಿಯೊಂದಿಗೆ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. कार्डियोवैस्कुलर सिस्टम: यह हृदय गति को धीमा करता है और रक्तचाप को कम करता है। यह चालन को धीमा करता है और एक एंटीरैडमिक एजेंट (सुप्रावेंट्रिकुलर अतालता के लिए उपयोगी) के रूप में कार्य करता है। 2. श्वसन प्रणाली: यह एक संवेदनशील रोगी में ब्रोन्कोस्पाज्म का कारण बन सकता है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन:- 10 मिली (100 और 250 मिलीग्राम)।
+<strong>मात्रा :</strong>
+अंतःशिरा जलसेक
+आमतौर पर हृदय रोग विशेषज्ञ की सख्त पेशेवर देखरेख में 50 से 200 µg/kg शरीर के वजन/मिनट की सीमा के साथ।
+`},
+
+
+
+{
+    title: "HALOTHANE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Central nervous system (CNS): It produces dose-dependent depression of CNS and cerebral metabolic rate. Halothane, like other inhaled anaesthetics produces dissociation between cerebral metabolic rate (CMRO2) and cerebral blood flow (CBF). It produces vasodilatation of the cerebral vessels, increases cerebral blood flow and can increase intracranial pressure when used in excess of I MAC. 
+2.Cardiovascular system: It causes hypotension mainly due to myocardial depression. It reduces contractility, heart rate and cardiac output. Blunts baroreceptor reflex responses completely. It delays AV nodal conduction and therefore, may precipitate bradyarrhythmias, such as junctional bradycardia. It sensitises the myocardium to both endogenous as well as exogenously administered catecholamines and predisposes to arrhythmias. 
+3.Respiratory system: It is a pleasant agent to inhale and is an agent commonly used for inhalation induction. It progressively decreases tidal volume and depresses respiration. It may cause an increase in respiratory rate but alveolar ventilation is reduced. Halothane raises the apnoeic threshold and shifts the carbon dioxide response curve to the right. It obtunds the airway reflexes well. It is a good bronchodilator (mediated through calcium channel blockade).
+4.Musculoskeletal system: Halothane prolongs non-depolarising neuromuscular blockade by several mechanisms: depression of central nervous system, increased delivery of muscle relaxants to the neuromuscular junction and direct relaxation of skeletal muscle.
+5.Gastrointestinal system: It delays gastric emptying.
+<strong>Availability :</strong>
+VOLATILE LIQUID:- 30, 50, 200, and 250 ml.
+<strong>Dosage :</strong>
+Induction of anaesthesia using specially calibrated vaporiser; in oxygen or oxygen– nitrous oxide.
+Introductory dose: 0.5 to 3%.
+Maintenance dose: 0.5 to 1.5%.
+Adult- Increase gradually 2 to 4%.
+Child- 1.5 to 2%.
+Maintenance of anaesthesia using specially calibrated vaporiser; oxygen; oxygen–nitrous oxide 0.5 to 2%.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಸೆಂಟ್ರಲ್ ನರವ್ಯೂಹ (CNS): ಇದು CNS ಮತ್ತು ಸೆರೆಬ್ರಲ್ ಮೆಟಬಾಲಿಕ್ ದರದ ಡೋಸ್-ಅವಲಂಬಿತ ಖಿನ್ನತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಹ್ಯಾಲೋಥೇನ್, ಇತರ ಇನ್ಹೇಲ್ ಅರಿವಳಿಕೆಗಳಂತೆ ಸೆರೆಬ್ರಲ್ ಮೆಟಬಾಲಿಕ್ ರೇಟ್ (CMRO2) ಮತ್ತು ಸೆರೆಬ್ರಲ್ ರಕ್ತದ ಹರಿವು (CBF) ನಡುವೆ ವಿಘಟನೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಇದು ಮೆದುಳಿನ ನಾಳಗಳ ವಾಸೋಡಿಲೇಟೇಶನ್ ಅನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ, ಸೆರೆಬ್ರಲ್ ರಕ್ತದ ಹರಿವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ ಮತ್ತು I MAC ಗಿಂತ ಹೆಚ್ಚಿನ ಪ್ರಮಾಣದಲ್ಲಿ ಬಳಸಿದಾಗ ಇಂಟ್ರಾಕ್ರೇನಿಯಲ್ ಒತ್ತಡವನ್ನು ಹೆಚ್ಚಿಸಬಹುದು.
+2.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಮುಖ್ಯವಾಗಿ ಮಯೋಕಾರ್ಡಿಯಲ್ ಖಿನ್ನತೆಯಿಂದ ಹೈಪೊಟೆನ್ಷನ್ ಅನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಇದು ಸಂಕೋಚನ, ಹೃದಯ ಬಡಿತ ಮತ್ತು ಹೃದಯದ ಉತ್ಪಾದನೆಯನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಬ್ಯಾರೆಸೆಪ್ಟರ್ ರಿಫ್ಲೆಕ್ಸ್ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಬ್ಲಂಟ್ ಮಾಡುತ್ತದೆ. ಇದು AV ನೋಡಲ್ ವಹನವನ್ನು ವಿಳಂಬಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಆದ್ದರಿಂದ, ಜಂಕ್ಷನಲ್ ಬ್ರಾಡಿಕಾರ್ಡಿಯಾದಂತಹ ಬ್ರಾಡಿಯರ್ರಿಥ್ಮಿಯಾವನ್ನು ಪ್ರಚೋದಿಸಬಹುದು. ಇದು ಮಯೋಕಾರ್ಡಿಯಂ ಅನ್ನು ಅಂತರ್ವರ್ಧಕ ಮತ್ತು ಬಾಹ್ಯವಾಗಿ ನಿರ್ವಹಿಸುವ ಕ್ಯಾಟೆಕೊಲಮೈನ್‌ಗಳಿಗೆ ಸಂವೇದನಾಶೀಲಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಆರ್ಹೆತ್ಮಿಯಾಗಳಿಗೆ ಪೂರ್ವಭಾವಿಯಾಗುತ್ತದೆ.
+3.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ಉಸಿರಾಡಲು ಆಹ್ಲಾದಕರ ಏಜೆಂಟ್ ಮತ್ತು ಇನ್ಹಲೇಷನ್ ಇಂಡಕ್ಷನ್ಗೆ ಸಾಮಾನ್ಯವಾಗಿ ಬಳಸುವ ಏಜೆಂಟ್. ಇದು ಕ್ರಮೇಣ ಉಬ್ಬರವಿಳಿತದ ಪ್ರಮಾಣವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ ಮತ್ತು ಉಸಿರಾಟವನ್ನು ಕುಗ್ಗಿಸುತ್ತದೆ. ಇದು ಉಸಿರಾಟದ ದರದಲ್ಲಿ ಹೆಚ್ಚಳಕ್ಕೆ ಕಾರಣವಾಗಬಹುದು ಆದರೆ ಅಲ್ವಿಯೋಲಾರ್ ವಾತಾಯನ ಕಡಿಮೆಯಾಗುತ್ತದೆ. ಹ್ಯಾಲೋಥೇನ್ ಉಸಿರುಕಟ್ಟುವಿಕೆ ಮಿತಿಯನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ ಮತ್ತು ಕಾರ್ಬನ್ ಡೈಆಕ್ಸೈಡ್ ಪ್ರತಿಕ್ರಿಯೆ ಕರ್ವ್ ಅನ್ನು ಬಲಕ್ಕೆ ಬದಲಾಯಿಸುತ್ತದೆ. ಇದು ಶ್ವಾಸನಾಳದ ಪ್ರತಿವರ್ತನವನ್ನು ಚೆನ್ನಾಗಿ ತಡೆಯುತ್ತದೆ. ಇದು ಉತ್ತಮ ಬ್ರಾಂಕೋಡಿಲೇಟರ್ ಆಗಿದೆ (ಕ್ಯಾಲ್ಸಿಯಂ ಚಾನಲ್ ದಿಗ್ಬಂಧನದ ಮೂಲಕ ಮಧ್ಯಸ್ಥಿಕೆ).
+4.ಮಸ್ಕ್ಯುಲೋಸ್ಕೆಲಿಟಲ್ ಸಿಸ್ಟಮ್: ಹ್ಯಾಲೋಥೇನ್ ಹಲವಾರು ಕಾರ್ಯವಿಧಾನಗಳ ಮೂಲಕ ಡಿಪೋಲರೈಸಿಂಗ್ ಅಲ್ಲದ ನರಸ್ನಾಯುಕ ದಿಗ್ಬಂಧನವನ್ನು ವಿಸ್ತರಿಸುತ್ತದೆ: ಕೇಂದ್ರ ನರಮಂಡಲದ ಖಿನ್ನತೆ, ನರಸ್ನಾಯುಕ ಜಂಕ್ಷನ್‌ಗೆ ಸ್ನಾಯು ಸಡಿಲಗೊಳಿಸುವವರ ವಿತರಣೆ ಮತ್ತು ಅಸ್ಥಿಪಂಜರದ ಸ್ನಾಯುಗಳ ನೇರ ವಿಶ್ರಾಂತಿ.
+5.ಜಠರಗರುಳಿನ ವ್ಯವಸ್ಥೆ: ಇದು ಗ್ಯಾಸ್ಟ್ರಿಕ್ ಖಾಲಿಯಾಗುವುದನ್ನು ವಿಳಂಬಗೊಳಿಸುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಬಾಷ್ಪಶೀಲ ದ್ರವ:- 30, 50, 200, ಮತ್ತು 250 ಮಿಲಿ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ವಿಶೇಷವಾಗಿ ಮಾಪನಾಂಕ ನಿರ್ಣಯಿಸಲಾದ ಆವಿಯನ್ನು ಬಳಸಿಕೊಂಡು ಅರಿವಳಿಕೆ ಇಂಡಕ್ಷನ್; ಆಮ್ಲಜನಕ ಅಥವಾ ಆಮ್ಲಜನಕದಲ್ಲಿ - ನೈಟ್ರಸ್ ಆಕ್ಸೈಡ್.
+ಪರಿಚಯಾತ್ಮಕ ಡೋಸ್: 0.5 ರಿಂದ 3%.
+ನಿರ್ವಹಣೆ ಪ್ರಮಾಣ: 0.5 ರಿಂದ 1.5%.
+ವಯಸ್ಕ - ಕ್ರಮೇಣ 2 ರಿಂದ 4% ಹೆಚ್ಚಿಸಿ.
+ಮಗು - 1.5 ರಿಂದ 2%.
+ವಿಶೇಷವಾಗಿ ಮಾಪನಾಂಕ ನಿರ್ಣಯಿಸಿದ ಆವಿಯನ್ನು ಬಳಸಿಕೊಂಡು ಅರಿವಳಿಕೆ ನಿರ್ವಹಣೆ; ಆಮ್ಲಜನಕ; ಆಮ್ಲಜನಕ-ನೈಟ್ರಸ್ ಆಕ್ಸೈಡ್ 0.5 ರಿಂದ 2%.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. केंद्रीय तंत्रिका तंत्र (CNS): यह CNS और मस्तिष्क चयापचय दर में खुराक पर निर्भर अवसाद पैदा करता है। हेलोथेन, अन्य साँस के द्वारा ली जाने वाली एनेस्थेटिक्स की तरह मस्तिष्क चयापचय दर (CMRO2) और मस्तिष्क रक्त प्रवाह (CBF) के बीच पृथक्करण पैदा करता है। यह मस्तिष्क वाहिकाओं के वासोडिलेशन का उत्पादन करता है, मस्तिष्क रक्त प्रवाह को बढ़ाता है और I MAC से अधिक उपयोग किए जाने पर इंट्राक्रैनील दबाव बढ़ा सकता है।
+
+2. कार्डियोवैस्कुलर सिस्टम: यह मुख्य रूप से मायोकार्डियल अवसाद के कारण हाइपोटेंशन का कारण बनता है। यह सिकुड़न, हृदय गति और कार्डियक आउटपुट को कम करता है। बैरोरिसेप्टर रिफ्लेक्स प्रतिक्रियाओं को पूरी तरह से कुंद कर देता है। यह AV नोडल चालन में देरी करता है और इसलिए, जंक्शनल ब्रैडीकार्डिया जैसे ब्रैडीअरिथमिया को तेज कर सकता है। यह मायोकार्डियम को अंतर्जात और साथ ही बहिर्जात रूप से प्रशासित कैटेकोलामाइन दोनों के प्रति संवेदनशील बनाता है और अतालता के लिए पूर्वनिर्धारित करता है। 3. श्वसन प्रणाली: यह साँस लेने के लिए एक सुखद एजेंट है और आमतौर पर साँस लेने के लिए इस्तेमाल किया जाने वाला एजेंट है। यह धीरे-धीरे ज्वार की मात्रा को कम करता है और श्वसन को दबाता है। यह श्वसन दर में वृद्धि का कारण बन सकता है लेकिन एल्वियोलर वेंटिलेशन कम हो जाता है। हेलोथेन एप्नोइक थ्रेशोल्ड को बढ़ाता है और कार्बन डाइऑक्साइड प्रतिक्रिया वक्र को दाईं ओर स्थानांतरित करता है। यह वायुमार्ग की सजगता को अच्छी तरह से बाधित करता है। यह एक अच्छा ब्रोन्कोडायलेटर है (कैल्शियम चैनल नाकाबंदी के माध्यम से मध्यस्थता)।
+
+4. मस्कुलोस्केलेटल सिस्टम: हेलोथेन कई तंत्रों द्वारा गैर-विध्रुवीकरण न्यूरोमस्कुलर नाकाबंदी को लम्बा खींचता है: केंद्रीय तंत्रिका तंत्र का अवसाद, न्यूरोमस्कुलर जंक्शन पर मांसपेशियों को आराम देने वाले पदार्थों की डिलीवरी में वृद्धि और कंकाल की मांसपेशियों की सीधी छूट।
+
+5. गैस्ट्रोइंटेस्टाइनल सिस्टम: यह गैस्ट्रिक खाली करने में देरी करता है।
+<strong>उपलब्धता :</strong>
+वाष्पशील तरल:- 30, 50, 200, और 250 मिली.
+<strong>मात्रा :</strong>
+विशेष रूप से कैलिब्रेटेड वेपोराइजर का उपयोग करके एनेस्थीसिया का प्रेरण; ऑक्सीजन या ऑक्सीजन-नाइट्रस ऑक्साइड में।
+प्रारंभिक खुराक: 0.5 से 3%।
+रखरखाव खुराक: 0.5 से 1.5%।
+वयस्क- धीरे-धीरे 2 से 4% तक बढ़ाएँ।
+बच्चे- 1.5 से 2%।
+विशेष रूप से कैलिब्रेटेड वेपोराइजर का उपयोग करके एनेस्थीसिया का रखरखाव; ऑक्सीजन; ऑक्सीजन-नाइट्रस ऑक्साइड 0.5 से 2%।
+`},
+
+
+
+{
+    title: "HEPARIN",
+informationInEnglish: `
+<strong>Uses :</strong>
+Heparin is used to prevent clotting of blood in vitro when blood samples are taken for blood gas analysis, electrolyte estimation etc. It is also used in blood storage bags for preventing clotting of blood within the blood bag. Slow diluted infusion of heparin (1U/ml) is useful to prevent clotting of blood in the indwelling catheters such as arterial lines, central venous catheters, pulmonary arterial catheters etc. Heparin is also used to maintain anticoagulation during interventional cardiology / radiological procedures that require temporary insertion of foreign body into vascular access such as cardiac catheterization, percutaneous angioplasty, etc.
+<strong>Availability :</strong>
+INJECTION vials 1000, 5000 and 25,000 IU/ml.
+<strong>Dosage :</strong>
+Intravenous injection
+Adult-Treatment of deep-vein thrombosis and pulmonary embolism: loading dose of 5000 units (10,000 units in severe pulmonary embolism)	followed	by	continuous intravenous infusion of 15 to 25 units/kg/h. 
+Child- 50 to 100U/kg every 4 to 6 h.
+Subcutaneous injection
+15,000 units every 12 h; laboratory monitoring is essential, preferably on a daily basis and dose adjusted accordingly.
+Prophylaxis in general surgery: 5,000 units 2 h before surgery, then every 8 to 12 h for 7 days or until patient is ambulant (monitoring not needed); during pregnancy (with monitoring) 5,000-10,000 units every 12 h.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ರಕ್ತದ ಅನಿಲ ವಿಶ್ಲೇಷಣೆ, ಎಲೆಕ್ಟ್ರೋಲೈಟ್ ಅಂದಾಜು ಇತ್ಯಾದಿಗಳಿಗೆ ರಕ್ತದ ಮಾದರಿಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುವಾಗ ವಿಟ್ರೊದಲ್ಲಿ ರಕ್ತ ಹೆಪ್ಪುಗಟ್ಟುವುದನ್ನು ತಡೆಯಲು ಹೆಪಾರಿನ್ ಅನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ರಕ್ತದ ಚೀಲದೊಳಗೆ ರಕ್ತ ಹೆಪ್ಪುಗಟ್ಟುವುದನ್ನು ತಡೆಯಲು ಇದನ್ನು ರಕ್ತ ಸಂಗ್ರಹ ಚೀಲಗಳಲ್ಲಿಯೂ ಬಳಸಲಾಗುತ್ತದೆ. ಹೆಪಾರಿನ್ (1U/ml) ನ ನಿಧಾನವಾದ ದುರ್ಬಲಗೊಳಿಸಿದ ಕಷಾಯವು ಒಳಗಿನ ಕ್ಯಾತಿಟರ್‌ಗಳಾದ ಅಪಧಮನಿಯ ರೇಖೆಗಳು, ಕೇಂದ್ರ ಸಿರೆಯ ಕ್ಯಾತಿಟರ್‌ಗಳು, ಶ್ವಾಸಕೋಶದ ಅಪಧಮನಿಯ ಕ್ಯಾತಿಟರ್‌ಗಳು ಇತ್ಯಾದಿಗಳಲ್ಲಿ ರಕ್ತ ಹೆಪ್ಪುಗಟ್ಟುವುದನ್ನು ತಡೆಯಲು ಉಪಯುಕ್ತವಾಗಿದೆ. ಹೆಪಾರಿನ್ ಅನ್ನು ಇಂಟರ್ವೆನ್ಷನಲ್ ಕಾರ್ಡಿಯಾಲಜಿ / ವಿಕಿರಣಶಾಸ್ತ್ರದ ಕಾರ್ಯವಿಧಾನಗಳ ಸಮಯದಲ್ಲಿ ಹೆಪ್ಪುಗಟ್ಟುವಿಕೆಯನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಲು ಬಳಸಲಾಗುತ್ತದೆ. ಕಾರ್ಡಿಯಾಕ್ ಕ್ಯಾತಿಟೆರೈಸೇಶನ್, ಪೆರ್ಕ್ಯುಟೇನಿಯಸ್ ಆಂಜಿಯೋಪ್ಲ್ಯಾಸ್ಟಿ ಮುಂತಾದ ನಾಳೀಯ ಪ್ರವೇಶಕ್ಕೆ ವಿದೇಶಿ ದೇಹವನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ಸೇರಿಸುವುದು.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್ ಬಾಟಲುಗಳು 1000, 5000 ಮತ್ತು 25,000 IU/ml.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ಡೀಪ್-ವೆನ್ ಥ್ರಂಬೋಸಿಸ್ ಮತ್ತು ಪಲ್ಮನರಿ ಎಂಬಾಲಿಸಮ್‌ನ ವಯಸ್ಕರ-ಚಿಕಿತ್ಸೆ: 5000 ಯೂನಿಟ್‌ಗಳ ಲೋಡಿಂಗ್ ಡೋಸ್ (ತೀವ್ರವಾದ ಪಲ್ಮನರಿ ಎಂಬಾಲಿಸಮ್‌ನಲ್ಲಿ 10,000 ಯೂನಿಟ್‌ಗಳು) ನಂತರ 15 ರಿಂದ 25 ಯೂನಿಟ್‌ಗಳು/ಕೆಜಿ/ಗಂ ನಿರಂತರ ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್.
+ಮಗು- 50 ರಿಂದ 100U/kg ಪ್ರತಿ 4 ರಿಂದ 6 ಗಂಟೆಗಳವರೆಗೆ.
+ಸಬ್ಕ್ಯುಟೇನಿಯಸ್ ಇಂಜೆಕ್ಷನ್
+ಪ್ರತಿ 12 ಗಂಟೆಗೆ 15,000 ಘಟಕಗಳು; ಪ್ರಯೋಗಾಲಯದ ಮೇಲ್ವಿಚಾರಣೆ ಅತ್ಯಗತ್ಯ, ಮೇಲಾಗಿ ದೈನಂದಿನ ಆಧಾರದ ಮೇಲೆ ಮತ್ತು ಅದಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಡೋಸ್ ಅನ್ನು ಸರಿಹೊಂದಿಸಲಾಗುತ್ತದೆ.
+ಸಾಮಾನ್ಯ ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯಲ್ಲಿ ರೋಗನಿರೋಧಕ: ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಗೆ 2 ಗಂಟೆಗಳ ಮೊದಲು 5,000 ಘಟಕಗಳು, ನಂತರ ಪ್ರತಿ 8 ರಿಂದ 12 ಗಂಟೆಗಳವರೆಗೆ 7 ದಿನಗಳವರೆಗೆ ಅಥವಾ ರೋಗಿಯು ಆಂಬ್ಯುಲೆಂಟ್ ಆಗುವವರೆಗೆ (ಮೇಲ್ವಿಚಾರಣೆ ಅಗತ್ಯವಿಲ್ಲ); ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ (ಮೇಲ್ವಿಚಾರಣೆಯೊಂದಿಗೆ) ಪ್ರತಿ 12 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ 5,000-10,000 ಘಟಕಗಳು.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+हेपरिन का उपयोग इन विट्रो में रक्त के थक्के को रोकने के लिए किया जाता है जब रक्त गैस विश्लेषण, इलेक्ट्रोलाइट आकलन आदि के लिए रक्त के नमूने लिए जाते हैं। इसका उपयोग रक्त भंडारण बैग में रक्त के थक्के को रोकने के लिए भी किया जाता है। हेपरिन (1U/ml) का धीमा पतला जलसेक धमनी लाइनों, केंद्रीय शिरापरक कैथेटर, फुफ्फुसीय धमनी कैथेटर आदि जैसे इंडवेलिंग कैथेटर में रक्त के थक्के को रोकने के लिए उपयोगी है। हेपरिन का उपयोग इंटरवेंशनल कार्डियोलॉजी / रेडियोलॉजिकल प्रक्रियाओं के दौरान एंटीकोएगुलेशन बनाए रखने के लिए भी किया जाता है, जिसमें कार्डियक कैथीटेराइजेशन, परक्यूटेनियस एंजियोप्लास्टी आदि जैसे संवहनी पहुंच में विदेशी शरीर के अस्थायी सम्मिलन की आवश्यकता होती है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन की शीशियां 1000, 5000 और 25,000 IU/ml.
+<strong>मात्रा :</strong>
+अंतःशिरा इंजेक्शन
+वयस्क-गहरी शिरा घनास्त्रता और फुफ्फुसीय अन्तःशल्यता का उपचार: 5000 इकाइयों की लोडिंग खुराक (गंभीर फुफ्फुसीय अन्तःशल्यता में 10,000 इकाइयाँ) के बाद 15 से 25 इकाइयों/किग्रा/घंटा की निरंतर अंतःशिरा जलसेक।
+बच्चे- 50 से 100 यू/किग्रा हर 4 से 6 घंटे।
+चमड़े के नीचे इंजेक्शन
+हर 12 घंटे में 15,000 इकाइयाँ; प्रयोगशाला निगरानी आवश्यक है, अधिमानतः दैनिक आधार पर और खुराक तदनुसार समायोजित की जाती है।
+सामान्य सर्जरी में प्रोफिलैक्सिस: सर्जरी से 2 घंटे पहले 5,000 इकाइयाँ, फिर 7 दिनों के लिए हर 8 से 12 घंटे में या जब तक रोगी चलने-फिरने में सक्षम न हो जाए (निगरानी की आवश्यकता नहीं); गर्भावस्था के दौरान (निगरानी के साथ) हर 12 घंटे में 5,000-10,000 इकाइयाँ।
+`},
+{
+title: "KETAMINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Central nervous system (CNS): It has a biphasic action on the CNS. Ketamine produces dissociative anaesthesia resembling a cataleptic state. It causes functional and electrophysiological dissociation of thalamocortical system (depressed) from the limbic system (stimulated). There is intense analgesia and amnesia as the sensory impulses from the body do not reach the cortex. It has been postulated that the psychic emergence reactions occur secondary to ketamine-induced depression of auditory and visual relay nuclei, leading to misperception misinterpretation of auditory and visual stimuli. It increases skeletal muscle tone. It increases the cerebral metabolic rate, increases cerebral blood flow through autoregulation and thus increases intracranial pressure. It also increases intraocular pressure. However, in higher doses, it produces generalized depression of the central nervous system. 
+2.Cardiovascular system: It has a dual effect on the cardiovascular system. It indirectly stimulates the sympathetic nervous system, releasing catecholamines causing hypertension and tachycardia. In larger doses or in patients with suppressed sympathetic nervous system, it may cause hypotension due to direct myocardial depression.
+3.Respiratory system: It does not obtund airway reflexes but is a very good bronchodilator. It also causes dose dependent respiratory depression.
+4.Gastrointestinal system: It causes increased secretions, especially salivary and bronchial.
+<strong>Availability :</strong>
+INJECTIONS-2 ml ampoule (50 mg/ml),
+10 ml vial (10 and 50 mg/ml).
+<strong>Dosage :</strong>
+Intravenous injection
+Short Procedures: Initially 6.5 to 13 mg/kg adjusted according to response (10 mg/kg usually produces 12 to 25 min. of surgical anesthesia).
+Procedures not involving intense pain: initially 4 mg/kg, (usual dose is 1 to 4.5 mg/ kg).
+Short procedure over at least 60 min: initially 4 mg/kg (2 mg/kg usually produces 5 to 10 min. of surgical anesthesia).
+Longer Procedure induction by intravenous injection using solution containing 1 mg/ml.
+Longer procedure induction dose 0.5 to 2 mg/kg, maintenance 10 to 45 mg/kg/min. rate adjusted according to response.
+`,
+
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಸೆಂಟ್ರಲ್ ನರ್ವಸ್ ಸಿಸ್ಟಮ್ (ಸಿಎನ್ಎಸ್): ಇದು ಸಿಎನ್ಎಸ್ ಮೇಲೆ ಬೈಫಾಸಿಕ್ ಕ್ರಿಯೆಯನ್ನು ಹೊಂದಿದೆ. ಕೆಟಮೈನ್ ಕ್ಯಾಟಲೆಪ್ಟಿಕ್ ಸ್ಥಿತಿಯನ್ನು ಹೋಲುವ ವಿಘಟಿತ ಅರಿವಳಿಕೆಯನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ. ಇದು ಲಿಂಬಿಕ್ ವ್ಯವಸ್ಥೆಯಿಂದ (ಪ್ರಚೋದಿತ) ಥಾಲಮೊಕಾರ್ಟಿಕಲ್ ಸಿಸ್ಟಮ್ (ಖಿನ್ನತೆ) ಕ್ರಿಯಾತ್ಮಕ ಮತ್ತು ಎಲೆಕ್ಟ್ರೋಫಿಸಿಯೋಲಾಜಿಕಲ್ ವಿಘಟನೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ದೇಹದಿಂದ ಸಂವೇದನಾ ಪ್ರಚೋದನೆಗಳು ಕಾರ್ಟೆಕ್ಸ್ ಅನ್ನು ತಲುಪದ ಕಾರಣ ತೀವ್ರವಾದ ನೋವು ನಿವಾರಕ ಮತ್ತು ವಿಸ್ಮೃತಿ ಇದೆ. ಶ್ರವಣೇಂದ್ರಿಯ ಮತ್ತು ದೃಶ್ಯ ಪ್ರಸಾರದ ನ್ಯೂಕ್ಲಿಯಸ್‌ಗಳ ಕೆಟಮೈನ್-ಪ್ರೇರಿತ ಖಿನ್ನತೆಗೆ ದ್ವಿತೀಯಕವಾಗಿ ಮಾನಸಿಕ ಹೊರಹೊಮ್ಮುವಿಕೆಯ ಪ್ರತಿಕ್ರಿಯೆಗಳು ಸಂಭವಿಸುತ್ತವೆ ಎಂದು ಪ್ರತಿಪಾದಿಸಲಾಗಿದೆ, ಇದು ಶ್ರವಣೇಂದ್ರಿಯ ಮತ್ತು ದೃಶ್ಯ ಪ್ರಚೋದಕಗಳ ತಪ್ಪು ಗ್ರಹಿಕೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ. ಇದು ಅಸ್ಥಿಪಂಜರದ ಸ್ನಾಯುವಿನ ಟೋನ್ ಅನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ. ಇದು ಸೆರೆಬ್ರಲ್ ಮೆಟಾಬಾಲಿಕ್ ದರವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ, ಸ್ವಯಂ ನಿಯಂತ್ರಣದ ಮೂಲಕ ಸೆರೆಬ್ರಲ್ ರಕ್ತದ ಹರಿವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ ಮತ್ತು ಇದರಿಂದಾಗಿ ಇಂಟ್ರಾಕ್ರೇನಿಯಲ್ ಒತ್ತಡವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ. ಇದು ಇಂಟ್ರಾಕ್ಯುಲರ್ ಒತ್ತಡವನ್ನು ಸಹ ಹೆಚ್ಚಿಸುತ್ತದೆ. ಆದಾಗ್ಯೂ, ಹೆಚ್ಚಿನ ಪ್ರಮಾಣದಲ್ಲಿ, ಇದು ಕೇಂದ್ರ ನರಮಂಡಲದ ಸಾಮಾನ್ಯ ಖಿನ್ನತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. 
+2.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆಯ ಮೇಲೆ ಉಭಯ ಪರಿಣಾಮವನ್ನು ಬೀರುತ್ತದೆ. ಇದು ಪರೋಕ್ಷವಾಗಿ ಸಹಾನುಭೂತಿಯ ನರಮಂಡಲವನ್ನು ಉತ್ತೇಜಿಸುತ್ತದೆ, ಅಧಿಕ ರಕ್ತದೊತ್ತಡ ಮತ್ತು ಟಾಕಿಕಾರ್ಡಿಯಾವನ್ನು ಉಂಟುಮಾಡುವ ಕ್ಯಾಟೆಕೊಲಮೈನ್ಗಳನ್ನು ಬಿಡುಗಡೆ ಮಾಡುತ್ತದೆ. ಹೆಚ್ಚಿನ ಪ್ರಮಾಣದಲ್ಲಿ ಅಥವಾ ಸಹಾನುಭೂತಿಯ ನರವ್ಯೂಹವನ್ನು ನಿಗ್ರಹಿಸಿದ ರೋಗಿಗಳಲ್ಲಿ, ಇದು ನೇರ ಹೃದಯ ಸ್ನಾಯುವಿನ ಖಿನ್ನತೆಯ ಕಾರಣದಿಂದಾಗಿ ಹೈಪೊಟೆನ್ಷನ್ಗೆ ಕಾರಣವಾಗಬಹುದು.
+3.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ವಾಯುಮಾರ್ಗದ ಪ್ರತಿವರ್ತನಗಳನ್ನು ತಡೆಯುವುದಿಲ್ಲ ಆದರೆ ಉತ್ತಮ ಬ್ರಾಂಕೋಡಿಲೇಟರ್ ಆಗಿದೆ. ಇದು ಡೋಸ್ ಅವಲಂಬಿತ ಉಸಿರಾಟದ ಖಿನ್ನತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.
+4.ಜಠರಗರುಳಿನ ವ್ಯವಸ್ಥೆ: ಇದು ಹೆಚ್ಚಿದ ಸ್ರವಿಸುವಿಕೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ, ವಿಶೇಷವಾಗಿ ಲಾಲಾರಸ ಮತ್ತು ಶ್ವಾಸನಾಳ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಚುಚ್ಚುಮದ್ದು-2 ಮಿಲಿ ಆಂಪೋಲ್ (50 ಮಿಗ್ರಾಂ/ಮಿಲಿ),
+10 ಮಿಲಿ ಸೀಸೆ (10 ಮತ್ತು 50 ಮಿಗ್ರಾಂ / ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ಸಣ್ಣ ಕಾರ್ಯವಿಧಾನಗಳು: ಆರಂಭದಲ್ಲಿ 6.5 ರಿಂದ 13 ಮಿಗ್ರಾಂ / ಕೆಜಿ ಪ್ರತಿಕ್ರಿಯೆಗೆ ಅನುಗುಣವಾಗಿ ಸರಿಹೊಂದಿಸಲಾಗುತ್ತದೆ (10 ಮಿಗ್ರಾಂ / ಕೆಜಿ ಸಾಮಾನ್ಯವಾಗಿ 12 ರಿಂದ 25 ನಿಮಿಷಗಳ ಶಸ್ತ್ರಚಿಕಿತ್ಸಾ ಅರಿವಳಿಕೆ ಉತ್ಪಾದಿಸುತ್ತದೆ).
+ತೀವ್ರವಾದ ನೋವನ್ನು ಒಳಗೊಂಡಿರದ ಕಾರ್ಯವಿಧಾನಗಳು: ಆರಂಭದಲ್ಲಿ 4 ಮಿಗ್ರಾಂ / ಕೆಜಿ, (ಸಾಮಾನ್ಯ ಡೋಸ್ 1 ರಿಂದ 4.5 ಮಿಗ್ರಾಂ / ಕೆಜಿ).
+ಕನಿಷ್ಠ 60 ನಿಮಿಷಗಳಿಗಿಂತ ಕಡಿಮೆ ಅವಧಿಯ ವಿಧಾನ: ಆರಂಭದಲ್ಲಿ 4 mg/kg (2 mg/kg ಸಾಮಾನ್ಯವಾಗಿ 5 ರಿಂದ 10 ನಿಮಿಷಗಳ ಶಸ್ತ್ರಚಿಕಿತ್ಸಾ ಅರಿವಳಿಕೆಯನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ).
+1 mg/ml ಹೊಂದಿರುವ ದ್ರಾವಣವನ್ನು ಬಳಸಿಕೊಂಡು ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್ ಮೂಲಕ ದೀರ್ಘವಾದ ಕಾರ್ಯವಿಧಾನದ ಇಂಡಕ್ಷನ್.
+ದೀರ್ಘ ವಿಧಾನದ ಇಂಡಕ್ಷನ್ ಡೋಸ್ 0.5 ರಿಂದ 2 mg/kg, ನಿರ್ವಹಣೆ 10 ರಿಂದ 45 mg/kg/min. ಪ್ರತಿಕ್ರಿಯೆಗೆ ಅನುಗುಣವಾಗಿ ದರವನ್ನು ಸರಿಹೊಂದಿಸಲಾಗುತ್ತದೆ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.केंद्रीय तंत्रिका तंत्र (सीएनएस): इसकी सीएनएस पर द्विचरणीय क्रिया होती है। केटामाइन एक कैटेलेप्टिक अवस्था के समान डिसोसिएटिव एनेस्थेसिया उत्पन्न करता है। यह लिम्बिक सिस्टम (उत्तेजित) से थैलामोकॉर्टिकल सिस्टम (अवसादित) के कार्यात्मक और इलेक्ट्रोफिजियोलॉजिकल पृथक्करण का कारण बनता है। इसमें तीव्र वेदना और भूलने की बीमारी होती है क्योंकि शरीर से संवेदी आवेग कॉर्टेक्स तक नहीं पहुंच पाते हैं। यह माना गया है कि मानसिक उद्भव प्रतिक्रियाएं श्रवण और दृश्य रिले नाभिक के केटामाइन-प्रेरित अवसाद के बाद होती हैं, जिससे श्रवण और दृश्य उत्तेजनाओं की गलत व्याख्या होती है। यह कंकाल की मांसपेशियों की टोन को बढ़ाता है। यह मस्तिष्क चयापचय दर को बढ़ाता है, ऑटोरेग्यूलेशन के माध्यम से मस्तिष्क रक्त प्रवाह को बढ़ाता है और इस प्रकार इंट्राक्रैनियल दबाव बढ़ाता है। इससे अंतःनेत्र दबाव भी बढ़ता है। हालाँकि, अधिक मात्रा में, यह केंद्रीय तंत्रिका तंत्र में सामान्यीकृत अवसाद पैदा करता है। 
+2.हृदय प्रणाली: यह हृदय प्रणाली पर दोहरा प्रभाव डालता है। यह अप्रत्यक्ष रूप से सहानुभूति तंत्रिका तंत्र को उत्तेजित करता है, कैटेकोलामाइन जारी करता है जिससे उच्च रक्तचाप और टैचीकार्डिया होता है। बड़ी खुराक में या दबी हुई सहानुभूति तंत्रिका तंत्र वाले रोगियों में, यह प्रत्यक्ष मायोकार्डियल अवसाद के कारण हाइपोटेंशन का कारण बन सकता है।
+3. श्वसन प्रणाली: यह वायुमार्ग की प्रतिक्रिया को बाधित नहीं करता है लेकिन एक बहुत अच्छा ब्रोन्कोडायलेटर है। यह खुराक पर निर्भर श्वसन अवसाद का भी कारण बनता है।
+4. गैस्ट्रोइंटेस्टाइनल सिस्टम: यह स्राव, विशेष रूप से लार और ब्रोन्कियल में वृद्धि का कारण बनता है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-2 मिली एम्पुल (50 मिग्रा/मिली),
+10 मिली शीशी (10 और 50 मिलीग्राम/एमएल)।
+<strong>मात्रा :</strong>
+अंतःशिरा इंजेक्शन
+लघु प्रक्रियाएं: प्रारंभ में प्रतिक्रिया के अनुसार 6.5 से 13 मिलीग्राम/किलोग्राम समायोजित किया जाता है (10 मिलीग्राम/किग्रा आमतौर पर 12 से 25 मिनट सर्जिकल एनेस्थीसिया उत्पन्न करता है)।
+ऐसी प्रक्रियाएं जिनमें तीव्र दर्द शामिल नहीं है: प्रारंभ में 4 मिलीग्राम/किग्रा, (सामान्य खुराक 1 से 4.5 मिलीग्राम/किग्रा है)।
+कम से कम 60 मिनट से अधिक की छोटी प्रक्रिया: प्रारंभ में 4 मिलीग्राम/किग्रा (2 मिलीग्राम/किग्रा आमतौर पर 5 से 10 मिनट सर्जिकल एनेस्थीसिया उत्पन्न करती है)।
+1 मिलीग्राम/एमएल युक्त घोल का उपयोग करके अंतःशिरा इंजेक्शन द्वारा लंबी प्रक्रिया प्रेरण।
+लंबी प्रक्रिया प्रेरण खुराक 0.5 से 2 मिलीग्राम/किग्रा, रखरखाव 10 से 45 मिलीग्राम/किग्रा/मिनट। प्रतिक्रिया के अनुसार दर समायोजित की गई।
+`},
+{
+    title: "LIGNOCAINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+Lignocaine acts on the nerves close to the site of injection, blocks sodium channels, prevents depolarization and conduction of impulses. Lignocaine deposited in the tissues is gradually absorbed into the blood. The systemic effects of lignocaine are related to the plasma concentration. Initially, as the concentration 29 increases, neurological symptoms such as tinnitus, dizziness, neuromuscular twitches, change in taste and restlessness occur (up to 5 µg/ml). As the concentration increases, other symptoms appear such as convulsions (15 µg/ml), respiratory depression (20 µg/ml) and finally cardiovascular collapse (25 µg/ml). Thus, the margin of safety for lignocaine is high. The dose required to produce cardiovascular toxicity is said to be approximately 7 times higher than that required to produce central nervous system toxicity
+<strong>Availability :</strong>
+INJECTIONS-30 ml vial (1%) and 10 ml (5%/2 ml) ampoule and 30 ml vial (2%).
+TOPICAL-30 ml vial (4%), 30 ml vial (lignocaine 20 mg and adrenaline 5 mg/ml).
+GEL-2% and 4%.
+OINTMENT-5% w/w, SPRAY 15% w/w.
+INJECTIONS-2 ml ampoule (Lignocaine HCl 53.3 mg and Dextrose 75 mg/ml) for spinal anaesthesia.
+<strong>Dosage :</strong>
+Induction of anaesthesia: By injection according to patient weight and nature of procedure. (max. 200 mg lignocaine or 500 mg with adrenaline).
+Local application: Rub gently on the affected area.
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಲಿಗ್ನೋಕೇನ್ ಚುಚ್ಚುಮದ್ದಿನ ಸ್ಥಳಕ್ಕೆ ಹತ್ತಿರವಿರುವ ನರಗಳ ಮೇಲೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ, ಸೋಡಿಯಂ ಚಾನಲ್‌ಗಳನ್ನು ನಿರ್ಬಂಧಿಸುತ್ತದೆ, ಡಿಪೋಲರೈಸೇಶನ್ ಮತ್ತು ಪ್ರಚೋದನೆಗಳ ವಹನವನ್ನು ತಡೆಯುತ್ತದೆ. ಅಂಗಾಂಶಗಳಲ್ಲಿ ಸಂಗ್ರಹವಾಗಿರುವ ಲಿಗ್ನೋಕೇನ್ ಕ್ರಮೇಣ ರಕ್ತದಲ್ಲಿ ಹೀರಲ್ಪಡುತ್ತದೆ. ಲಿಗ್ನೋಕೇನ್‌ನ ವ್ಯವಸ್ಥಿತ ಪರಿಣಾಮಗಳು ಪ್ಲಾಸ್ಮಾ ಸಾಂದ್ರತೆಗೆ ಸಂಬಂಧಿಸಿವೆ. ಆರಂಭದಲ್ಲಿ, ಸಾಂದ್ರತೆಯು 29 ಹೆಚ್ಚಾದಂತೆ, ಟಿನ್ನಿಟಸ್, ತಲೆತಿರುಗುವಿಕೆ, ನರಸ್ನಾಯುಕ ಸಂಕೋಚನಗಳು, ರುಚಿಯಲ್ಲಿ ಬದಲಾವಣೆ ಮತ್ತು ಚಡಪಡಿಕೆಗಳಂತಹ ನರವೈಜ್ಞಾನಿಕ ಲಕ್ಷಣಗಳು ಕಂಡುಬರುತ್ತವೆ (5 µg/ml ವರೆಗೆ). ಸಾಂದ್ರತೆಯು ಹೆಚ್ಚಾದಂತೆ, ಸೆಳೆತ (15 µg/ml), ಉಸಿರಾಟದ ಖಿನ್ನತೆ (20 µg/ml) ಮತ್ತು ಅಂತಿಮವಾಗಿ ಹೃದಯರಕ್ತನಾಳದ ಕುಸಿತ (25 µg/ml) ನಂತಹ ಇತರ ರೋಗಲಕ್ಷಣಗಳು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ. ಹೀಗಾಗಿ, ಲಿಗ್ನೋಕೇನ್ ಸುರಕ್ಷತೆಯ ಅಂಚು ಹೆಚ್ಚು. ಹೃದಯರಕ್ತನಾಳದ ವಿಷತ್ವವನ್ನು ಉತ್ಪಾದಿಸಲು ಅಗತ್ಯವಿರುವ ಡೋಸ್ ಕೇಂದ್ರ ನರಮಂಡಲದ ವಿಷತ್ವವನ್ನು ಉತ್ಪಾದಿಸಲು ಅಗತ್ಯವಿರುವ ಪ್ರಮಾಣಕ್ಕಿಂತ ಸುಮಾರು 7 ಪಟ್ಟು ಹೆಚ್ಚು ಎಂದು ಹೇಳಲಾಗುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಚುಚ್ಚುಮದ್ದು-30 ಮಿಲಿ ಸೀಸೆ (1%) ಮತ್ತು 10 ಮಿಲಿ (5%/2 ಮಿಲಿ) ಆಂಪೋಲ್ ಮತ್ತು 30 ಮಿಲಿ ಸೀಸೆ (2%).
+ಟಾಪಿಕಲ್-30 ಮಿಲಿ ಸೀಸೆ (4%), 30 ಮಿಲಿ ಸೀಸೆ (ಲಿಗ್ನೋಕೇನ್ 20 ಮಿಗ್ರಾಂ ಮತ್ತು ಅಡ್ರಿನಾಲಿನ್ 5 ಮಿಗ್ರಾಂ/ಮಿಲಿ).
+GEL-2% ಮತ್ತು 4%.
+ಮುಲಾಮು-5% w/w, ಸ್ಪ್ರೇ 15% w/w.
+ಚುಚ್ಚುಮದ್ದು-2 ಮಿಲಿ ಆಂಪೋಲ್ (ಲಿಗ್ನೋಕೇನ್ ಹೆಚ್ಸಿಎಲ್ 53.3 ಮಿಗ್ರಾಂ ಮತ್ತು ಡೆಕ್ಸ್ಟ್ರೋಸ್ 75 ಮಿಗ್ರಾಂ/ಮಿಲಿ) ಬೆನ್ನುಮೂಳೆಯ ಅರಿವಳಿಕೆಗಾಗಿ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಅರಿವಳಿಕೆ ಇಂಡಕ್ಷನ್: ರೋಗಿಯ ತೂಕ ಮತ್ತು ಕಾರ್ಯವಿಧಾನದ ಸ್ವರೂಪಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಚುಚ್ಚುಮದ್ದಿನ ಮೂಲಕ. (ಗರಿಷ್ಠ. 200 ಮಿಗ್ರಾಂ ಲಿಗ್ನೋಕೇನ್ ಅಥವಾ 500 ಮಿಗ್ರಾಂ ಅಡ್ರಿನಾಲಿನ್ ಜೊತೆ).
+ಸ್ಥಳೀಯ ಅಪ್ಲಿಕೇಶನ್: ಪೀಡಿತ ಪ್ರದೇಶದ ಮೇಲೆ ನಿಧಾನವಾಗಿ ಉಜ್ಜಿಕೊಳ್ಳಿ.`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+लिग्नोकेन इंजेक्शन स्थल के करीब की नसों पर कार्य करता है, सोडियम चैनलों को अवरुद्ध करता है, विध्रुवण और आवेगों के संचालन को रोकता है। ऊतकों में जमा लिग्नोकेन धीरे-धीरे रक्त में अवशोषित हो जाता है। लिग्नोकेन के प्रणालीगत प्रभाव प्लाज्मा सांद्रता से संबंधित हैं। प्रारंभ में, जैसे-जैसे सांद्रता 29 बढ़ती है, न्यूरोलॉजिकल लक्षण जैसे टिनिटस, चक्कर आना, न्यूरोमस्कुलर मरोड़, स्वाद में बदलाव और बेचैनी (5 µg/ml तक) उत्पन्न होती है। जैसे-जैसे सांद्रता बढ़ती है, अन्य लक्षण प्रकट होते हैं जैसे ऐंठन (15 माइक्रोग्राम प्रति मिली), श्वसन अवसाद (20 माइक्रोग्राम प्रति मिली) और अंत में हृदय पतन (25 माइक्रोग्राम प्रति मिली)। इस प्रकार, लिग्नोकेन के लिए सुरक्षा का मार्जिन अधिक है। ऐसा कहा जाता है कि हृदय संबंधी विषाक्तता पैदा करने के लिए आवश्यक खुराक केंद्रीय तंत्रिका तंत्र विषाक्तता पैदा करने के लिए आवश्यक खुराक से लगभग 7 गुना अधिक है|
+<strong>उपलब्धता :</strong>
+इंजेक्शन-30 मिली शीशी (1%) और 10 मिली (5%/2 मिली) एम्पुल और 30 मिली शीशी (2%)।
+टॉपिकल-30 मिली शीशी (4%), 30 मिली शीशी (लिग्नोकेन 20 एमजी और एड्रेनालाईन 5 एमजी/एमएल)।
+जीईएल-2% और 4%।
+मरहम-5% w/w, स्प्रे 15% w/w।
+स्पाइनल एनेस्थीसिया के लिए इंजेक्शन-2 एमएल एम्पौल (लिग्नोकेन एचसीएल 53.3 मिलीग्राम और डेक्सट्रोज 75 मिलीग्राम/एमएल)।
+<strong>मात्रा :</strong>
+एनेस्थीसिया का प्रेरण: रोगी के वजन और प्रक्रिया की प्रकृति के अनुसार इंजेक्शन द्वारा। (अधिकतम 200 मिलीग्राम लिग्नोकेन या एड्रेनालाईन के साथ 500 मिलीग्राम)।
+स्थानीय अनुप्रयोग: प्रभावित क्षेत्र पर धीरे से रगड़ें।
+`
+},
+{
+title: "MIDAZOLAM",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Central nervous system (CNS): It produces dose-dependent depression of the CNS. 
+2.Cardiovascular system: It is relatively cardiostable and does not affect blood pressure or heart rate. However, in hypovolaemic patients, it can produce significant hypotension as it reduces the systemic vascular resistance.
+3.Respiratory system: At sedation doses, it does not produce any change in respiration. However, higher doses can cause dose dependent respiratory depression.
+<strong>Availability :</strong>
+INJECTION-1 ml ampoule (5 mg/ml), 5 and 10 ml vial (1 mg/ml).
+<strong>Dosage :</strong>
+Slow intravenous injection
+Adult- Conscious sedation: approximately 2 mg/min, 5 to 10 min before procedure,
+initially 2 to 2.5 mg. Usual total dose 3.5 to 5 mg (Max. 7.5 mg).
+Elderly- 0.5 to 1.0 mg. Increase if necessary in steps of 1 mg.
+Intravenous injection (Over 2 to 3 min)
+Child- 6 months to 7 years: initially 50 to 100 µg/kg, increase if necessary in steps (max. total dose 6.0 mg). 6 to 12 years: initially 25 to 50 µg/kg increase in steps if necessary (max. total dose 10 mg).
+Intramuscular injection
+Adult- Sedation in combined anaesthesia:
+30 to 100 µg/kg repeated as required by continuous intravenous infusion 30 to 100 µg/ kg/h (lower doses in elderly).Premedication: 70 to 100 µg/kg.
+1 to 15 years: 50 to 150 µg/kg (max.1 mg).
+Elderly and debilitated- 25 to 50 µg/kg. (20 to 60 min induction).
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಸೆಂಟ್ರಲ್ ನರವ್ಯೂಹ (ಸಿಎನ್ಎಸ್): ಇದು ಸಿಎನ್ಎಸ್ನ ಡೋಸ್-ಅವಲಂಬಿತ ಖಿನ್ನತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. 
+2.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ತುಲನಾತ್ಮಕವಾಗಿ ಕಾರ್ಡಿಯೋಸ್ಟಬಲ್ ಆಗಿದೆ ಮತ್ತು ರಕ್ತದೊತ್ತಡ ಅಥವಾ ಹೃದಯ ಬಡಿತದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ. ಆದಾಗ್ಯೂ, ಹೈಪೋವೊಲೆಮಿಕ್ ರೋಗಿಗಳಲ್ಲಿ, ಇದು ವ್ಯವಸ್ಥಿತ ನಾಳೀಯ ಪ್ರತಿರೋಧವನ್ನು ಕಡಿಮೆ ಮಾಡುವ ಮೂಲಕ ಗಮನಾರ್ಹವಾದ ಹೈಪೊಟೆನ್ಷನ್ ಅನ್ನು ಉಂಟುಮಾಡಬಹುದು.
+3.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ನಿದ್ರಾಜನಕ ಪ್ರಮಾಣದಲ್ಲಿ, ಇದು ಉಸಿರಾಟದಲ್ಲಿ ಯಾವುದೇ ಬದಲಾವಣೆಯನ್ನು ಉಂಟುಮಾಡುವುದಿಲ್ಲ. ಆದಾಗ್ಯೂ, ಹೆಚ್ಚಿನ ಪ್ರಮಾಣಗಳು ಡೋಸ್ ಅವಲಂಬಿತ ಉಸಿರಾಟದ ಖಿನ್ನತೆಗೆ ಕಾರಣವಾಗಬಹುದು.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-1 ಮಿಲಿ ಆಂಪೋಲ್ (5 ಮಿಗ್ರಾಂ/ಮಿಲಿ), 5 ಮತ್ತು 10 ಮಿಲಿ ಸೀಸೆ (1 ಮಿಗ್ರಾಂ/ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ನಿಧಾನವಾದ ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು-ಪ್ರಜ್ಞಾಪೂರ್ವಕ ನಿದ್ರಾಜನಕ: ಸರಿಸುಮಾರು 2 ಮಿಗ್ರಾಂ / ನಿಮಿಷ, ಕಾರ್ಯವಿಧಾನಕ್ಕೆ 5 ರಿಂದ 10 ನಿಮಿಷಗಳ ಮೊದಲು,
+ಆರಂಭದಲ್ಲಿ 2 ರಿಂದ 2.5 ಮಿಗ್ರಾಂ. ಸಾಮಾನ್ಯ ಒಟ್ಟು ಡೋಸ್ 3.5 ರಿಂದ 5 ಮಿಗ್ರಾಂ (ಗರಿಷ್ಠ 7.5 ಮಿಗ್ರಾಂ).
+ವಯಸ್ಸಾದವರು - 0.5 ರಿಂದ 1.0 ಮಿಗ್ರಾಂ. ಅಗತ್ಯವಿದ್ದರೆ 1 ಮಿಗ್ರಾಂ ಹಂತಗಳಲ್ಲಿ ಹೆಚ್ಚಿಸಿ.
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್ (2 ರಿಂದ 3 ನಿಮಿಷಗಳಿಗಿಂತ ಹೆಚ್ಚು)
+ಮಗು- 6 ತಿಂಗಳಿಂದ 7 ವರ್ಷಗಳವರೆಗೆ: ಆರಂಭದಲ್ಲಿ 50 ರಿಂದ 100 μg/kg, ಅಗತ್ಯವಿದ್ದರೆ ಹಂತಗಳಲ್ಲಿ ಹೆಚ್ಚಿಸಿ (ಗರಿಷ್ಠ. ಒಟ್ಟು ಡೋಸ್ 6.0 ಮಿಗ್ರಾಂ). 6 ರಿಂದ 12 ವರ್ಷಗಳು: ಅಗತ್ಯವಿದ್ದಲ್ಲಿ ಆರಂಭದಲ್ಲಿ 25 ರಿಂದ 50 µg/kg ಹಂತಗಳಲ್ಲಿ ಹೆಚ್ಚಳ (ಗರಿಷ್ಠ. ಒಟ್ಟು ಡೋಸ್ 10 mg).
+ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು- ಸಂಯೋಜಿತ ಅರಿವಳಿಕೆಯಲ್ಲಿ ನಿದ್ರಾಜನಕ:
+30 ರಿಂದ 100 µg/kg ವರೆಗೆ ನಿರಂತರ ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್ ಮೂಲಕ ಪುನರಾವರ್ತನೆಯಾಗುತ್ತದೆ 30 ರಿಂದ 100 µg/ kg/h (ವಯಸ್ಸಾದವರಲ್ಲಿ ಕಡಿಮೆ ಪ್ರಮಾಣಗಳು). ಪೂರ್ವಭಾವಿ ಚಿಕಿತ್ಸೆ: 70 ರಿಂದ 100 μg/kg.
+1 ರಿಂದ 15 ವರ್ಷಗಳು: 50 ರಿಂದ 150 µg/kg (ಗರಿಷ್ಠ.1 mg).
+ವಯಸ್ಸಾದವರು ಮತ್ತು ದುರ್ಬಲಗೊಂಡವರು- 25 ರಿಂದ 50 μg/kg. (20 ರಿಂದ 60 ನಿಮಿಷಗಳ ಇಂಡಕ್ಷನ್).`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.केंद्रीय तंत्रिका तंत्र (सीएनएस): यह सीएनएस की खुराक पर निर्भर अवसाद पैदा करता है। 
+2.हृदय प्रणाली: यह अपेक्षाकृत हृदय स्थिर है और रक्तचाप या हृदय गति को प्रभावित नहीं करता है। हालाँकि, हाइपोवॉलेमिक रोगियों में, यह महत्वपूर्ण हाइपोटेंशन पैदा कर सकता है क्योंकि यह प्रणालीगत संवहनी प्रतिरोध को कम कर देता है।
+3. श्वसन प्रणाली: बेहोश करने वाली खुराक पर, यह श्वसन में कोई बदलाव नहीं लाता है। हालाँकि, अधिक खुराक खुराक पर निर्भर श्वसन अवसाद का कारण बन सकती है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-1 मिली एम्पौल (5 मिग्रा/मिली), 5 और 10 मिली शीशी (1 मिग्रा/मिली)।
+<strong>मात्रा :</strong>
+धीमा अंतःशिरा इंजेक्शन
+वयस्क- सचेतन बेहोशी: लगभग 2 मिलीग्राम/मिनट, प्रक्रिया से 5 से 10 मिनट पहले,
+शुरुआत में 2 से 2.5 मि.ग्रा. सामान्य कुल खुराक 3.5 से 5 मिलीग्राम (अधिकतम 7.5 मिलीग्राम)।
+बुजुर्ग- 0.5 से 1.0 मिलीग्राम। यदि आवश्यक हो तो 1 मिलीग्राम के चरणों में बढ़ाएँ।
+अंतःशिरा इंजेक्शन (2 से 3 मिनट से अधिक)
+बच्चा- 6 महीने से 7 साल: शुरू में 50 से 100 माइक्रोग्राम/किग्रा, यदि आवश्यक हो तो चरणों में वृद्धि करें (अधिकतम कुल खुराक 6.0 मिलीग्राम)। 6 से 12 वर्ष: यदि आवश्यक हो तो प्रारंभ में चरणों में 25 से 50 माइक्रोग्राम/किलोग्राम की वृद्धि (अधिकतम कुल खुराक 10 मिलीग्राम)।
+इंट्रामस्क्युलर इंजेक्शन
+वयस्क- संयुक्त संज्ञाहरण में बेहोश करने की क्रिया:
+30 से 100 माइक्रोग्राम प्रति किग्रा, निरंतर अंतःशिरा जलसेक द्वारा आवश्यकतानुसार दोहराया जाता है 30 से 100 माइक्रोग्राम प्रति किग्रा/घंटा (बुजुर्गों में कम खुराक)। प्रीमेडिकेशन: 70 से 100 माइक्रोग्राम प्रति किग्रा।
+1 से 15 वर्ष: 50 से 150 माइक्रोग्राम/किग्रा (अधिकतम 1 मिलीग्राम)।
+बुजुर्ग और दुर्बल - 25 से 50 माइक्रोग्राम प्रति किग्रा। (20 से 60 मिनट इंडक्शन)।
+`},
+{
+    title: "MORPHINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Central nervous system (CNS): Initially it causes euphoria and then sedation. It is a very good analgesic. Later, it produces dose-dependent depression of the CNS. Induction of anaesthesia is usually heralded by loss of verbal contact but this is usually maintained even after large doses. Characteristically, morphine produces respiratory depression, but as long as the patient remains conscious, verbal contact can be made and he is reminded to breathe. This pattern of respiratory depression is called Ondine’s curse. It has a cerebral protective effect by reducing cerebral metabolic rate and blood flow.
+2.Cardiovascular system: It causes hypotension due to peripheral vasodilatation. It also has a vagotonic effect and causes bradycardia.
+3.Respiratory system: It produces dose-dependent reduction in respiratory rate and in large doses, apnoea. The tidal volume is well-maintained till late. Minute ventilation reduces causing hypercarbia. It obtunds the airway reflexes well. It can cause bronchospasm through histamine release.
+4.Gastrointestinal system: It has emetic properties, delays gastric emptying and produces constipation. It can precipitate biliary colic in susceptible individuals.
+<strong>Availability :</strong>
+INJECTION-10 ml ampoule (1 mg/ml, 10 mg/ml and 15 mg/ml), 
+TABLETS-10, 20, 30 and 60 mg.
+<strong>Dosage :</strong>
+Subcutaneous or intramuscular injection
+Adult- Preoperative medication before procedure: up to 10 mg, 60 to 90 min before procedure, 20 to 30 mg per 12 h depending on patient weight. Postoperative analgesia: 150 to 300 µg/kg every 4 h.
+Child- (By intramuscular injection) Preopera- tive medication before procedure: 150 µg/kg. Postoperative analgesia: 100 to 200 µg/kg.
+Intravenous injection
+Adult- Intra-operative analgesia: 100 µg/ kg, repeated every 40 to 60 min as required. Postoperative analgesia: 8 to10 mg over 30 min (slow intravenous infusion), then 2 to 2.5 mg/h.
+Child- Intra-operative analgesia: 100 µg/kg, repeated every 40 to 60 min as required.
+`,
+
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಸೆಂಟ್ರಲ್ ನರವ್ಯೂಹ (CNS): ಆರಂಭದಲ್ಲಿ ಇದು ಯೂಫೋರಿಯಾ ಮತ್ತು ನಂತರ ನಿದ್ರಾಜನಕವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಇದು ಬಹಳ ಒಳ್ಳೆಯ ನೋವು ನಿವಾರಕವಾಗಿದೆ. ನಂತರ, ಇದು CNS ನ ಡೋಸ್-ಅವಲಂಬಿತ ಖಿನ್ನತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಅರಿವಳಿಕೆ ಪ್ರಚೋದನೆಯನ್ನು ಸಾಮಾನ್ಯವಾಗಿ ಮೌಖಿಕ ಸಂಪರ್ಕದ ನಷ್ಟದಿಂದ ಘೋಷಿಸಲಾಗುತ್ತದೆ ಆದರೆ ಇದನ್ನು ಸಾಮಾನ್ಯವಾಗಿ ದೊಡ್ಡ ಪ್ರಮಾಣದ ನಂತರವೂ ನಿರ್ವಹಿಸಲಾಗುತ್ತದೆ. ವಿಶಿಷ್ಟವಾಗಿ, ಮಾರ್ಫಿನ್ ಉಸಿರಾಟದ ಖಿನ್ನತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ, ಆದರೆ ರೋಗಿಯು ಜಾಗೃತರಾಗಿರುವವರೆಗೆ, ಮೌಖಿಕ ಸಂಪರ್ಕವನ್ನು ಮಾಡಬಹುದು ಮತ್ತು ಅವನು ಉಸಿರಾಡಲು ನೆನಪಿಸುತ್ತಾನೆ. ಉಸಿರಾಟದ ಖಿನ್ನತೆಯ ಈ ಮಾದರಿಯನ್ನು ಒಂಡೈನ್ಸ್ ಶಾಪ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಇದು ಸೆರೆಬ್ರಲ್ ಮೆಟಾಬಾಲಿಕ್ ದರ ಮತ್ತು ರಕ್ತದ ಹರಿವನ್ನು ಕಡಿಮೆ ಮಾಡುವ ಮೂಲಕ ಸೆರೆಬ್ರಲ್ ರಕ್ಷಣಾತ್ಮಕ ಪರಿಣಾಮವನ್ನು ಹೊಂದಿದೆ.
+2.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಬಾಹ್ಯ ವಾಸೋಡಿಲೇಟೇಶನ್‌ನಿಂದಾಗಿ ಹೈಪೊಟೆನ್ಷನ್‌ಗೆ ಕಾರಣವಾಗುತ್ತದೆ. ಇದು ವ್ಯಾಗೋಟೋನಿಕ್ ಪರಿಣಾಮವನ್ನು ಸಹ ಹೊಂದಿದೆ ಮತ್ತು ಬ್ರಾಡಿಕಾರ್ಡಿಯಾವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.
+3.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ಉಸಿರಾಟದ ದರದಲ್ಲಿ ಡೋಸ್-ಅವಲಂಬಿತ ಕಡಿತವನ್ನು ಮತ್ತು ದೊಡ್ಡ ಪ್ರಮಾಣದಲ್ಲಿ ಉಸಿರುಕಟ್ಟುವಿಕೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ. ಉಬ್ಬರವಿಳಿತದ ಪ್ರಮಾಣವು ತಡವಾಗಿ ತನಕ ಉತ್ತಮವಾಗಿ ನಿರ್ವಹಿಸಲ್ಪಡುತ್ತದೆ. ನಿಮಿಷದ ವಾತಾಯನವು ಹೈಪರ್ಕಾರ್ಬಿಯಾವನ್ನು ಉಂಟುಮಾಡುವುದನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಇದು ಶ್ವಾಸನಾಳದ ಪ್ರತಿವರ್ತನವನ್ನು ಚೆನ್ನಾಗಿ ತಡೆಯುತ್ತದೆ. ಇದು ಹಿಸ್ಟಮೈನ್ ಬಿಡುಗಡೆಯ ಮೂಲಕ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ಗೆ ಕಾರಣವಾಗಬಹುದು.
+4.ಜಠರಗರುಳಿನ ವ್ಯವಸ್ಥೆ: ಇದು ಎಮೆಟಿಕ್ ಗುಣಲಕ್ಷಣಗಳನ್ನು ಹೊಂದಿದೆ, ಗ್ಯಾಸ್ಟ್ರಿಕ್ ಖಾಲಿಯಾಗುವುದನ್ನು ವಿಳಂಬಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಮಲಬದ್ಧತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಇದು ಒಳಗಾಗುವ ವ್ಯಕ್ತಿಗಳಲ್ಲಿ ಪಿತ್ತರಸದ ಕೊಲಿಕ್ ಅನ್ನು ಪ್ರಚೋದಿಸುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-10 ಮಿಲಿ ಆಂಪೋಲ್ (1 ಮಿಗ್ರಾಂ/ಮಿಲಿ, 10 ಮಿಗ್ರಾಂ/ಮಿಲಿ ಮತ್ತು 15 ಮಿಗ್ರಾಂ/ಮಿಲಿ), 
+ಮಾತ್ರೆಗಳು-10, 20, 30 ಮತ್ತು 60 ಮಿಗ್ರಾಂ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಸಬ್ಕ್ಯುಟೇನಿಯಸ್ ಅಥವಾ ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು- ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಗೆ ಮುನ್ನ ಔಷಧಿ: 10 ಮಿಗ್ರಾಂ ವರೆಗೆ, ಕಾರ್ಯವಿಧಾನದ ಮೊದಲು 60 ರಿಂದ 90 ನಿಮಿಷಗಳು, ರೋಗಿಯ ತೂಕವನ್ನು ಅವಲಂಬಿಸಿ 12 ಗಂಟೆಗೆ 20 ರಿಂದ 30 ಮಿಗ್ರಾಂ. ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ನಂತರದ ನೋವು ನಿವಾರಕ: ಪ್ರತಿ 4 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ 150 ರಿಂದ 300 μg/kg.
+ಮಗು- (ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಇಂಜೆಕ್ಷನ್ ಮೂಲಕ) ಕಾರ್ಯವಿಧಾನದ ಮೊದಲು ಪೂರ್ವ-ಆಪರೇಟಿವ್ ಔಷಧಿ: 150 µg/kg. ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ನಂತರದ ನೋವು ನಿವಾರಕ: 100 ರಿಂದ 200 μg/kg.
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು- ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯೊಳಗೆ ನೋವು ನಿವಾರಕ: 100 µg/ kg, ಅಗತ್ಯವಿರುವಂತೆ ಪ್ರತಿ 40 ರಿಂದ 60 ನಿಮಿಷಗಳವರೆಗೆ ಪುನರಾವರ್ತಿಸಲಾಗುತ್ತದೆ. ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ನಂತರದ ನೋವು ನಿವಾರಕ: 30 ನಿಮಿಷಗಳಲ್ಲಿ 8 ರಿಂದ 10 ಮಿಗ್ರಾಂ (ನಿಧಾನ ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್), ನಂತರ 2 ರಿಂದ 2.5 ಮಿಗ್ರಾಂ / ಗಂ.
+ಮಗು- ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯೊಳಗೆ ನೋವು ನಿವಾರಕ: 100 µg/kg, ಅಗತ್ಯವಿರುವಂತೆ ಪ್ರತಿ 40 ರಿಂದ 60 ನಿಮಿಷಗಳವರೆಗೆ ಪುನರಾವರ್ತಿಸಲಾಗುತ್ತದೆ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.केंद्रीय तंत्रिका तंत्र (सीएनएस): प्रारंभ में यह उत्साह और फिर बेहोशी का कारण बनता है। यह एक बहुत अच्छी एनाल्जेसिक है. बाद में, यह सीएनएस का खुराक-निर्भर अवसाद पैदा करता है। संज्ञाहरण की शुरूआत आमतौर पर मौखिक संपर्क के नुकसान से शुरू होती है लेकिन यह आमतौर पर बड़ी खुराक के बाद भी बनी रहती है। विशिष्ट रूप से, मॉर्फिन श्वसन अवसाद पैदा करता है, लेकिन जब तक रोगी सचेत रहता है, मौखिक संपर्क किया जा सकता है और उसे सांस लेने की याद दिलाई जाती है। श्वसन अवसाद के इस पैटर्न को ओन्डाइन अभिशाप कहा जाता है। यह मस्तिष्क चयापचय दर और रक्त प्रवाह को कम करके मस्तिष्क सुरक्षात्मक प्रभाव डालता है।
+2.हृदय प्रणाली: यह परिधीय वासोडिलेशन के कारण हाइपोटेंशन का कारण बनता है। इसका वैगोटोनिक प्रभाव भी होता है और ब्रैडीकार्डिया का कारण बनता है।
+3. श्वसन प्रणाली: यह श्वसन दर में खुराक पर निर्भर कमी और बड़ी खुराक में, एपनिया पैदा करती है। देर तक ज्वारीय मात्रा अच्छी तरह से बनी रहती है। मिनट वेंटिलेशन कम हो जाता है जिससे हाइपरकार्बिया होता है। यह वायुमार्ग की सजगता को अच्छी तरह से बाधित करता है। यह हिस्टामाइन रिलीज के माध्यम से ब्रोंकोस्पज़म का कारण बन सकता है।
+4. गैस्ट्रोइंटेस्टाइनल सिस्टम: इसमें उल्टी के गुण होते हैं, यह गैस्ट्रिक को खाली करने में देरी करता है और कब्ज पैदा करता है। यह संवेदनशील व्यक्तियों में पित्त संबंधी शूल उत्पन्न कर सकता है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-10 मिली एम्पौल (1 मिग्रा/मिली, 10 मिग्रा/मिली और 15 मिग्रा/मिली), 
+गोलियाँ-10, 20, 30 और 60 मिलीग्राम।
+<strong>मात्रा :</strong>
+चमड़े के नीचे या इंट्रामस्क्युलर इंजेक्शन
+वयस्क- प्रक्रिया से पहले प्रीऑपरेटिव दवा: प्रक्रिया से 60 से 90 मिनट पहले 10 मिलीग्राम तक, रोगी के वजन के आधार पर प्रति 12 घंटे में 20 से 30 मिलीग्राम। पोस्टऑपरेटिव एनाल्जेसिया: हर 4 घंटे में 150 से 300 माइक्रोग्राम/किग्रा।
+बच्चा- (इंट्रामस्क्युलर इंजेक्शन द्वारा) प्रक्रिया से पहले प्रीऑपरेटिव दवा: 150 माइक्रोग्राम/किग्रा। पोस्टऑपरेटिव एनाल्जेसिया: 100 से 200 माइक्रोग्राम/किग्रा।
+अंतःशिरा इंजेक्शन
+वयस्क- इंट्रा-ऑपरेटिव एनाल्जेसिया: 100 माइक्रोग्राम/किग्रा, आवश्यकतानुसार हर 40 से 60 मिनट में दोहराया जाता है। पोस्टऑपरेटिव एनाल्जेसिया: 30 मिनट में 8 से 10 मिलीग्राम (धीमी अंतःशिरा जलसेक), फिर 2 से 2.5 मिलीग्राम/घंटा।
+बाल-इंट्रा-ऑपरेटिव एनाल्जेसिया: 100 माइक्रोग्राम/किग्रा, आवश्यकतानुसार हर 40 से 60 मिनट में दोहराया जाता है।
+`
+},
+{
+title: "METOPROLOL",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Cardiovascular system: It slows down the heart rate and reduces blood pressure. It slows down conduction and acts as an antiarrhythmic agent (useful for supraventricular arrhythmias). 
+2.Respiratory system: It may cause bronchospasm in a susceptible patient
+<strong>Availability :</strong>
+TABLETS-10, 25, 50 and 100 mg.
+CAPSULE-12.5, 25, 50 and 100 mg.
+INJECTION-100mg/2 ml, 250 mg/2 ml, 500 mg/2 ml.
+<strong>Dosage :</strong>
+Oral
+Heart failure: Initiating dose 12.5 - 25 mg once a day, Maximum dose: 200 mg once a day, Hypertension: initially 100 mg daily, increase if required to 200 mg in two divided doses (max 400 mg daily). Angina: 50 mg daily, up to 300 mg daily in 2 to 3 divided doses if necessary.
+Intravenous injection
+Arrhythmia: up to 5 mg at a rate of 1 to 2 mg per min, repeated after 5 min if necessary (max dose 10 to 15 mg). Arrythmia developing during anaesthesia: 2 to 4 mg during induction.
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಹೃದಯ ಬಡಿತವನ್ನು ನಿಧಾನಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ರಕ್ತದೊತ್ತಡವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಇದು ವಹನವನ್ನು ನಿಧಾನಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಆಂಟಿಅರಿಥಮಿಕ್ ಏಜೆಂಟ್ ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ (ಸುಪ್ರಾವೆಂಟ್ರಿಕ್ಯುಲರ್ ಆರ್ಹೆತ್ಮಿಯಾಗಳಿಗೆ ಉಪಯುಕ್ತವಾಗಿದೆ). 
+2. ಉಸಿರಾಟದ ವ್ಯವಸ್ಥೆ: ಇದು ಒಳಗಾಗುವ ರೋಗಿಯಲ್ಲಿ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ಗೆ ಕಾರಣವಾಗಬಹುದು
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು-10, 25, 50 ಮತ್ತು 100 ಮಿಗ್ರಾಂ.
+ಕ್ಯಾಪ್ಸುಲ್-12.5, 25, 50 ಮತ್ತು 100 ಮಿಗ್ರಾಂ.
+ಇಂಜೆಕ್ಷನ್-100mg/2 ml, 250 mg/2 ml, 500 mg/2 ml.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ಹೃದಯ ವೈಫಲ್ಯ: ಆರಂಭಿಕ ಡೋಸ್ ದಿನಕ್ಕೆ ಒಮ್ಮೆ 12.5 - 25 ಮಿಗ್ರಾಂ, ಗರಿಷ್ಠ ಡೋಸ್: ದಿನಕ್ಕೆ ಒಮ್ಮೆ 200 ಮಿಗ್ರಾಂ, ಅಧಿಕ ರಕ್ತದೊತ್ತಡ: ಆರಂಭದಲ್ಲಿ 100 ಮಿಗ್ರಾಂ ದೈನಂದಿನ, ಅಗತ್ಯವಿದ್ದರೆ 200 ಮಿಗ್ರಾಂಗೆ ಎರಡು ವಿಂಗಡಿಸಲಾದ ಪ್ರಮಾಣದಲ್ಲಿ ಹೆಚ್ಚಿಸಿ (ಗರಿಷ್ಠ 400 ಮಿಗ್ರಾಂ ದೈನಂದಿನ). ಆಂಜಿನಾ: ದಿನಕ್ಕೆ 50 ಮಿಗ್ರಾಂ, ಅಗತ್ಯವಿದ್ದರೆ ದಿನಕ್ಕೆ 300 ಮಿಗ್ರಾಂ 2 ರಿಂದ 3 ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ.
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ಆರ್ಹೆತ್ಮಿಯಾ: ಪ್ರತಿ ನಿಮಿಷಕ್ಕೆ 1 ರಿಂದ 2 ಮಿಗ್ರಾಂ ದರದಲ್ಲಿ 5 ಮಿಗ್ರಾಂ ವರೆಗೆ, ಅಗತ್ಯವಿದ್ದರೆ 5 ನಿಮಿಷಗಳ ನಂತರ ಪುನರಾವರ್ತಿಸಿ (ಗರಿಷ್ಠ ಡೋಸ್ 10 ರಿಂದ 15 ಮಿಗ್ರಾಂ). ಅರಿತ್ಮಿಯಾವು ಅರಿವಳಿಕೆ ಸಮಯದಲ್ಲಿ ಬೆಳವಣಿಗೆಯಾಗುತ್ತದೆ: ಇಂಡಕ್ಷನ್ ಸಮಯದಲ್ಲಿ 2 ರಿಂದ 4 ಮಿಗ್ರಾಂ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.हृदय प्रणाली: यह हृदय गति को धीमा कर देता है और रक्तचाप को कम कर देता है। यह चालन को धीमा कर देता है और एक एंटीरैडमिक एजेंट के रूप में कार्य करता है (सुप्रावेंट्रिकुलर अतालता के लिए उपयोगी)। 
+2. श्वसन प्रणाली: यह अतिसंवेदनशील रोगी में ब्रोंकोस्पज़म का कारण बन सकता है
+<strong>उपलब्धता :</strong>
+गोलियाँ-10, 25, 50 और 100 मिलीग्राम।
+कैप्सूल-12.5, 25, 50 एवं 100 मिलीग्राम।
+इंजेक्शन-100 मिग्रा/2 मिली, 250 मिग्रा/2 मिली, 500 मिग्रा/2 मिली।
+<strong>मात्रा :</strong>
+मौखिक
+दिल की विफलता: प्रारंभिक खुराक दिन में एक बार 12.5 - 25 मिलीग्राम, अधिकतम खुराक: दिन में एक बार 200 मिलीग्राम, उच्च रक्तचाप: शुरू में प्रतिदिन 100 मिलीग्राम, यदि आवश्यक हो तो दो विभाजित खुराकों में 200 मिलीग्राम तक बढ़ाएं (अधिकतम 400 मिलीग्राम दैनिक)। एनजाइना: प्रतिदिन 50 मिलीग्राम, यदि आवश्यक हो तो 2 से 3 विभाजित खुराकों में प्रतिदिन 300 मिलीग्राम तक।
+अंतःशिरा इंजेक्शन
+अतालता: प्रति मिनट 1 से 2 मिलीग्राम की दर से 5 मिलीग्राम तक, यदि आवश्यक हो तो 5 मिनट के बाद दोहराया जाता है (अधिकतम खुराक 10 से 15 मिलीग्राम)। एनेस्थीसिया के दौरान एरिथिमिया का विकास: प्रेरण के दौरान 2 से 4 मिलीग्राम।
+`},
+{
+    title: "MAGNESIUM SULPHATE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Cardiovascular system: It slows down the heart rate and reduces blood pressure. It slows down conduction and acts as an antiarrhythmic agent (useful for ventricular tachycardia, particularly torsade de pointes). 
+2.Respiratory system: It is a bronchodilator.
+3.Central nervous system: It reduces nerve excitability and conduction
+4.Neuromuscular junction: It prolongs the effect of depolarizing and non-depolarising muscle relaxants.
+<strong>Availability :</strong>
+INJECTION-500 mg/ml.
+<strong>Dosage :</strong>
+Intravenous injection (concentration of magnesium sulphate should not exceed 20%)
+Prevention of seizure occurrence in eclampsia: initially 4g over 5 to 15 min, followed by infusion 1g/hr for at least 24 h after last seizure. If seizures recur, additional dose of 2g (or 4g if body weight is over 70 kg).
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಹೃದಯ ಬಡಿತವನ್ನು ನಿಧಾನಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ರಕ್ತದೊತ್ತಡವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಇದು ವಹನವನ್ನು ನಿಧಾನಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಆಂಟಿಅರಿಥಮಿಕ್ ಏಜೆಂಟ್ ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ (ವೆಂಟ್ರಿಕ್ಯುಲರ್ ಟಾಕಿಕಾರ್ಡಿಯಾಕ್ಕೆ ಉಪಯುಕ್ತವಾಗಿದೆ, ವಿಶೇಷವಾಗಿ ಟಾರ್ಸೇಡ್ ಡಿ ಪಾಯಿಂಟ್ಸ್). 
+2.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ಬ್ರಾಂಕೋಡಿಲೇಟರ್ ಆಗಿದೆ.
+3.ಕೇಂದ್ರ ನರಮಂಡಲ: ಇದು ನರಗಳ ಪ್ರಚೋದನೆ ಮತ್ತು ವಹನವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ
+4.ನರಸ್ನಾಯುಕ ಜಂಕ್ಷನ್: ಇದು ಡಿಪೋಲರೈಸಿಂಗ್ ಮತ್ತು ಡಿಪೋಲರೈಸಿಂಗ್ ಅಲ್ಲದ ಸ್ನಾಯು ಸಡಿಲಗೊಳಿಸುವ ಪರಿಣಾಮವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-500 ಮಿಗ್ರಾಂ / ಮಿಲಿ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್ (ಮೆಗ್ನೀಸಿಯಮ್ ಸಲ್ಫೇಟ್ನ ಸಾಂದ್ರತೆಯು 20% ಮೀರಬಾರದು)
+ಎಕ್ಲಾಂಪ್ಸಿಯಾದಲ್ಲಿ ರೋಗಗ್ರಸ್ತವಾಗುವಿಕೆ ಸಂಭವಿಸುವುದನ್ನು ತಡೆಗಟ್ಟುವುದು: ಆರಂಭದಲ್ಲಿ 5 ರಿಂದ 15 ನಿಮಿಷಗಳವರೆಗೆ 4g, ನಂತರ ಕೊನೆಯ ಸೆಳವಿನ ನಂತರ ಕನಿಷ್ಠ 24 ಗಂಟೆಗಳ ಕಾಲ 1g/hr ಕಷಾಯ. ರೋಗಗ್ರಸ್ತವಾಗುವಿಕೆಗಳು ಮರುಕಳಿಸಿದರೆ, ಹೆಚ್ಚುವರಿ ಡೋಸ್ 2 ಗ್ರಾಂ (ಅಥವಾ ದೇಹದ ತೂಕ 70 ಕೆಜಿಗಿಂತ ಹೆಚ್ಚಿದ್ದರೆ 4 ಗ್ರಾಂ).
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.हृदय प्रणाली: यह हृदय गति को धीमा कर देता है और रक्तचाप को कम कर देता है। यह चालन को धीमा कर देता है और एक एंटीरैडमिक एजेंट के रूप में कार्य करता है (वेंट्रिकुलर टैचीकार्डिया के लिए उपयोगी, विशेष रूप से टॉर्सेड डी पॉइंट)। 
+2.श्वसन तंत्र: यह ब्रोंकोडाईलेटर है।
+3.केंद्रीय तंत्रिका तंत्र: यह तंत्रिका उत्तेजना और संचालन को कम करता है
+4.न्यूरोमस्कुलर जंक्शन: यह डीपोलराइजिंग और नॉन-डीपोलाइजिंग मांसपेशी रिलैक्सेंट के प्रभाव को बढ़ाता है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-500 मिलीग्राम/मिली.
+<strong>मात्रा :</strong>
+अंतःशिरा इंजेक्शन (मैग्नीशियम सल्फेट की सांद्रता 20% से अधिक नहीं होनी चाहिए)
+एक्लम्पसिया में दौरे की रोकथाम: शुरुआत में 5 से 15 मिनट तक 4 ग्राम, उसके बाद आखिरी दौरे के बाद कम से कम 24 घंटे तक 1 ग्राम/घंटा। यदि दौरे दोबारा आते हैं, तो 2 ग्राम की अतिरिक्त खुराक (या यदि शरीर का वजन 70 किलोग्राम से अधिक है तो 4 ग्राम)।
+`},
+{
+title: "MANNITOL",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Raised intracranial pressure, as after head injury, neurosurgery
+2.Patients with brain tumours
+3.To protect kidneys after mismatched blood transfusion
+4.Prophylaxis of hepatorenal syndrome
+5.Forced diuresis.
+<strong>Availability :</strong>
+INFUSION-5, 10 and 20%.
+<strong>Dosage :</strong>
+Test dose (if patient is oliguric or if renal function is inadequate), By intravenous infusion as a 20% solution infused over 3–5 minutes, Adult and Child- 200 mg/kg, repeat test dose if urine output is less than 30–50 ml/h, if response is inadequate after a second test dose, re-evaluate the patient.
+Raised intracranial or intraocular pressure: By i.v infusion as a 20% solution infused over 30–60 minutes, Adult- 0.25–2g/kg, Child- 0.5–1.5g/kg.
+Cerebral oedema: By i.v infusion as a 20% solution infused rapidly, Adult and Child- 1g/kg.
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ತಲೆ ಗಾಯ, ನರಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ನಂತರ ಇಂಟ್ರಾಕ್ರೇನಿಯಲ್ ಒತ್ತಡವನ್ನು ಹೆಚ್ಚಿಸಲಾಗಿದೆ
+2.ಮೆದುಳಿನ ಗೆಡ್ಡೆ ಹೊಂದಿರುವ ರೋಗಿಗಳು
+3. ಹೊಂದಿಕೆಯಾಗದ ರಕ್ತ ವರ್ಗಾವಣೆಯ ನಂತರ ಮೂತ್ರಪಿಂಡಗಳನ್ನು ರಕ್ಷಿಸಲು
+4.ಹೆಪಟೋರೆನಲ್ ಸಿಂಡ್ರೋಮ್ನ ರೋಗನಿರೋಧಕ
+5. ಬಲವಂತದ ಮೂತ್ರವರ್ಧಕ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇನ್ಫ್ಯೂಷನ್- 5, 10 ಮತ್ತು 20%.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಪರೀಕ್ಷಾ ಡೋಸ್ (ರೋಗಿಯು ಒಲಿಗುರಿಕ್ ಆಗಿದ್ದರೆ ಅಥವಾ ಮೂತ್ರಪಿಂಡದ ಕಾರ್ಯವು ಅಸಮರ್ಪಕವಾಗಿದ್ದರೆ), 3-5 ನಿಮಿಷಗಳ ಕಾಲ 20% ದ್ರಾವಣವನ್ನು ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್ ಮೂಲಕ, ವಯಸ್ಕರು ಮತ್ತು ಮಕ್ಕಳು - 200 ಮಿಗ್ರಾಂ / ಕೆಜಿ, ಮೂತ್ರದ ಉತ್ಪಾದನೆಯು 30-ಕ್ಕಿಂತ ಕಡಿಮೆಯಿದ್ದರೆ ಪರೀಕ್ಷಾ ಪ್ರಮಾಣವನ್ನು ಪುನರಾವರ್ತಿಸಿ. 50 ಮಿಲಿ / ಗಂ, ಎರಡನೇ ಪರೀಕ್ಷಾ ಡೋಸ್ ನಂತರ ಪ್ರತಿಕ್ರಿಯೆ ಅಸಮರ್ಪಕವಾಗಿದ್ದರೆ, ರೋಗಿಯನ್ನು ಮರು-ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ.
+ಹೆಚ್ಚಿದ ಇಂಟ್ರಾಕ್ರೇನಿಯಲ್ ಅಥವಾ ಇಂಟ್ರಾಕ್ಯುಲರ್ ಒತ್ತಡ: 30-60 ನಿಮಿಷಗಳಲ್ಲಿ 20% ದ್ರಾವಣವಾಗಿ i.v ಇನ್ಫ್ಯೂಷನ್ ಮೂಲಕ, ವಯಸ್ಕ- 0.25-2g/kg, ಮಗು- 0.5-1.5g/kg.
+ಸೆರೆಬ್ರಲ್ ಎಡಿಮಾ: ಐವಿ ಇನ್ಫ್ಯೂಷನ್ ಮೂಲಕ 20% ದ್ರಾವಣವನ್ನು ತ್ವರಿತವಾಗಿ ತುಂಬಿಸಲಾಗುತ್ತದೆ, ವಯಸ್ಕರು ಮತ್ತು ಮಕ್ಕಳು - 1 ಗ್ರಾಂ / ಕೆಜಿ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. बढ़ा हुआ इंट्राक्रैनील दबाव, जैसे सिर की चोट, न्यूरोसर्जरी के बाद
+2.ब्रेन ट्यूमर वाले मरीज़
+3.बेमेल रक्त आधान के बाद गुर्दे की रक्षा के लिए
+4.हेपेटोरेनल सिंड्रोम की रोकथाम
+5.जबरदस्ती मूत्राधिक्य।
+<strong>उपलब्धता :</strong>
+इन्फ्यूजन-5, 10 और 20%।
+<strong>मात्रा :</strong>
+परीक्षण खुराक (यदि रोगी ओलिगुरिक है या यदि गुर्दे का कार्य अपर्याप्त है), 3-5 मिनट में 20% घोल के रूप में अंतःशिरा जलसेक द्वारा, वयस्क और बच्चे- 200 मिलीग्राम/किग्रा, यदि मूत्र उत्पादन 30- से कम है तो परीक्षण खुराक दोहराएं। 50 मिली/घंटा, यदि दूसरी परीक्षण खुराक के बाद प्रतिक्रिया अपर्याप्त है, तो रोगी का पुनर्मूल्यांकन करें।
+बढ़ा हुआ इंट्राक्रैनियल या इंट्राओकुलर दबाव: 30-60 मिनट में 20% घोल के रूप में आई.वी. जलसेक द्वारा, वयस्क- 0.25-2 ग्राम/किग्रा, बच्चे- 0.5-1.5 ग्राम/किग्रा।
+सेरेब्रल एडिमा: आई.वी. इन्फ्यूजन द्वारा 20% घोल के रूप में तेजी से डाला जाता है, वयस्क और बच्चे - 1 ग्राम/किग्रा।
+`},
+{
+    title: "METOCLOPRAMIDE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.It inhibits the dopamine (D2) and 5-HT3 receptors in the chemoreceptor trigger zone of the medulla and by decreasing afferent activity from viscera to vomiting centre
+2.Central nervous system: Normally it has no effect on the central nervous system except for the anti-emetic effect. Occasionally, it can cause extrapyramidal reactions and even cause oculogyric crisis. This can be treated with promethazine (phenergan) which in itself is an antiemetic. Promethazine acts through histamine (H1) and muscarinic (M3) receptors and the dose is 0.25 mg/kg slow IV.
+<strong>Availability :</strong>
+INJECTION-1 ml ampoule (5 mg/ml), 5 and 10ml vial (1 mg/ml).
+<strong>Dosage :</strong>
+Slow intravenous injection
+Adult- Conscious sedation: approximately 2 mg/min, 5 to 10 min before procedure,
+initially 2 to 2.5 mg. Usual total dose 3.5 to 5 mg (Max. 7.5 mg).
+Elderly- 0.5 to 1.0 mg. Increase if necessary in steps of 1 mg.
+Intravenous injection (Over 2 to 3 min)
+Child- 6 months to 7 years: initially 50 to 100 µg/kg, increase if necessary in steps (max. total dose 6.0 mg). 6 to 12 years: initially 25 to 50 µg/kg increase in steps if necessary (max. total dose 10 mg).
+Intramuscular injection
+Adult- Sedation in combined anaesthesia:
+30 to 100 µg/kg repeated as required by continuous intravenous infusion 30 to 100 µg/ kg/h (lower doses in elderly). Premedication: 70 to 100 µg/kg.
+1 to 15 years: 50 to 150 µg/kg (max.1 mg).
+Elderly and debilitated- 25 to 50 µg/kg. (20 to 60 min induction).
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಇದು ಮೆಡುಲ್ಲಾದ ಕೆಮೊರೆಸೆಪ್ಟರ್ ಟ್ರಿಗ್ಗರ್ ವಲಯದಲ್ಲಿ ಡೋಪಮೈನ್ (D2) ಮತ್ತು 5-HT3 ಗ್ರಾಹಕಗಳನ್ನು ಪ್ರತಿಬಂಧಿಸುತ್ತದೆ ಮತ್ತು ಒಳಾಂಗಗಳಿಂದ ವಾಂತಿ ಕೇಂದ್ರಕ್ಕೆ ಅಫೆರೆಂಟ್ ಚಟುವಟಿಕೆಯನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ
+2.ಕೇಂದ್ರ ನರಮಂಡಲ: ಸಾಮಾನ್ಯವಾಗಿ ಇದು ವಾಂತಿ-ನಿರೋಧಕ ಪರಿಣಾಮವನ್ನು ಹೊರತುಪಡಿಸಿ ಕೇಂದ್ರ ನರಮಂಡಲದ ಮೇಲೆ ಯಾವುದೇ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ. ಸಾಂದರ್ಭಿಕವಾಗಿ, ಇದು ಎಕ್ಸ್ಟ್ರಾಪಿರಮಿಡಲ್ ಪ್ರತಿಕ್ರಿಯೆಗಳಿಗೆ ಕಾರಣವಾಗಬಹುದು ಮತ್ತು ಆಕ್ಯುಲೋಜಿರಿಕ್ ಬಿಕ್ಕಟ್ಟನ್ನು ಸಹ ಉಂಟುಮಾಡಬಹುದು. ಇದನ್ನು ಪ್ರೋಮೆಥಾಜಿನ್ (ಫೆನರ್ಗಾನ್) ನೊಂದಿಗೆ ಚಿಕಿತ್ಸೆ ನೀಡಬಹುದು, ಅದು ಸ್ವತಃ ಆಂಟಿಮೆಟಿಕ್ ಆಗಿದೆ. ಪ್ರೋಮೆಥಾಜಿನ್ ಹಿಸ್ಟಮೈನ್ (H1) ಮತ್ತು ಮಸ್ಕರಿನಿಕ್ (M3) ಗ್ರಾಹಕಗಳ ಮೂಲಕ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ ಮತ್ತು ಡೋಸ್ 0.25 mg/kg ನಿಧಾನ IV ಆಗಿದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-1 ಮಿಲಿ ಆಂಪೋಲ್ (5 ಮಿಗ್ರಾಂ/ಮಿಲಿ), 5 ಮತ್ತು 10 ಮಿಲಿ ಸೀಸೆ (1 ಮಿಗ್ರಾಂ/ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ನಿಧಾನವಾದ ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು-ಪ್ರಜ್ಞಾಪೂರ್ವಕ ನಿದ್ರಾಜನಕ: ಸರಿಸುಮಾರು 2 ಮಿಗ್ರಾಂ / ನಿಮಿಷ, ಕಾರ್ಯವಿಧಾನಕ್ಕೆ 5 ರಿಂದ 10 ನಿಮಿಷಗಳ ಮೊದಲು,
+ಆರಂಭದಲ್ಲಿ 2 ರಿಂದ 2.5 ಮಿಗ್ರಾಂ. ಸಾಮಾನ್ಯ ಒಟ್ಟು ಡೋಸ್ 3.5 ರಿಂದ 5 ಮಿಗ್ರಾಂ (ಗರಿಷ್ಠ 7.5 ಮಿಗ್ರಾಂ).
+ವಯಸ್ಸಾದವರು - 0.5 ರಿಂದ 1.0 ಮಿಗ್ರಾಂ. ಅಗತ್ಯವಿದ್ದರೆ 1 ಮಿಗ್ರಾಂ ಹಂತಗಳಲ್ಲಿ ಹೆಚ್ಚಿಸಿ.
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್ (2 ರಿಂದ 3 ನಿಮಿಷಗಳಿಗಿಂತ ಹೆಚ್ಚು)
+ಮಗು- 6 ತಿಂಗಳಿಂದ 7 ವರ್ಷಗಳವರೆಗೆ: ಆರಂಭದಲ್ಲಿ 50 ರಿಂದ 100 μg/kg, ಅಗತ್ಯವಿದ್ದರೆ ಹಂತಗಳಲ್ಲಿ ಹೆಚ್ಚಿಸಿ (ಗರಿಷ್ಠ. ಒಟ್ಟು ಡೋಸ್ 6.0 mg). 6 ರಿಂದ 12 ವರ್ಷಗಳು: ಆರಂಭದಲ್ಲಿ 25 ರಿಂದ 50 μg/ಕೆಜಿ ಅಗತ್ಯವಿದ್ದಲ್ಲಿ ಹಂತಗಳಲ್ಲಿ ಹೆಚ್ಚಳ (ಗರಿಷ್ಠ. ಒಟ್ಟು ಡೋಸ್ 10 ಮಿಗ್ರಾಂ).
+ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು- ಸಂಯೋಜಿತ ಅರಿವಳಿಕೆಯಲ್ಲಿ ನಿದ್ರಾಜನಕ:
+30 ರಿಂದ 100 µg/kg ವರೆಗೆ ನಿರಂತರ ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್ ಮೂಲಕ ಪುನರಾವರ್ತನೆಯಾಗುತ್ತದೆ 30 ರಿಂದ 100 µg/ kg/h (ವಯಸ್ಸಾದವರಲ್ಲಿ ಕಡಿಮೆ ಪ್ರಮಾಣದಲ್ಲಿ). ಪೂರ್ವಭಾವಿ ಚಿಕಿತ್ಸೆ: 70 ರಿಂದ 100 μg/kg.
+1 ರಿಂದ 15 ವರ್ಷಗಳು: 50 ರಿಂದ 150 µg/kg (ಗರಿಷ್ಠ.1 mg).
+ವಯಸ್ಸಾದವರು ಮತ್ತು ದುರ್ಬಲಗೊಂಡವರು- 25 ರಿಂದ 50 μg/kg. (20 ರಿಂದ 60 ನಿಮಿಷಗಳ ಇಂಡಕ್ಷನ್).
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.यह मज्जा के केमोरिसेप्टर ट्रिगर जोन में डोपामाइन (डी2) और 5-एचटी3 रिसेप्टर्स को रोकता है और आंत से उल्टी केंद्र तक अभिवाही गतिविधि को कम करता है।
+2.केंद्रीय तंत्रिका तंत्र: आम तौर पर इसका केंद्रीय तंत्रिका तंत्र पर वमनरोधी प्रभाव के अलावा कोई प्रभाव नहीं पड़ता है। कभी-कभी, यह एक्स्ट्रामाइराइडल प्रतिक्रियाएं पैदा कर सकता है और यहां तक ​​कि नेत्र संबंधी संकट भी पैदा कर सकता है। इसका इलाज प्रोमेथाज़िन (फेनर्गन) से किया जा सकता है जो स्वयं एक वमनरोधी है। प्रोमेथाज़िन हिस्टामाइन (H1) और मस्कैरेनिक (M3) रिसेप्टर्स के माध्यम से कार्य करता है और खुराक 0.25 मिलीग्राम/किग्रा धीमी IV है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-1 मिली एम्पौल (5 मिग्रा/मिली), 5 और 10 मिली शीशी (1 मिग्रा/मिली)।
+<strong>मात्रा :</strong>
+धीमा अंतःशिरा इंजेक्शन
+वयस्क- सचेतन बेहोशी: लगभग 2 मिलीग्राम/मिनट, प्रक्रिया से 5 से 10 मिनट पहले,
+शुरुआत में 2 से 2.5 मि.ग्रा. सामान्य कुल खुराक 3.5 से 5 मिलीग्राम (अधिकतम 7.5 मिलीग्राम)।
+बुजुर्ग- 0.5 से 1.0 मिलीग्राम। यदि आवश्यक हो तो 1 मिलीग्राम के चरणों में बढ़ाएँ।
+अंतःशिरा इंजेक्शन (2 से 3 मिनट से अधिक)
+बच्चा- 6 महीने से 7 साल: शुरू में 50 से 100 माइक्रोग्राम/किग्रा, यदि आवश्यक हो तो चरणों में वृद्धि करें (अधिकतम कुल खुराक 6.0 मिलीग्राम)। 6 से 12 वर्ष: यदि आवश्यक हो तो प्रारंभ में चरणों में 25 से 50 माइक्रोग्राम/किलोग्राम की वृद्धि (अधिकतम कुल खुराक 10 मिलीग्राम)।
+इंट्रामस्क्युलर इंजेक्शन
+वयस्क- संयुक्त संज्ञाहरण में बेहोश करने की क्रिया:
+निरंतर अंतःशिरा जलसेक द्वारा आवश्यकतानुसार 30 से 100 माइक्रोग्राम/किलोग्राम दोहराया जाता है 30 से 100 माइक्रोग्राम/किग्रा/घंटा (बुजुर्गों में कम खुराक)। प्रीमेडिकेशन: 70 से 100 माइक्रोग्राम/किग्रा।
+1 से 15 वर्ष: 50 से 150 माइक्रोग्राम/किग्रा (अधिकतम 1 मिलीग्राम)।
+बुजुर्ग और दुर्बल - 25 से 50 माइक्रोग्राम प्रति किग्रा। (20 से 60 मिनट इंडक्शन)।
+`
+},
+{
+title: "NEOSTIGMINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+Neostigmine can cause bradycardia, increased secretions and increased gastrointestinal peristalsis through its muscarinic effects. An anticholinergic agent must always 
+be given along with it. It does not cause histamine release. It does not cross placental barrier.
+<strong>Availability :</strong>
+TABLET-15 mg.
+INJECTION-0.5 mg/ml.
+<strong>Dosage :</strong>
+Oral
+Adult- 15 mg every 3 to 4 hrs. Total daily dose 75 to 300 mg in divided doses.
+Child- 2 mg/kg daily in divided doses every 3 to 4 hrs. Total daily dose 15 to 90 mg.
+Neonate- 1 to 5 mg every 4 hour.
+Intramuscular
+Adult- 0.02 mg/kg as a single dose.
+Child- 0.04 mg/kg as a single dose.
+Intravenous
+Adult- 0.5 to 2.5 mg to a total daily dose of 5-20 mg.
+Child- 200 to 500 µg as single daily dose.
+Neonate- 50 to 250 µg every 4 hour.
+`,
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ನಿಯೋಸ್ಟಿಗ್ಮೈನ್ ತನ್ನ ಮಸ್ಕರಿನಿಕ್ ಪರಿಣಾಮಗಳ ಮೂಲಕ ಬ್ರಾಡಿಕಾರ್ಡಿಯಾ, ಹೆಚ್ಚಿದ ಸ್ರವಿಸುವಿಕೆ ಮತ್ತು ಜಠರಗರುಳಿನ ಪೆರಿಸ್ಟಲ್ಸಿಸ್ ಅನ್ನು ಹೆಚ್ಚಿಸಬಹುದು. ಆಂಟಿಕೋಲಿನರ್ಜಿಕ್ ಏಜೆಂಟ್ ಯಾವಾಗಲೂ ಇರಬೇಕು 
+ಅದರೊಂದಿಗೆ ನೀಡಲಾಗುವುದು. ಇದು ಹಿಸ್ಟಮೈನ್ ಬಿಡುಗಡೆಗೆ ಕಾರಣವಾಗುವುದಿಲ್ಲ. ಇದು ಜರಾಯು ತಡೆಗೋಡೆ ದಾಟುವುದಿಲ್ಲ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಟ್ಯಾಬ್ಲೆಟ್-15 ಮಿಗ್ರಾಂ.
+ಇಂಜೆಕ್ಷನ್-0.5 ಮಿಗ್ರಾಂ/ಮಿಲಿ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ವಯಸ್ಕರು - ಪ್ರತಿ 3 ರಿಂದ 4 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ 15 ಮಿಗ್ರಾಂ. ಒಟ್ಟು ದೈನಂದಿನ ಡೋಸ್ 75 ರಿಂದ 300 ಮಿಗ್ರಾಂ ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ.
+ಮಗು - ಪ್ರತಿ 3 ರಿಂದ 4 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ ವಿಂಗಡಿಸಲಾದ ಪ್ರಮಾಣದಲ್ಲಿ ದಿನಕ್ಕೆ 2 ಮಿಗ್ರಾಂ / ಕೆಜಿ. ಒಟ್ಟು ದೈನಂದಿನ ಡೋಸ್ 15 ರಿಂದ 90 ಮಿಗ್ರಾಂ.
+ನವಜಾತ ಶಿಶುಗಳು - ಪ್ರತಿ 4 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ 1 ರಿಂದ 5 ಮಿಗ್ರಾಂ.
+ಇಂಟ್ರಾಮಸ್ಕುಲರ್
+ವಯಸ್ಕ - 0.02 ಮಿಗ್ರಾಂ / ಕೆಜಿ ಒಂದೇ ಡೋಸ್ ಆಗಿ.
+ಮಗು- 0.04 ಮಿಗ್ರಾಂ/ಕೆಜಿ ಒಂದೇ ಡೋಸ್ ಆಗಿ.
+ಇಂಟ್ರಾವೆನಸ್
+ವಯಸ್ಕ - 0.5 ರಿಂದ 2.5 ಮಿಗ್ರಾಂ ವರೆಗೆ ಒಟ್ಟು ದೈನಂದಿನ ಡೋಸ್ 5-20 ಮಿಗ್ರಾಂ.
+ಮಗು - 200 ರಿಂದ 500 μg ಒಂದು ದೈನಂದಿನ ಡೋಸ್.
+ನವಜಾತ ಶಿಶುಗಳು - ಪ್ರತಿ 4 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ 50 ರಿಂದ 250 μg.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+नियोस्टिग्माइन अपने मस्कैरेनिक प्रभाव के माध्यम से मंदनाड़ी, स्राव में वृद्धि और गैस्ट्रोइंटेस्टाइनल पेरिस्टलसिस में वृद्धि का कारण बन सकता है। एक एंटीकोलिनर्जिक एजेंट हमेशा होना चाहिए 
+इसके साथ दिया जाए. इससे हिस्टामाइन रिलीज नहीं होता है। यह प्लेसेंटल बाधा को पार नहीं करता है।
+<strong>उपलब्धता :</strong>
+टेबलेट-15 मि.ग्रा.
+इंजेक्शन-0.5 मिलीग्राम/मिली.
+<strong>मात्रा :</strong>
+मौखिक
+वयस्क- हर 3 से 4 घंटे में 15 मिलीग्राम। विभाजित खुराकों में कुल दैनिक खुराक 75 से 300 मिलीग्राम।
+बच्चा- प्रतिदिन 2 मिलीग्राम/किग्रा, हर 3 से 4 घंटे में विभाजित खुराक में। कुल दैनिक खुराक 15 से 90 मिलीग्राम।
+नवजात- हर 4 घंटे में 1 से 5 मिलीग्राम।
+इंट्रामस्क्युलर
+वयस्क- एकल खुराक के रूप में 0.02 मिलीग्राम/किग्रा।
+बच्चे- एकल खुराक के रूप में 0.04 मिलीग्राम/किग्रा।
+नसों में
+वयस्क- 0.5 से 2.5 मिलीग्राम और कुल दैनिक खुराक 5-20 मिलीग्राम।
+बच्चे- एकल दैनिक खुराक के रूप में 200 से 500 माइक्रोग्राम।
+नवजात- हर 4 घंटे में 50 से 250 माइक्रोग्राम।
+`
+},
+{
+    title: "NALOXONE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Cardiovascular system: Naloxone should be carefully administered to patients with respiratory depression. In the presence of hypercarbia, naloxone can cause tachycardia, hypertension and arrhythmias. The patient must be manually ventilated to treat hypercarbia and naloxone administered slowly. 
+2.Respiratory system: Naloxone effectively reverses respiratory depression due to opioids. However, it should be remembered that the duration of action of naloxone is one hour whereas the opioid may be of longer duration of action. Hence, resedation and recurrence of respiratory depression is possible when the effect of naloxone wears off. 
+Central nervous system: The administration of naloxone is accompanied by reversal of analgesia. Hence, the patient can become restless and agitated due to perception of pain.
+<strong>Availability :</strong>
+INJECTION-0.4 mg/ml.
+<strong>Dosage :</strong>
+Intravenous injection
+Subcutaneous or intramuscular route (if i.v. route is not feasible but the dose is same, can be given oral as well).
+Adult- Opioid poisoning: Start with 0.4 to 2 mg (at all ages) as intravenous bolus, Repeat every 2 minutes if no response to a total of 10 mg. Once response occurs start infusion of naloxone at 2/3rd the total loading dose given every hour with continous monitoring for reccurence of respiratory depression. May require additional bolus during infusion.
+Child- Opioid poisoning: 10 µg/kg, followed by 100 µg/kg if there is no response.
+`,
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಉಸಿರಾಟದ ಖಿನ್ನತೆಯ ರೋಗಿಗಳಿಗೆ ನಲೋಕ್ಸೋನ್ ಅನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ನಿರ್ವಹಿಸಬೇಕು. ಹೈಪರ್ಕಾರ್ಬಿಯಾ ಉಪಸ್ಥಿತಿಯಲ್ಲಿ, ನಲೋಕ್ಸೋನ್ ಟಾಕಿಕಾರ್ಡಿಯಾ, ಅಧಿಕ ರಕ್ತದೊತ್ತಡ ಮತ್ತು ಆರ್ಹೆತ್ಮಿಯಾಗಳಿಗೆ ಕಾರಣವಾಗಬಹುದು. ಹೈಪರ್ ಕಾರ್ಬಿಯಾ ಚಿಕಿತ್ಸೆಗಾಗಿ ರೋಗಿಯನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ಗಾಳಿ ಮಾಡಬೇಕು ಮತ್ತು ನಲೋಕ್ಸೋನ್ ಅನ್ನು ನಿಧಾನವಾಗಿ ನಿರ್ವಹಿಸಬೇಕು. 
+2.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಒಪಿಯಾಡ್‌ಗಳ ಕಾರಣದಿಂದಾಗಿ ನಲೋಕ್ಸೋನ್ ಉಸಿರಾಟದ ಖಿನ್ನತೆಯನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಹಿಮ್ಮೆಟ್ಟಿಸುತ್ತದೆ. ಆದಾಗ್ಯೂ, ನಲೋಕ್ಸೋನ್‌ನ ಕ್ರಿಯೆಯ ಅವಧಿಯು ಒಂದು ಗಂಟೆಯಾಗಿರುತ್ತದೆ ಎಂದು ನೆನಪಿನಲ್ಲಿಡಬೇಕು ಆದರೆ ಒಪಿಯಾಡ್ ದೀರ್ಘಾವಧಿಯ ಕ್ರಿಯೆಯನ್ನು ಹೊಂದಿರಬಹುದು. ಆದ್ದರಿಂದ, ನಲೋಕ್ಸೋನ್‌ನ ಪರಿಣಾಮವು ಕಡಿಮೆಯಾದಾಗ ಉಸಿರಾಟದ ಖಿನ್ನತೆಯ ಮರುಕಳಿಸುವಿಕೆ ಮತ್ತು ಮರುಕಳಿಸುವಿಕೆಯು ಸಾಧ್ಯ. 
+ಕೇಂದ್ರ ನರಮಂಡಲದ ವ್ಯವಸ್ಥೆ: ನಲೋಕ್ಸೋನ್ನ ಆಡಳಿತವು ನೋವು ನಿವಾರಕವನ್ನು ಹಿಮ್ಮುಖಗೊಳಿಸುವುದರೊಂದಿಗೆ ಇರುತ್ತದೆ. ಆದ್ದರಿಂದ, ನೋವಿನ ಗ್ರಹಿಕೆಯಿಂದಾಗಿ ರೋಗಿಯು ಪ್ರಕ್ಷುಬ್ಧ ಮತ್ತು ಉದ್ರೇಕಗೊಳ್ಳಬಹುದು.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-0.4 ಮಿಗ್ರಾಂ/ಮಿಲಿ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ಸಬ್ಕ್ಯುಟೇನಿಯಸ್ ಅಥವಾ ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಮಾರ್ಗ (ಐವಿ ಮಾರ್ಗವು ಕಾರ್ಯಸಾಧ್ಯವಾಗದಿದ್ದರೆ ಆದರೆ ಡೋಸ್ ಒಂದೇ ಆಗಿದ್ದರೆ, ಮೌಖಿಕವಾಗಿಯೂ ನೀಡಬಹುದು).
+ವಯಸ್ಕರು- ಒಪಿಯಾಡ್ ವಿಷ: 0.4 ರಿಂದ 2 ಮಿಗ್ರಾಂ (ಎಲ್ಲಾ ವಯಸ್ಸಿನಲ್ಲೂ) ಇಂಟ್ರಾವೆನಸ್ ಬೋಲಸ್‌ನೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸಿ, ಒಟ್ಟು 10 ಮಿಗ್ರಾಂಗೆ ಯಾವುದೇ ಪ್ರತಿಕ್ರಿಯೆಯಿಲ್ಲದಿದ್ದರೆ ಪ್ರತಿ 2 ನಿಮಿಷಗಳಿಗೊಮ್ಮೆ ಪುನರಾವರ್ತಿಸಿ. ಒಮ್ಮೆ ಪ್ರತಿಕ್ರಿಯೆ ಸಂಭವಿಸಿದಲ್ಲಿ, ಉಸಿರಾಟದ ಖಿನ್ನತೆಯ ಪುನರಾವರ್ತನೆಗಾಗಿ ನಿರಂತರ ಮೇಲ್ವಿಚಾರಣೆಯೊಂದಿಗೆ ಪ್ರತಿ ಗಂಟೆಗೆ ನೀಡಲಾದ ಒಟ್ಟು ಲೋಡಿಂಗ್ ಡೋಸ್‌ನ 2/3 ರಷ್ಟು ನಲೋಕ್ಸೋನ್ ಕಷಾಯವನ್ನು ಪ್ರಾರಂಭಿಸಿ. ಇನ್ಫ್ಯೂಷನ್ ಸಮಯದಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಬೋಲಸ್ ಬೇಕಾಗಬಹುದು.
+ಮಗು- ಒಪಿಯಾಡ್ ವಿಷ: 10 µg/kg, ನಂತರ 100 µg/kg ಯಾವುದೇ ಪ್ರತಿಕ್ರಿಯೆ ಇಲ್ಲದಿದ್ದರೆ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.हृदय प्रणाली: श्वसन अवसाद वाले रोगियों को नालोक्सोन सावधानी से दिया जाना चाहिए। हाइपरकार्बिया की उपस्थिति में, नालोक्सोन टैचीकार्डिया, उच्च रक्तचाप और अतालता का कारण बन सकता है। हाइपरकार्बिया के इलाज के लिए रोगी को मैन्युअल रूप से हवादार किया जाना चाहिए और नालोक्सोन को धीरे-धीरे प्रशासित किया जाना चाहिए। 
+2. श्वसन प्रणाली: नालोक्सोन ओपिओइड के कारण श्वसन अवसाद को प्रभावी ढंग से उलट देता है। हालाँकि, यह याद रखना चाहिए कि नालोक्सोन की कार्रवाई की अवधि एक घंटा है जबकि ओपिओइड की कार्रवाई की अवधि लंबी हो सकती है। इसलिए, जब नालोक्सोन का प्रभाव कम हो जाता है तो श्वसन अवसाद की पुनरावृत्ति और पुनरावृत्ति संभव है। 
+केंद्रीय तंत्रिका तंत्र: नालोक्सोन का प्रशासन एनाल्जेसिया के उलट के साथ होता है। इसलिए, दर्द की अनुभूति के कारण रोगी बेचैन और उत्तेजित हो सकता है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-0.4 मिलीग्राम/मिली.
+<strong>मात्रा :</strong>
+अंतःशिरा इंजेक्शन
+चमड़े के नीचे या इंट्रामस्क्युलर मार्ग (यदि IV मार्ग संभव नहीं है लेकिन खुराक समान है, तो मौखिक रूप से भी दिया जा सकता है)।
+वयस्क- ओपिओइड विषाक्तता: अंतःशिरा बोलस के रूप में 0.4 से 2 मिलीग्राम (सभी उम्र में) से शुरू करें, यदि कुल 10 मिलीग्राम पर कोई प्रतिक्रिया नहीं होती है तो हर 2 मिनट में दोहराएं। एक बार प्रतिक्रिया होने पर श्वसन अवसाद की पुनरावृत्ति के लिए निरंतर निगरानी के साथ हर घंटे दी जाने वाली कुल लोडिंग खुराक का 2/3 नालोक्सोन डालना शुरू करें। जलसेक के दौरान अतिरिक्त बोलस की आवश्यकता हो सकती है।
+बच्चा- ओपिओइड विषाक्तता: 10 माइक्रोग्राम/किग्रा, इसके बाद कोई प्रतिक्रिया न होने पर 100 माइक्रोग्राम/किग्रा।
+`},
+{
+title: "NORADRENALINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+Norepinephrine (Noradrenaline) Norepinephrine, also known as noradrenaline, is both a neurotransmitter and a hormone. It plays an important role in your body's “fight-or-flight” response. As a medication, norepinephrine is used to increase and maintain blood pressure in limited, short-term serious health situations.
+<strong>Availability :</strong>
+INJECTIONS-Vials (4 mg/ml, 4 mg/2 ml and 2 mg/2 ml)
+<strong>Dosage :</strong>
+Parenteral
+Intravenous
+Acute hypotension
+Adult: 8-12 µg/minute, up to 8-30 µg/minute in refractory shock. Infused using a solution of 4 µg/ml in glucose 5%, or sodium chloride 0.9% and glucose 5% at a rate of 2-3 ml/ minute. Adjust according to blood pressure response. Average maintenance dose: 0.5-1 ml/minute (2-4 µg/minute). Infuse via a central venous catheter or into a large vein. Child: Administer at a rate of 2 µg/minute. Alternatively, 2 µg/m2/minute. Adjust rate according to BP response and perfusion.
+Elderly: Initial dose should be at low end of dose range.
+Upper gastrointestinal haemorrhage
+Adult: 8 mg in 250 ml of 0.9% sodium chloride injection via intraperitoneal route Alternatively, instill 8 mg in 100 ml of 0.9% sodiumchloridesolutionthroughanasogastric tube every hr for 6–8 hrs, then every 2 hrs for 4–6 hrs. Withdraw drug gradually.
+Reconstitution
+Dilute with 5% glucose injection, with or without sodium chloride, dilution with sodium chloride injection alone is not recommended.
+`,
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ನೊರ್ಪೈನ್ಫ್ರಿನ್ (ನೊರಾಡ್ರಿನಾಲಿನ್) ನೊರ್ಪೈನ್ಫ್ರಿನ್, ನೊರಾಡ್ರಿನಾಲಿನ್ ಎಂದೂ ಕರೆಯಲ್ಪಡುತ್ತದೆ, ಇದು ನರಪ್ರೇಕ್ಷಕ ಮತ್ತು ಹಾರ್ಮೋನ್ ಆಗಿದೆ. ಇದು ನಿಮ್ಮ ದೇಹದ "ಹೋರಾಟ-ಅಥವಾ-ಹಾರಾಟ" ಪ್ರತಿಕ್ರಿಯೆಯಲ್ಲಿ ಪ್ರಮುಖ ಪಾತ್ರ ವಹಿಸುತ್ತದೆ. ಔಷಧಿಯಾಗಿ, ಸೀಮಿತ, ಅಲ್ಪಾವಧಿಯ ಗಂಭೀರ ಆರೋಗ್ಯ ಸಂದರ್ಭಗಳಲ್ಲಿ ರಕ್ತದೊತ್ತಡವನ್ನು ಹೆಚ್ಚಿಸಲು ಮತ್ತು ನಿರ್ವಹಿಸಲು ನೊರ್ಪೈನ್ಫ್ರಿನ್ ಅನ್ನು ಬಳಸಲಾಗುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಚುಚ್ಚುಮದ್ದು-ಬಾಟಲುಗಳು (4 mg/ml, 4 mg/2 ml ಮತ್ತು 2 mg/2 ml)
+<strong>ಪ್ರಮಾಣ :</strong>
+ಪೇರೆಂಟೆರಲ್
+ಇಂಟ್ರಾವೆನಸ್
+ತೀವ್ರವಾದ ಹೈಪೊಟೆನ್ಷನ್
+ವಯಸ್ಕ: 8-12 µg/ನಿಮಿಷ, 8-30 µg/ನಿಮಿಷದವರೆಗೆ ವಕ್ರೀಕಾರಕ ಆಘಾತದಲ್ಲಿ. ಗ್ಲುಕೋಸ್ 5%, ಅಥವಾ ಸೋಡಿಯಂ ಕ್ಲೋರೈಡ್ 0.9% ಮತ್ತು ಗ್ಲುಕೋಸ್ 5% 2-3 ಮಿಲಿ/ನಿಮಿಷದ ದರದಲ್ಲಿ 4 µg/ml ದ್ರಾವಣವನ್ನು ಬಳಸಿ ತುಂಬಿಸಲಾಗುತ್ತದೆ. ರಕ್ತದೊತ್ತಡದ ಪ್ರತಿಕ್ರಿಯೆಗೆ ಅನುಗುಣವಾಗಿ ಹೊಂದಿಸಿ. ಸರಾಸರಿ ನಿರ್ವಹಣೆ ಪ್ರಮಾಣ: 0.5-1 ಮಿಲಿ/ನಿಮಿಷ (2-4 μg/ನಿಮಿಷ). ಕೇಂದ್ರ ಸಿರೆಯ ಕ್ಯಾತಿಟರ್ ಮೂಲಕ ಅಥವಾ ದೊಡ್ಡ ಅಭಿಧಮನಿಯೊಳಗೆ ತುಂಬಿಸಿ. ಮಗು: 2 µg/ನಿಮಿಷದ ದರದಲ್ಲಿ ನಿರ್ವಹಿಸಿ. ಪರ್ಯಾಯವಾಗಿ, 2 µg/m2/ನಿಮಿಷ. ಬಿಪಿ ಪ್ರತಿಕ್ರಿಯೆ ಮತ್ತು ಪರ್ಫ್ಯೂಷನ್ ಪ್ರಕಾರ ದರವನ್ನು ಹೊಂದಿಸಿ.
+ಹಿರಿಯರು: ಆರಂಭಿಕ ಡೋಸ್ ಡೋಸ್ ಶ್ರೇಣಿಯ ಕಡಿಮೆ ಕೊನೆಯಲ್ಲಿ ಇರಬೇಕು.
+ಮೇಲಿನ ಜಠರಗರುಳಿನ ರಕ್ತಸ್ರಾವ
+ವಯಸ್ಕ: ಇಂಟ್ರಾಪೆರಿಟೋನಿಯಲ್ ಮಾರ್ಗದ ಮೂಲಕ 250 ಮಿಲಿ 0.9% ಸೋಡಿಯಂ ಕ್ಲೋರೈಡ್ ಇಂಜೆಕ್ಷನ್‌ನಲ್ಲಿ 8 ಮಿಗ್ರಾಂ ಪರ್ಯಾಯವಾಗಿ, 100 ಮಿಲಿ 0.9% ಸೋಡಿಯಂ ಕ್ಲೋರೈಡ್ ದ್ರಾವಣದ ಮೂಲಕ 8 ಮಿಗ್ರಾಂ ಅನ್ನು 6-8 ಗಂಟೆಗಳವರೆಗೆ ಪ್ರತಿ ಗಂಟೆಗೆ 6-8 ಗಂಟೆಗಳವರೆಗೆ, ನಂತರ ಪ್ರತಿ 2-6 ಗಂಟೆಗಳವರೆಗೆ. ಕ್ರಮೇಣ ಔಷಧವನ್ನು ಹಿಂತೆಗೆದುಕೊಳ್ಳಿ.
+ಪುನರ್ ರಚನೆ
+5% ಗ್ಲೂಕೋಸ್ ಇಂಜೆಕ್ಷನ್‌ನೊಂದಿಗೆ ದುರ್ಬಲಗೊಳಿಸಿ, ಸೋಡಿಯಂ ಕ್ಲೋರೈಡ್‌ನೊಂದಿಗೆ ಅಥವಾ ಇಲ್ಲದೆ, ಸೋಡಿಯಂ ಕ್ಲೋರೈಡ್ ಇಂಜೆಕ್ಷನ್‌ನೊಂದಿಗೆ ದುರ್ಬಲಗೊಳಿಸುವುದನ್ನು ಶಿಫಾರಸು ಮಾಡುವುದಿಲ್ಲ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+नॉरएपिनेफ्रिन (नॉरएड्रेनालाईन) नॉरएपिनेफ्रिन, जिसे नॉरएड्रेनालाईन भी कहा जाता है, एक न्यूरोट्रांसमीटर और एक हार्मोन दोनों है। यह आपके शरीर की "लड़ो-या-उड़ाओ" प्रतिक्रिया में महत्वपूर्ण भूमिका निभाता है। एक दवा के रूप में, नॉरपेनेफ्रिन का उपयोग सीमित, अल्पकालिक गंभीर स्वास्थ्य स्थितियों में रक्तचाप को बढ़ाने और बनाए रखने के लिए किया जाता है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-शीशियाँ (4 मिलीग्राम/एमएल, 4 मिलीग्राम/2 एमएल और 2 मिलीग्राम/2 एमएल)
+<strong>मात्रा :</strong>
+पैरेंटरल
+नसों में
+तीव्र हाइपोटेंशन
+वयस्क: 8-12 µg/मिनट, दुर्दम्य सदमे में 8-30 µg/मिनट तक। ग्लूकोज 5%, या सोडियम क्लोराइड 0.9% और ग्लूकोज 5% में 2-3 मिली/मिनट की दर से 4 माइक्रोग्राम/एमएल के घोल का उपयोग करके डाला जाता है। रक्तचाप प्रतिक्रिया के अनुसार समायोजित करें। औसत रखरखाव खुराक: 0.5-1 मिली/मिनट (2-4 माइक्रोग्राम/मिनट)। एक केंद्रीय शिरापरक कैथेटर के माध्यम से या एक बड़ी नस में डालें। बच्चा: 2 माइक्रोग्राम प्रति मिनट की दर से दें। वैकल्पिक रूप से, 2 µg/m2/मिनट। बीपी प्रतिक्रिया और छिड़काव के अनुसार दर समायोजित करें।
+बुजुर्ग: प्रारंभिक खुराक खुराक सीमा के निचले सिरे पर होनी चाहिए।
+ऊपरी जठरांत्र रक्तस्राव
+वयस्क: इंट्रापेरिटोनियल मार्ग के माध्यम से 0.9% सोडियम क्लोराइड इंजेक्शन के 250 मिलीलीटर में 8 मिलीग्राम वैकल्पिक रूप से, 0.9% सोडियमक्लोराइड समाधान के 100 मिलीलीटर में 8 मिलीग्राम 6-8 घंटे के लिए हर घंटे एनासोगैस्ट्रिक ट्यूब के माध्यम से डालें, फिर हर 2 घंटे में 4-6 घंटे के लिए डालें। धीरे-धीरे दवा वापस लें।
+पुनर्गठन
+5% ग्लूकोज इंजेक्शन के साथ पतला करें, सोडियम क्लोराइड के साथ या उसके बिना, अकेले सोडियम क्लोराइड इंजेक्शन के साथ पतला करने की अनुशंसा नहीं की जाती है।
+`},
+{
+title: "NIFEDIPINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+Nifedipine is used to treat high blood pressure and to control angina (chest pain). Nifedipine is in a class of medications called calcium-channel blockers. It lowers blood pressure by relaxing the blood vessels so the heart does not have to pump as hard.
+<strong>Availability :</strong>
+TABLETS-5, 10, 20 and 30 mg plain and SR,
+CAPSULES-5, 10, 20 and 30 mg.
+<strong>Dosage :</strong>
+Oral
+Adult- Hypertension (as sustained-release tablets): usual range 20 to 100 mg daily in 1 to 2 divided doses.
+`,
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ನಿಫೆಡಿಪೈನ್ ಅನ್ನು ಅಧಿಕ ರಕ್ತದೊತ್ತಡಕ್ಕೆ ಚಿಕಿತ್ಸೆ ನೀಡಲು ಮತ್ತು ಆಂಜಿನಾ (ಎದೆ ನೋವು) ನಿಯಂತ್ರಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ. ನಿಫೆಡಿಪೈನ್ ಕ್ಯಾಲ್ಸಿಯಂ-ಚಾನೆಲ್ ಬ್ಲಾಕರ್ಸ್ ಎಂಬ ಔಷಧಿಗಳ ವರ್ಗದಲ್ಲಿದೆ. ಇದು ರಕ್ತನಾಳಗಳನ್ನು ವಿಶ್ರಾಂತಿ ಮಾಡುವ ಮೂಲಕ ರಕ್ತದೊತ್ತಡವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ ಆದ್ದರಿಂದ ಹೃದಯವು ಗಟ್ಟಿಯಾಗಿ ಪಂಪ್ ಮಾಡಬೇಕಾಗಿಲ್ಲ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು-5, 10, 20 ಮತ್ತು 30 ಮಿಗ್ರಾಂ ಸರಳ ಮತ್ತು ಎಸ್ಆರ್,
+ಕ್ಯಾಪ್ಸುಲ್ಗಳು-5, 10, 20 ಮತ್ತು 30 ಮಿಗ್ರಾಂ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ವಯಸ್ಕರು-ಅಧಿಕ ರಕ್ತದೊತ್ತಡ (ನಿರಂತರ-ಬಿಡುಗಡೆ ಮಾತ್ರೆಗಳಂತೆ): 1 ರಿಂದ 2 ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ ಪ್ರತಿದಿನ 20 ರಿಂದ 100 ಮಿಗ್ರಾಂ ಸಾಮಾನ್ಯ ಶ್ರೇಣಿ.`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+निफ़ेडिपिन का उपयोग उच्च रक्तचाप के इलाज और एनजाइना (सीने में दर्द) को नियंत्रित करने के लिए किया जाता है। निफ़ेडिपिन कैल्शियम-चैनल ब्लॉकर्स नामक दवाओं के एक वर्ग में है। यह रक्त वाहिकाओं को आराम देकर रक्तचाप को कम करता है ताकि हृदय को अधिक जोर से पंप न करना पड़े।
+<strong>उपलब्धता :</strong>
+गोलियाँ-5, 10, 20 और 30 मिलीग्राम सादा और एसआर,
+कैप्सूल-5, 10, 20 और 30 मिलीग्राम।
+<strong>मात्रा :</strong>
+मौखिक
+वयस्क- उच्च रक्तचाप (निरंतर-रिलीज़ गोलियों के रूप में): सामान्य रूप से प्रतिदिन 1 से 2 विभाजित खुराकों में 20 से 100 मिलीग्राम।
+`},
+{
+    title: "ONDANSETRON",
+informationInEnglish: `
+<strong>Uses :</strong>
+Central nervous system: Normally it has no effect on the central nervous system except for the anti-emetic effect. It does not cause extrapyramidal reactions or cause oculogyric crisis.
+<strong>Availability :</strong>
+TABLETS-4 and 8 mg, 
+INJECTION 2 and 4ml ampoule (2 mg/ml),
+DROPS-2 mg/5 ml,
+SYRUP-2 mg/5 ml, 
+SUSPENSION-1 mg/5 ml.
+<strong>Dosage :</strong>
+Oral
+Prevention of post-operative nausea and vomiting: Adult 16 mg, 1 h before induction of anaesthesia.
+Nausea and vomiting associated with cancer chemotherapy:
+Adult- 24 mg as a single dose taken 30 min before start of single day chemotherapy.
+Child (4-11 yrs)- 4 mg tablets 3 times a day, continue for 1-2 days after completion of chemotherapy.
+Parenteral
+Post-operative nausea and vomiting:
+Adult- 4 mg by i.m or slow i.v as a single dose.
+Prevention	of chemotherapy-induced nausea and vomiting:
+Adult- single 32 mg i.v dose infused over 15 min begining 30 min before start of emetogenic chemotherapy.
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಕೇಂದ್ರ ನರಮಂಡಲ: ಸಾಮಾನ್ಯವಾಗಿ ಇದು ವಾಂತಿ-ನಿರೋಧಕ ಪರಿಣಾಮವನ್ನು ಹೊರತುಪಡಿಸಿ ಕೇಂದ್ರ ನರಮಂಡಲದ ಮೇಲೆ ಯಾವುದೇ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ. ಇದು ಎಕ್ಸ್ಟ್ರಾಪಿರಮಿಡಲ್ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಉಂಟುಮಾಡುವುದಿಲ್ಲ ಅಥವಾ ಆಕ್ಯುಲೋಜಿರಿಕ್ ಬಿಕ್ಕಟ್ಟನ್ನು ಉಂಟುಮಾಡುವುದಿಲ್ಲ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 4 ಮತ್ತು 8 ಮಿಗ್ರಾಂ, 
+ಇಂಜೆಕ್ಷನ್ 2 ಮತ್ತು 4ml ampoule (2 mg/ml),
+ಡ್ರಾಪ್ಸ್-2 ಮಿಗ್ರಾಂ/5 ಮಿಲಿ,
+ಸಿರಪ್-2 ಮಿಗ್ರಾಂ/5 ಮಿಲಿ, 
+ಸಸ್ಪೆನ್ಷನ್-1 ಮಿಗ್ರಾಂ/5 ಮಿಲಿ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ನಂತರದ ವಾಕರಿಕೆ ಮತ್ತು ವಾಂತಿ ತಡೆಗಟ್ಟುವಿಕೆ: ವಯಸ್ಕರಿಗೆ 16 ಮಿಗ್ರಾಂ, ಅರಿವಳಿಕೆಗೆ 1 ಗಂಟೆ ಮೊದಲು.
+ಕ್ಯಾನ್ಸರ್ ಕೀಮೋಥೆರಪಿಗೆ ಸಂಬಂಧಿಸಿದ ವಾಕರಿಕೆ ಮತ್ತು ವಾಂತಿ:
+ವಯಸ್ಕರು- 24 ಮಿಗ್ರಾಂ ಒಂದೇ ಡೋಸ್ ಆಗಿ ಒಂದೇ ದಿನದ ಕಿಮೊಥೆರಪಿ ಪ್ರಾರಂಭವಾಗುವ 30 ನಿಮಿಷಗಳ ಮೊದಲು ತೆಗೆದುಕೊಳ್ಳಲಾಗುತ್ತದೆ.
+ಮಗು (4-11 ವರ್ಷಗಳು) - 4 ಮಿಗ್ರಾಂ ಮಾತ್ರೆಗಳು ದಿನಕ್ಕೆ 3 ಬಾರಿ, ಕೀಮೋಥೆರಪಿ ಮುಗಿದ ನಂತರ 1-2 ದಿನಗಳವರೆಗೆ ಮುಂದುವರಿಸಿ.
+ಪೇರೆಂಟೆರಲ್
+ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ನಂತರ ವಾಕರಿಕೆ ಮತ್ತು ವಾಂತಿ:
+ವಯಸ್ಕರು- 4 ಮಿಗ್ರಾಂ i.m ಅಥವಾ ನಿಧಾನ i.v ಮೂಲಕ ಒಂದೇ ಡೋಸ್ ಆಗಿ.
+ಕಿಮೊಥೆರಪಿ-ಪ್ರೇರಿತ ವಾಕರಿಕೆ ಮತ್ತು ವಾಂತಿ ತಡೆಗಟ್ಟುವಿಕೆ:
+ವಯಸ್ಕರು - ಎಮೆಟೋಜೆನಿಕ್ ಕಿಮೊಥೆರಪಿ ಪ್ರಾರಂಭವಾಗುವ 30 ನಿಮಿಷಗಳ ಮೊದಲು 15 ನಿಮಿಷಗಳ ಕಾಲ 32 ಮಿಗ್ರಾಂ ಐವಿ ಡೋಸ್ ಅನ್ನು ತುಂಬಿಸಲಾಗುತ್ತದೆ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+केंद्रीय तंत्रिका तंत्र: आम तौर पर इसका केंद्रीय तंत्रिका तंत्र पर वमनरोधी प्रभाव के अलावा कोई प्रभाव नहीं पड़ता है। यह एक्स्ट्रामाइराइडल प्रतिक्रियाओं का कारण नहीं बनता है या नेत्र संबंधी संकट का कारण नहीं बनता है।
+<strong>उपलब्धता :</strong>
+गोलियाँ-4 और 8 मिलीग्राम, 
+इंजेक्शन 2 और 4 मिली एम्पौल (2 मिलीग्राम/एमएल),
+ड्रॉप्स-2 मिलीग्राम/5 मिली,
+सिरप-2 मिग्रा/5 मि.ली., 
+सस्पेंशन-1 मिलीग्राम/5 मिली.
+<strong>मात्रा :</strong>
+मौखिक
+ऑपरेशन के बाद मतली और उल्टी की रोकथाम: वयस्कों को एनेस्थीसिया देने से 1 घंटे पहले 16 मिलीग्राम।
+कैंसर कीमोथेरेपी से जुड़ी मतली और उल्टी:
+वयस्क- एकल खुराक के रूप में 24 मिलीग्राम, एक दिन की कीमोथेरेपी शुरू होने से 30 मिनट पहले ली जाती है।
+बच्चा (4-11 वर्ष)- 4 मिलीग्राम की गोलियाँ दिन में 3 बार, कीमोथेरेपी पूरी होने के बाद 1-2 दिनों तक जारी रखें।
+पैरेंटरल
+ऑपरेशन के बाद मतली और उल्टी:
+वयस्क- एकल खुराक के रूप में आईएम प्रति 4 मिलीग्राम या धीमी आई.वी.
+कीमोथेरेपी-प्रेरित मतली और उल्टी की रोकथाम:
+वयस्क- एमेटोजेनिक कीमोथेरेपी शुरू होने से 30 मिनट पहले 15 मिनट से अधिक समय तक एकल 32 मिलीग्राम चतुर्थ खुराक दी जाती है।
+`},
+{
+title: "PROPOFOL",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Central nervous system (CNS): It produces dose-dependent depression of the CNS. Induction of anaesthesia is usually heralded by loss of verbal contact rather than loss of eyelash reflex. It may be used as an anticonvulsant. It reduces the cerebral metabolic rate, reduces cerebral blood flow through autoregulation and thus reduces intracranial pressure and intraocular pressure. However, it may reduce cerebral perfusion pressure by producing greater reduction in mean arterial pressure than intracranial pressure. It may cause some involuntary movements during induction.
+2.Cardiovascular system: It causes hypotension due to peripheral vasodilatation. The change in heart rate is unpredictable. Propofol completely obtunds the baroreceptor reflex responses.
+3.Respiratory system: It may cause transient apnoea. It obtunds the airway reflexes well. It does not increase airway secretions. Helps in achieving good intubating conditions even with smaller doses of muscle relaxants.
+4.Gastrointestinal system: It has antiemetic properties.
+<strong>Availability :</strong>
+INJECTIONS-10, 20 and 50 ml vials (10 mg/ml), 10 and 20 ml vials (20 mg/ml), 
+Ampoule 12, 20 and 50 ml (1%)
+<strong>Dosage :</strong>
+Intravenous
+Induction and maintenance of general
+anaesthesia:
+Adult: Induction: 40 mg by injection or infusion every 10 seconds. Usual dose: 2-2.5 mg/kg. Maintenance: Infusion- 6-12 mg/ kg/h, intermittent bolus injection - 20-50 mg as needed.
+Child: >3 years: Induction dose of 2.5-3.5 mg/kg. Maintenance dose: 7.5-18 mg/kg/h by i.v infusion
+Elderly: Including debilitated patients: Infuse at a rate of 20 mg every 10 seconds. Maintenance: 3-6 mg/kg/h.
+Sedation:
+Adult: In diagnostic and surgical procedures: Initially, 6-9 mg/kg/h by infusion given for 3-5 minutes or an alternative dose of 0.5 mg/kg by slow injection over 3-5 minutes. Maintenance: 1.5-4.5 mg/kg/h infusion. Reduce maintenance dose by 20% for high- risk patients needing sedation. For ventilated patients: 0.3 mg/kg/h by infusion, subsequent maintenance dose: 0.3 – 3 mg/kg/h.
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಸೆಂಟ್ರಲ್ ನರವ್ಯೂಹ (ಸಿಎನ್ಎಸ್): ಇದು ಸಿಎನ್ಎಸ್ನ ಡೋಸ್-ಅವಲಂಬಿತ ಖಿನ್ನತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ರೆಪ್ಪೆಗೂದಲು ಪ್ರತಿಫಲಿತದ ನಷ್ಟಕ್ಕಿಂತ ಹೆಚ್ಚಾಗಿ ಮೌಖಿಕ ಸಂಪರ್ಕದ ನಷ್ಟದಿಂದ ಅರಿವಳಿಕೆ ಪ್ರಚೋದನೆಯನ್ನು ಸಾಮಾನ್ಯವಾಗಿ ಸೂಚಿಸಲಾಗುತ್ತದೆ. ಇದನ್ನು ಆಂಟಿಕಾನ್ವಲ್ಸೆಂಟ್ ಆಗಿ ಬಳಸಬಹುದು. ಇದು ಸೆರೆಬ್ರಲ್ ಮೆಟಾಬಾಲಿಕ್ ದರವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ, ಸ್ವಯಂ ನಿಯಂತ್ರಣದ ಮೂಲಕ ಸೆರೆಬ್ರಲ್ ರಕ್ತದ ಹರಿವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ ಮತ್ತು ಇದರಿಂದಾಗಿ ಇಂಟ್ರಾಕ್ರೇನಿಯಲ್ ಒತ್ತಡ ಮತ್ತು ಇಂಟ್ರಾಕ್ಯುಲರ್ ಒತ್ತಡವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಆದಾಗ್ಯೂ, ಇದು ಇಂಟ್ರಾಕ್ರೇನಿಯಲ್ ಒತ್ತಡಕ್ಕಿಂತ ಸರಾಸರಿ ಅಪಧಮನಿಯ ಒತ್ತಡದಲ್ಲಿ ಹೆಚ್ಚಿನ ಕಡಿತವನ್ನು ಉಂಟುಮಾಡುವ ಮೂಲಕ ಸೆರೆಬ್ರಲ್ ಪರ್ಫ್ಯೂಷನ್ ಒತ್ತಡವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಇದು ಇಂಡಕ್ಷನ್ ಸಮಯದಲ್ಲಿ ಕೆಲವು ಅನೈಚ್ಛಿಕ ಚಲನೆಗಳಿಗೆ ಕಾರಣವಾಗಬಹುದು.
+2.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಬಾಹ್ಯ ವಾಸೋಡಿಲೇಟೇಶನ್‌ನಿಂದಾಗಿ ಹೈಪೊಟೆನ್ಷನ್‌ಗೆ ಕಾರಣವಾಗುತ್ತದೆ. ಹೃದಯ ಬಡಿತದಲ್ಲಿನ ಬದಲಾವಣೆಯು ಅನಿರೀಕ್ಷಿತವಾಗಿದೆ. ಪ್ರೊಪೋಫೋಲ್ ಬ್ಯಾರೆಸೆಪ್ಟರ್ ರಿಫ್ಲೆಕ್ಸ್ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ತಡೆಯುತ್ತದೆ.
+3.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ಅಸ್ಥಿರ ಉಸಿರುಕಟ್ಟುವಿಕೆಗೆ ಕಾರಣವಾಗಬಹುದು. ಇದು ಶ್ವಾಸನಾಳದ ಪ್ರತಿವರ್ತನವನ್ನು ಚೆನ್ನಾಗಿ ತಡೆಯುತ್ತದೆ. ಇದು ಶ್ವಾಸನಾಳದ ಸ್ರವಿಸುವಿಕೆಯನ್ನು ಹೆಚ್ಚಿಸುವುದಿಲ್ಲ. ಸಣ್ಣ ಪ್ರಮಾಣದ ಸ್ನಾಯು ಸಡಿಲಗೊಳಿಸುವಿಕೆಯೊಂದಿಗೆ ಉತ್ತಮ ಇಂಟ್ಯೂಬೇಟಿಂಗ್ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ಸಾಧಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
+4.ಜಠರಗರುಳಿನ ವ್ಯವಸ್ಥೆ: ಇದು ವಾಂತಿ-ನಿರೋಧಕ ಗುಣಗಳನ್ನು ಹೊಂದಿದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಚುಚ್ಚುಮದ್ದು-10, 20 ಮತ್ತು 50 ಮಿಲಿ ಬಾಟಲುಗಳು (10 mg/ml), 10 ಮತ್ತು 20 ml ಬಾಟಲುಗಳು (20 mg/ml),
+ಆಂಪೌಲ್ 12, 20 ಮತ್ತು 50 ಮಿಲಿ (1%)
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್
+ಇಂಡಕ್ಷನ್ ಮತ್ತು ಸಾಮಾನ್ಯ ನಿರ್ವಹಣೆ
+ಅರಿವಳಿಕೆ:
+ವಯಸ್ಕ: ಇಂಡಕ್ಷನ್: ಪ್ರತಿ 10 ಸೆಕೆಂಡಿಗೆ ಇಂಜೆಕ್ಷನ್ ಅಥವಾ ಇನ್ಫ್ಯೂಷನ್ ಮೂಲಕ 40 ಮಿಗ್ರಾಂ. ಸಾಮಾನ್ಯ ಡೋಸ್: 2-2.5 ಮಿಗ್ರಾಂ / ಕೆಜಿ. ನಿರ್ವಹಣೆ: ಇನ್ಫ್ಯೂಷನ್- 6-12 ಮಿಗ್ರಾಂ / ಕೆಜಿ / ಗಂ, ಮಧ್ಯಂತರ ಬೋಲಸ್ ಇಂಜೆಕ್ಷನ್ - 20-50 ಮಿಗ್ರಾಂ ಅಗತ್ಯವಿರುವಂತೆ.
+ಮಗು:> 3 ವರ್ಷಗಳು: ಇಂಡಕ್ಷನ್ ಡೋಸ್ 2.5-3.5 mg/kg. ನಿರ್ವಹಣೆ ಡೋಸ್: 7.5-18 mg/kg/h i.v ಇನ್ಫ್ಯೂಷನ್ ಮೂಲಕ
+ವಯಸ್ಸಾದವರು: ದುರ್ಬಲಗೊಂಡ ರೋಗಿಗಳು ಸೇರಿದಂತೆ: ಪ್ರತಿ 10 ಸೆಕೆಂಡಿಗೆ 20 ಮಿಗ್ರಾಂ ದರದಲ್ಲಿ ತುಂಬಿಸಿ. ನಿರ್ವಹಣೆ: 3-6 mg/kg/h.
+ನಿದ್ರಾಜನಕ:
+ವಯಸ್ಕರು: ರೋಗನಿರ್ಣಯ ಮತ್ತು ಶಸ್ತ್ರಚಿಕಿತ್ಸಾ ವಿಧಾನಗಳಲ್ಲಿ: ಆರಂಭದಲ್ಲಿ, 3-5 ನಿಮಿಷಗಳ ಕಾಲ ಕಷಾಯದಿಂದ 6-9 mg/kg/h ಅಥವಾ 3-5 ನಿಮಿಷಗಳ ಕಾಲ ನಿಧಾನವಾದ ಇಂಜೆಕ್ಷನ್ ಮೂಲಕ 0.5 mg/kg ಪರ್ಯಾಯ ಡೋಸ್. ನಿರ್ವಹಣೆ: 1.5-4.5 mg/kg/h ದ್ರಾವಣ. ನಿದ್ರಾಜನಕ ಅಗತ್ಯವಿರುವ ಹೆಚ್ಚಿನ ಅಪಾಯದ ರೋಗಿಗಳಿಗೆ ನಿರ್ವಹಣೆ ಪ್ರಮಾಣವನ್ನು 20% ರಷ್ಟು ಕಡಿಮೆ ಮಾಡಿ. ಗಾಳಿಯಾಡುವ ರೋಗಿಗಳಿಗೆ: 0.3 mg/kg/h ಕಷಾಯದಿಂದ, ನಂತರದ ನಿರ್ವಹಣೆ ಪ್ರಮಾಣ: 0.3 - 3 mg/kg/h.
+
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. केंद्रीय तंत्रिका तंत्र (CNS): यह CNS में खुराक पर निर्भर अवसाद पैदा करता है। एनेस्थीसिया का प्रेरण आमतौर पर बरौनी प्रतिवर्त के नुकसान के बजाय मौखिक संपर्क के नुकसान से शुरू होता है। इसका उपयोग एक एंटीकॉन्वल्सेंट के रूप में किया जा सकता है। यह मस्तिष्क की चयापचय दर को कम करता है, ऑटोरेग्यूलेशन के माध्यम से मस्तिष्क रक्त प्रवाह को कम करता है और इस प्रकार इंट्राक्रैनील दबाव और इंट्राओकुलर दबाव को कम करता है। हालाँकि, यह इंट्राक्रैनील दबाव की तुलना में औसत धमनी दबाव में अधिक कमी करके मस्तिष्क परफ्यूजन दबाव को कम कर सकता है। यह प्रेरण के दौरान कुछ अनैच्छिक आंदोलनों का कारण बन सकता है।
+
+2. कार्डियोवैस्कुलर सिस्टम: यह परिधीय वासोडाइलेटेशन के कारण हाइपोटेंशन का कारण बनता है। हृदय गति में परिवर्तन अप्रत्याशित है। प्रोपोफोल बैरोरिसेप्टर रिफ्लेक्स प्रतिक्रियाओं को पूरी तरह से बाधित करता है।
+
+3. श्वसन प्रणाली: यह क्षणिक श्वासावरोध का कारण बन सकता है। यह वायुमार्ग प्रतिवर्त को अच्छी तरह से बाधित करता है। यह वायुमार्ग स्राव को नहीं बढ़ाता है। मांसपेशियों को आराम देने वाली छोटी खुराक के साथ भी अच्छी इंट्यूबेटिंग स्थिति प्राप्त करने में मदद करता है।
+
+4. जठरांत्र प्रणाली: इसमें वमनरोधी गुण होते हैं।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-10, 20 और 50 मिली शीशियाँ (10 मिग्रा/मिली), 10 और 20 मिली शीशियाँ (20 मिग्रा/मिली),
+एम्पुल 12, 20 और 50 मिली (1%)
+<strong>मात्रा :</strong>
+अंतःशिरा
+प्रेरण और सामान्य
+संज्ञाहरण का रखरखाव:
+वयस्क: प्रेरण: हर 10 सेकंड में इंजेक्शन या जलसेक द्वारा 40 मिलीग्राम। सामान्य खुराक: 2-2.5 मिलीग्राम/किग्रा। रखरखाव: जलसेक - 6-12 मिलीग्राम/किग्रा/घंटा, आंतरायिक बोलस इंजेक्शन - आवश्यकतानुसार 20-50 मिलीग्राम।
+बच्चा: >3 वर्ष: 2.5-3.5 मिलीग्राम/किग्रा की प्रेरण खुराक। रखरखाव खुराक: 7.5-18 मिलीग्राम/किग्रा/घंटा आई.वी. जलसेक द्वारा
+बुजुर्ग: दुर्बल रोगियों सहित: हर 10 सेकंड में 20 मिलीग्राम की दर से जलसेक करें। रखरखाव: 3-6 मिलीग्राम/किग्रा/घंटा।
+बेहोशी:
+वयस्क: निदान और शल्य चिकित्सा प्रक्रियाओं में: शुरू में, 3-5 मिनट के लिए जलसेक द्वारा 6-9 मिलीग्राम/किग्रा/घंटा या 3-5 मिनट में धीमी गति से इंजेक्शन द्वारा 0.5 मिलीग्राम/किग्रा की वैकल्पिक खुराक दी जाती है। रखरखाव: 1.5-4.5 मिलीग्राम/किग्रा/घंटा जलसेक। उच्च जोखिम वाले रोगियों के लिए रखरखाव खुराक को 20% तक कम करें जिन्हें बेहोश करने की ज़रूरत है। वेंटिलेटर पर रखे गए रोगियों के लिए: जलसेक द्वारा 0.3 मिलीग्राम/किग्रा/घंटा, बाद में रखरखाव खुराक: 0.3 - 3 मिलीग्राम/किग्रा/घंटा।
+`
+},
+
+
+
+{
+    title: "PANCURONIUM",
+informationInEnglish: `
+<strong>Uses :</strong>
+Pancuronium has an atropine-like moiety in its molecule and hence causes tachycardia and hypertension. It should be used with caution in patients with ischaemic 
+heart disease. It does not cause histamine release. It does not cross placental barrier.
+<strong>Availability :</strong>
+INJECTION-2 ml ampoule (2 mg/ml).
+<strong>Dosage :</strong>
+Intravenous injection
+Adult- Initially 50 to 100 µg/kg body weight, 10-20 µg/kg body weight for maintenance dose.
+Neonates- 30-40 µg/kg body weight.
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಪ್ಯಾನ್ಕುರೋನಿಯಮ್ ತನ್ನ ಅಣುವಿನಲ್ಲಿ ಅಟ್ರೋಪಿನ್ ತರಹದ ಭಾಗವನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಆದ್ದರಿಂದ ಟಾಕಿಕಾರ್ಡಿಯಾ ಮತ್ತು ಅಧಿಕ ರಕ್ತದೊತ್ತಡವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ರಕ್ತಕೊರತೆಯ ರೋಗಿಗಳಲ್ಲಿ ಇದನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಬಳಸಬೇಕು
+ಹೃದಯ ರೋಗ. ಇದು ಹಿಸ್ಟಮೈನ್ ಬಿಡುಗಡೆಗೆ ಕಾರಣವಾಗುವುದಿಲ್ಲ. ಇದು ಜರಾಯು ತಡೆಗೋಡೆ ದಾಟುವುದಿಲ್ಲ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-2 ಮಿಲಿ ಆಂಪೋಲ್ (2 ಮಿಗ್ರಾಂ/ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು- ಆರಂಭದಲ್ಲಿ 50 ರಿಂದ 100 µg/kg ದೇಹದ ತೂಕ, 10-20 µg/kg ದೇಹದ ತೂಕ ನಿರ್ವಹಣೆ ಡೋಸ್‌ಗಾಗಿ.
+ನವಜಾತ ಶಿಶುಗಳು - 30-40 µg/kg ದೇಹದ ತೂಕ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+पैन्क्यूरोनियम के अणु में एट्रोपिन जैसा अंश होता है और इसलिए यह टैचीकार्डिया और उच्च रक्तचाप का कारण बनता है। इस्केमिक हृदय रोग वाले रोगियों में इसका उपयोग सावधानी से किया जाना चाहिए। यह हिस्टामाइन रिलीज का कारण नहीं बनता है। यह प्लेसेंटल बाधा को पार नहीं करता है।
+<strong>उपलब्धता :</strong>
+ಇಂಜೆಕ್ಷನ್-2 ಮಿಲಿ ಆಂಪೋಲ್ (2 ಮಿಗ್ರಾಂ/ಮಿಲಿ).
+<strong>मात्रा :</strong>
+अंतःशिरा इंजेक्शन
+वयस्क- शुरू में 50 से 100 µg/kg शरीर का वजन, रखरखाव खुराक के लिए 10-20 µg/kg शरीर का वजन।
+नवजात शिशु- 30-40 µg/kg शरीर का वजन।
+`
+},
+
+
+
+
+
+{
+title: "PENTAZOCINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Central nervous system (CNS): Initially it causes euphoria and then sedation. It is a good analgesic. Later, it produces dose-dependent depression of the CNS. The pattern of respiratory depression is similar to morphine. 
+2.Cardiovascular system: It can cause hypertension, and myocardial ischaemia in susceptible patients.
+3.Respiratory system: It produces dose-dependent reduction in respiratory rate and in large doses, apnoea. The tidal volume is well-maintained till late. Minute ventilation reduces causing hypercarbia. 
+4.Gastrointestinal system: It has emetic properties (high incidence), delays gastric emptying and produces constipation.
+<strong>Availability :</strong>
+TABLETS- 25  mg  Plain,  Combination:Paracetamol 500 mg + Pentazocine 15 mg,
+INJECTION-1 ml ampoule (30 mg/ml).
+<strong>Dosage :</strong>
+Oral
+Adult- Pentazocine 50 mg every 3 to 4 h preferably after food (range 25 to 100 mg, max. 600 mg daily).
+Child- 6 to 12 years: 25 mg.
+Subcutaneous, intramuscular or intravenous injection
+Adult- Moderate pain: 30 mg. Severe pain: 45 to 60 mg every 3 h to 4 h when necessary.
+Child (Over 1 year)- by subcutaneous or intramuscular injection: 1 mg/kg, by intravenous injection: 500 µg/kg.
+`,
+
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಸೆಂಟ್ರಲ್ ನರವ್ಯೂಹ (CNS): ಆರಂಭದಲ್ಲಿ ಇದು ಯೂಫೋರಿಯಾ ಮತ್ತು ನಂತರ ನಿದ್ರಾಜನಕವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಇದು ಉತ್ತಮ ನೋವು ನಿವಾರಕವಾಗಿದೆ. ನಂತರ, ಇದು CNS ನ ಡೋಸ್-ಅವಲಂಬಿತ ಖಿನ್ನತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಉಸಿರಾಟದ ಖಿನ್ನತೆಯ ಮಾದರಿಯು ಮಾರ್ಫಿನ್ ಅನ್ನು ಹೋಲುತ್ತದೆ.
+2.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಒಳಗಾಗುವ ರೋಗಿಗಳಲ್ಲಿ ಅಧಿಕ ರಕ್ತದೊತ್ತಡ ಮತ್ತು ಮಯೋಕಾರ್ಡಿಯಲ್ ಇಷ್ಕೆಮಿಯಾವನ್ನು ಉಂಟುಮಾಡಬಹುದು.
+3.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ಉಸಿರಾಟದ ದರದಲ್ಲಿ ಡೋಸ್-ಅವಲಂಬಿತ ಕಡಿತವನ್ನು ಮತ್ತು ದೊಡ್ಡ ಪ್ರಮಾಣದಲ್ಲಿ ಉಸಿರುಕಟ್ಟುವಿಕೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ. ಉಬ್ಬರವಿಳಿತದ ಪ್ರಮಾಣವು ತಡವಾಗಿ ತನಕ ಉತ್ತಮವಾಗಿ ನಿರ್ವಹಿಸಲ್ಪಡುತ್ತದೆ. ನಿಮಿಷದ ವಾತಾಯನವು ಹೈಪರ್ಕಾರ್ಬಿಯಾವನ್ನು ಉಂಟುಮಾಡುವುದನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ.
+4.ಜಠರಗರುಳಿನ ವ್ಯವಸ್ಥೆ: ಇದು ಎಮೆಟಿಕ್ ಗುಣಲಕ್ಷಣಗಳನ್ನು ಹೊಂದಿದೆ (ಹೆಚ್ಚಿನ ಸಂಭವ), ಗ್ಯಾಸ್ಟ್ರಿಕ್ ಖಾಲಿಯಾಗುವುದನ್ನು ವಿಳಂಬಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಮಲಬದ್ಧತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 25 ಮಿಗ್ರಾಂ ಸರಳ, ಸಂಯೋಜನೆ: ಪ್ಯಾರೆಸಿಟಮಾಲ್ 500 ಮಿಗ್ರಾಂ + ಪೆಂಟಾಜೋಸಿನ್ 15 ಮಿಗ್ರಾಂ,
+ಇಂಜೆಕ್ಷನ್-1 ಮಿಲಿ ಆಂಪೋಲ್ (30 ಮಿಗ್ರಾಂ / ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ವಯಸ್ಕರು- ಪೆಂಟಾಜೋಸಿನ್ 50 ಮಿಗ್ರಾಂ ಪ್ರತಿ 3 ರಿಂದ 4 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ ಆಹಾರದ ನಂತರ ಆದ್ಯತೆ (25 ರಿಂದ 100 ಮಿಗ್ರಾಂ, ಗರಿಷ್ಠ 600 ಮಿಗ್ರಾಂ ದೈನಂದಿನ).
+ಮಗು - 6 ರಿಂದ 12 ವರ್ಷಗಳು: 25 ಮಿಗ್ರಾಂ.
+ಸಬ್ಕ್ಯುಟೇನಿಯಸ್, ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಅಥವಾ ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕ - ಮಧ್ಯಮ ನೋವು: 30 ಮಿಗ್ರಾಂ. ತೀವ್ರವಾದ ನೋವು: ಅಗತ್ಯವಿದ್ದಾಗ ಪ್ರತಿ 3 ಗಂಟೆಯಿಂದ 4 ಗಂಟೆಗಳವರೆಗೆ 45 ರಿಂದ 60 ಮಿಗ್ರಾಂ.
+ಮಗು (1 ವರ್ಷಕ್ಕಿಂತ ಮೇಲ್ಪಟ್ಟವರು)- ಸಬ್ಕ್ಯುಟೇನಿಯಸ್ ಅಥವಾ ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಇಂಜೆಕ್ಷನ್ ಮೂಲಕ: 1 mg/kg, ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್ ಮೂಲಕ: 500 μg/kg.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. केंद्रीय तंत्रिका तंत्र (सीएनएस): शुरू में यह उत्साह और फिर बेहोशी का कारण बनता है। यह एक अच्छा एनाल्जेसिक है। बाद में, यह सीएनएस के खुराक-निर्भर अवसाद का उत्पादन करता है। श्वसन अवसाद का पैटर्न मॉर्फिन के समान है।
+
+2. कार्डियोवैस्कुलर सिस्टम: यह अतिसंवेदनशील रोगियों में उच्च रक्तचाप और मायोकार्डियल इस्किमिया का कारण बन सकता है।
+
+3. श्वसन प्रणाली: यह श्वसन दर में खुराक-निर्भर कमी और बड़ी खुराक में श्वासावरोध पैदा करता है। ज्वारीय मात्रा देर तक अच्छी तरह से बनाए रखी जाती है। मिनट वेंटिलेशन हाइपरकार्बिया का कारण बनता है।
+
+4. गैस्ट्रोइंटेस्टाइनल सिस्टम: इसमें उबकाई लाने वाले गुण (उच्च घटना) होते हैं, गैस्ट्रिक खाली करने में देरी करता है और कब्ज पैदा करता है।
+<strong>उपलब्धता :</strong>
+गोलियाँ- 25 मिलीग्राम सादा, संयोजन: पैरासिटामोल 500 मिलीग्राम + पेंटाज़ोसीन 15 मिलीग्राम, इंजेक्शन- 1 मिली एम्पुल (30 मिलीग्राम/एमएल)।
+<strong>मात्रा :</strong>
+मौखिक
+वयस्क- पेंटाज़ोसीन 50 मिलीग्राम हर 3 से 4 घंटे में अधिमानतः भोजन के बाद (सीमा 25 से 100 मिलीग्राम, अधिकतम 600 मिलीग्राम प्रतिदिन)।
+बच्चा- 6 से 12 वर्ष: 25 मिलीग्राम।
+त्वचीय, अंतःपेशीय या अंतःशिरा इंजेक्शन
+वयस्क- मध्यम दर्द: 30 मिलीग्राम। गंभीर दर्द: 45 से 60 मिलीग्राम हर 3 घंटे से 4 घंटे में जब आवश्यक हो।
+बच्चा (1 वर्ष से अधिक)- उपचर्म या अंतःपेशीय इंजेक्शन द्वारा: 1 मिलीग्राम/किग्रा, अंतःशिरा इंजेक्शन द्वारा: 500 µg/किग्रा।
+`
+},
+
+
+
+{
+    title: "PARACETAMOL",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.It is mainly used as an antipyretic. In larger doses, it also provided analgesia. 
+2.Gastrointestinal system: It is well absorbed when given orally. In susceptible individuals, it can causes gastric ulcers.
+<strong>Availability :</strong>
+TABLETS- 500 and 650 mg Plain, 750 mg DT,
+SYRUPS/SUSPENSION- 125 and 250 mg/5 ml,
+INJECTION- 2 ml ampoule 125 mg/ml., Intra- venous infusion 500 mg and 1g.
+<strong>Dosage :</strong>
+Oral
+Adult- 0.5 to 1g every 4 to 6 h (max. 4g, max 2g in alcoholics per day).
+Child- for post-immunisation pyrexia, up to 2 months: 60 mg. 3 month to 1 year: 60 to 120mg every 4 to 6 h. 1 to 5 years: 120 to 250 mg every 4 to 6 h. 6 to 12 years: 250 to 500 mg every 4 to 6 h.
+Intramuscular injection
+Adult- 250 mg every 4 to 6 h or as required.
+Intravenous infusion
+Adult- 1g every 6 hours, maximum daily dose 4 g.
+Child- 15 mg/kg upto 4 times a day, maximum daily dose 60 mg/kg.
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಇದನ್ನು ಮುಖ್ಯವಾಗಿ ಜ್ವರನಿವಾರಕವಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ. ದೊಡ್ಡ ಪ್ರಮಾಣದಲ್ಲಿ, ಇದು ನೋವು ನಿವಾರಕವನ್ನು ಸಹ ಒದಗಿಸಿತು.
+2.ಜಠರಗರುಳಿನ ವ್ಯವಸ್ಥೆ: ಮೌಖಿಕವಾಗಿ ನೀಡಿದಾಗ ಇದು ಚೆನ್ನಾಗಿ ಹೀರಲ್ಪಡುತ್ತದೆ. ಒಳಗಾಗುವ ವ್ಯಕ್ತಿಗಳಲ್ಲಿ, ಇದು ಗ್ಯಾಸ್ಟ್ರಿಕ್ ಅಲ್ಸರ್ಗೆ ಕಾರಣವಾಗಬಹುದು.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 500 ಮತ್ತು 650 ಮಿಗ್ರಾಂ ಸರಳ, 750 ಮಿಗ್ರಾಂ ಡಿಟಿ,
+ಸಿರಪ್‌ಗಳು/ತೂಗು-125 ಮತ್ತು 250 ಮಿಗ್ರಾಂ/5 ಮಿಲಿ,
+ಇಂಜೆಕ್ಷನ್ - 2 ಮಿಲಿ ಆಂಪೋಲ್ 125 ಮಿಗ್ರಾಂ / ಮಿಲಿ., ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್ 500 ಮಿಗ್ರಾಂ ಮತ್ತು 1 ಗ್ರಾಂ.
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ವಯಸ್ಕರು- 0.5 ರಿಂದ 1 ಗ್ರಾಂ ಪ್ರತಿ 4 ರಿಂದ 6 ಗಂಟೆಗಳವರೆಗೆ (ಗರಿಷ್ಠ. 4 ಗ್ರಾಂ, ದಿನಕ್ಕೆ ಆಲ್ಕೊಹಾಲ್ಯುಕ್ತರಲ್ಲಿ ಗರಿಷ್ಠ 2 ಗ್ರಾಂ).
+ಮಗು- ರೋಗನಿರೋಧಕ ನಂತರದ ಪೈರೆಕ್ಸಿಯಾ, 2 ತಿಂಗಳವರೆಗೆ: 60 ಮಿಗ್ರಾಂ. 3 ತಿಂಗಳಿಂದ 1 ವರ್ಷ: ಪ್ರತಿ 4 ರಿಂದ 6 ಗಂಟೆಗಳವರೆಗೆ 60 ರಿಂದ 120 ಮಿಗ್ರಾಂ. 1 ರಿಂದ 5 ವರ್ಷಗಳು: ಪ್ರತಿ 4 ರಿಂದ 6 ಗಂಟೆಗಳವರೆಗೆ 120 ರಿಂದ 250 ಮಿಗ್ರಾಂ. 6 ರಿಂದ 12 ವರ್ಷಗಳು: 250 ರಿಂದ 500 ಮಿಗ್ರಾಂ ಪ್ರತಿ 4 ರಿಂದ 6 ಗಂಟೆಗಳವರೆಗೆ.
+ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು - 250 ಮಿಗ್ರಾಂ ಪ್ರತಿ 4 ರಿಂದ 6 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ ಅಥವಾ ಅಗತ್ಯವಿರುವಂತೆ.
+ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+ವಯಸ್ಕರು - ಪ್ರತಿ 6 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ 1 ಗ್ರಾಂ, ಗರಿಷ್ಠ ದೈನಂದಿನ ಡೋಸ್ 4 ಗ್ರಾಂ.
+ಮಗು - 15 ಮಿಗ್ರಾಂ / ಕೆಜಿ ದಿನಕ್ಕೆ 4 ಬಾರಿ, ಗರಿಷ್ಠ ದೈನಂದಿನ ಡೋಸ್ 60 ಮಿಗ್ರಾಂ / ಕೆಜಿ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1.यह मुख्य रूप से ज्वरनाशक के रूप में उपयोग किया जाता है। बड़ी खुराक में, यह एनाल्जेसिया भी प्रदान करता है। 2.गैस्ट्रोइंटेस्टाइनल सिस्टम: मौखिक रूप से दिए जाने पर यह अच्छी तरह से अवशोषित होता है। संवेदनशील व्यक्तियों में, यह गैस्ट्रिक अल्सर का कारण बन सकता है।
+<strong>उपलब्धता :</strong>
+गोलियाँ- 500 और 650 मिलीग्राम सादा, 750 मिलीग्राम डीटी, सिरप/सस्पेंशन- 125 और 250 मिलीग्राम/5 मिली, इंजेक्शन- 2 मिली एम्पुल 125 मिलीग्राम/एमएल, अंतःशिरा जलसेक 500 मिलीग्राम और 1 ग्राम।
+<strong>मात्रा :</strong>
+मौखिक
+वयस्क- 0.5 से 1 ग्राम हर 4 से 6 घंटे (अधिकतम 4 ग्राम, शराबियों में अधिकतम 2 ग्राम प्रतिदिन)।
+बच्चे- टीकाकरण के बाद बुखार के लिए, 2 महीने तक: 60 मि.ग्रा. 3 महीने से 1 वर्ष: 60 से 120 मि.ग्रा. हर 4 से 6 घंटे। 1 से 5 वर्ष: 120 से 250 मि.ग्रा. हर 4 से 6 घंटे। 6 से 12 वर्ष: 250 से 500 मि.ग्रा. हर 4 से 6 घंटे।
+इंट्रामस्क्युलर इंजेक्शन
+वयस्क- 250 मि.ग्रा. हर 4 से 6 घंटे या आवश्यकतानुसार।
+अंतःशिरा जलसेक
+वयस्क- 1 ग्राम हर 6 घंटे, अधिकतम दैनिक खुराक 4 ग्राम।
+बच्चे- 15 मि.ग्रा./कि.ग्रा. दिन में 4 बार तक, अधिकतम दैनिक खुराक 60 मि.ग्रा./कि.ग्रा.
+`
+},
+
+
+
+
+
+{
+title: "PROTAMINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+It is a strong base and heparin is a strong acid. Protamine binds to circulating heparin to form chemical complexes and produces coagulation.
+<strong>Availability :</strong>
+SOLUTION-5 ml (1%), 
+INJECTION-5 ml ampoule (10 mg/ml).
+<strong>Dosage :</strong>
+Intravenous injection
+Heparin overdose, over approximately 10 min, 1 mg neutralizes 80 to 100 units heparin when given within 15 min, if longer time, less protamine needed as heparin is rapidly excreted. 1 ml neutralises the effect of 1000 ml i.u. of circulating heparin, max. single dose 50 mg (5 ml).
+`,
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಇದು ಬಲವಾದ ಬೇಸ್ ಮತ್ತು ಹೆಪಾರಿನ್ ಬಲವಾದ ಆಮ್ಲವಾಗಿದೆ. ಪ್ರೋಟಮೈನ್ ರಾಸಾಯನಿಕ ಸಂಕೀರ್ಣಗಳನ್ನು ರೂಪಿಸಲು ಹೆಪಾರಿನ್ ಪರಿಚಲನೆಗೆ ಬಂಧಿಸುತ್ತದೆ ಮತ್ತು ಹೆಪ್ಪುಗಟ್ಟುವಿಕೆಯನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಪರಿಹಾರ-5 ಮಿಲಿ (1%),
+ಇಂಜೆಕ್ಷನ್-5 ಮಿಲಿ ಆಂಪೋಲ್ (10 ಮಿಗ್ರಾಂ / ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ಹೆಪಾರಿನ್ ಮಿತಿಮೀರಿದ ಪ್ರಮಾಣ, ಸರಿಸುಮಾರು 10 ನಿಮಿಷಗಳಲ್ಲಿ, 1 ಮಿಗ್ರಾಂ 80 ರಿಂದ 100 ಯೂನಿಟ್ ಹೆಪಾರಿನ್ ಅನ್ನು 15 ನಿಮಿಷಗಳಲ್ಲಿ ನೀಡಿದಾಗ ತಟಸ್ಥಗೊಳಿಸುತ್ತದೆ, ಹೆಚ್ಚು ಸಮಯ ಇದ್ದರೆ, ಹೆಪಾರಿನ್ ವೇಗವಾಗಿ ಹೊರಹಾಕಲ್ಪಟ್ಟಂತೆ ಕಡಿಮೆ ಪ್ರೋಟಮೈನ್ ಅಗತ್ಯವಿದೆ. 1 ಮಿಲಿ 1000 ಮಿಲಿ i.u ನ ಪರಿಣಾಮವನ್ನು ತಟಸ್ಥಗೊಳಿಸುತ್ತದೆ. ಹೆಪಾರಿನ್ ಪರಿಚಲನೆ, ಗರಿಷ್ಠ. ಒಂದೇ ಡೋಸ್ 50 ಮಿಗ್ರಾಂ (5 ಮಿಲಿ).
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+यह एक मजबूत क्षार है और हेपरिन एक मजबूत अम्ल है। प्रोटैमाइन परिसंचारी हेपरिन से बंध कर रासायनिक संकुल बनाता है और जमावट पैदा करता है।
+<strong>उपलब्धता :</strong>
+घोल-5 मिली (1%), इंजेक्शन-5 मिली एम्पुल (10 मिग्रा/एमएल)।
+<strong>मात्रा :</strong>
+अंतःशिरा इंजेक्शन
+हेपरिन ओवरडोज, लगभग 10 मिनट में, 1 मिलीग्राम 15 मिनट के भीतर दिए जाने पर 80 से 100 यूनिट हेपरिन को बेअसर कर देता है, यदि अधिक समय हो, तो कम प्रोटीन की आवश्यकता होती है क्योंकि हेपरिन तेजी से उत्सर्जित होता है। 1 मिली परिसंचारी हेपरिन के 1000 मिली आईयू के प्रभाव को बेअसर करता है, अधिकतम एकल खुराक 50 मिलीग्राम (5 मिली)।
+`
+},
+
+
+
+
+{
+    title: "POTASSIUM CHLORIDE",
+informationInEnglish: `
+<strong>Uses :</strong>
+Kcl Injection is a medicine used in the treatment of potassium deficiency in the body. This supplement can relieve muscle weakness, irregular heartbeat, nausea, and vomiting. It is an essential nutrient of the body which helps in the maintenance of good health.
+<strong>Availability :</strong>
+INJECTION-10 ml ampoule (11.2%w/v).
+<strong>Dosage :</strong>
+Slow Intravenous infusion
+Adult and Child- Electrolyte imbalance, depending on the deficit or the daily maintenance requirements.
+`,
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಕೆಸಿಎಲ್ ಇಂಜೆಕ್ಷನ್ ದೇಹದಲ್ಲಿನ ಪೊಟ್ಯಾಸಿಯಮ್ ಕೊರತೆಯ ಚಿಕಿತ್ಸೆಯಲ್ಲಿ ಬಳಸಲಾಗುವ ಔಷಧಿಯಾಗಿದೆ. ಈ ಪೂರಕವು ಸ್ನಾಯು ದೌರ್ಬಲ್ಯ, ಅನಿಯಮಿತ ಹೃದಯ ಬಡಿತ, ವಾಕರಿಕೆ ಮತ್ತು ವಾಂತಿಗಳನ್ನು ನಿವಾರಿಸುತ್ತದೆ. ಇದು ದೇಹಕ್ಕೆ ಅಗತ್ಯವಾದ ಪೋಷಕಾಂಶವಾಗಿದೆ, ಇದು ಉತ್ತಮ ಆರೋಗ್ಯವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-10 ಮಿಲಿ ಆಂಪೋಲ್ (11.2%w/v).ಇಂಜೆಕ್ಷನ್-10 ಮಿಲಿ ಆಂಪೌಲ್ (11.2%w/v).
+<strong>ಪ್ರಮಾಣ :</strong>
+ನಿಧಾನವಾದ ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+ವಯಸ್ಕರು ಮತ್ತು ಮಕ್ಕಳು- ಎಲೆಕ್ಟ್ರೋಲೈಟ್ ಅಸಮತೋಲನ, ಕೊರತೆ ಅಥವಾ ದೈನಂದಿನ ನಿರ್ವಹಣೆ ಅಗತ್ಯತೆಗಳನ್ನು ಅವಲಂಬಿಸಿ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+केसीएल इंजेक्शन शरीर में पोटेशियम की कमी के इलाज में इस्तेमाल की जाने वाली दवा है। यह सप्लीमेंट मांसपेशियों की कमजोरी, अनियमित दिल की धड़कन, मतली और उल्टी से राहत दिला सकता है। यह शरीर का एक आवश्यक पोषक तत्व है जो अच्छे स्वास्थ्य को बनाए रखने में मदद करता है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-10 मिली एम्पुल (11.2%w/v).इंजेक्शन-10 मिली एम्पुल (11.2%w/v).
+<strong>मात्रा :</strong>
+धीमी अंतःशिरा जलसेक
+वयस्क और बच्चे- इलेक्ट्रोलाइट असंतुलन, घाटे या दैनिक रखरखाव आवश्यकताओं पर निर्भर करता है।
+`
+},
+
+
+
+
+{
+title: "SUCCINYLCHOLINE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Endotracheal intubation: Succinylcholine was used routinely to facilitate endotracheal intubation. The trend has changed due to increasing recognition of the complications associated with succinylcholine and availability of fast-acting non-depolarising muscle relaxants.
+2.Treatment of laryngospasm: It may be given during the management of laryngospasm intravenously or intramuscularly (3-4 mg/kg) when an IV is not in place. It may be injected sublingually/intralingually in a dose of 2-3 mg/kg. The onset of action of intramuscularly injected Succinylcholine is three to five minutes and may last for ten minutes. If an IV is in place, the dose required to break laryngospasm is just 0.1 – 0.3 mg/kg.
+<strong>Availability :</strong>
+INJECTION-50, 100 and 500 mg Vial (50 mg/ml).
+<strong>Dosage :</strong>
+Intravenous injection
+Initially 1 mg/kg body weight, maintenance by 0.5 to 1 mg/kg body weight every 5 to 10 min interval (max 500 mg).
+Intravenous infusion
+1 to 2 mg/ml (0.1 to 0.2%), reduce infusion rate in child.
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಎಂಡೋಟ್ರಾಶಿಯಲ್ ಇಂಟ್ಯೂಬೇಶನ್: ಎಂಡೋಟ್ರಾಶಿಯಲ್ ಇಂಟ್ಯೂಬೇಶನ್ ಅನ್ನು ಸುಗಮಗೊಳಿಸಲು ಸಕ್ಸಿನೈಲ್ಕೋಲಿನ್ ಅನ್ನು ವಾಡಿಕೆಯಂತೆ ಬಳಸಲಾಗುತ್ತಿತ್ತು. ಸಕ್ಸಿನೈಲ್ಕೋಲಿನ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ತೊಡಕುಗಳ ಹೆಚ್ಚುತ್ತಿರುವ ಗುರುತಿಸುವಿಕೆ ಮತ್ತು ವೇಗವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ನಾನ್-ಡಿಪೋಲರೈಸಿಂಗ್ ಸ್ನಾಯು ಸಡಿಲಗೊಳಿಸುವಿಕೆಗಳ ಲಭ್ಯತೆಯಿಂದಾಗಿ ಪ್ರವೃತ್ತಿಯು ಬದಲಾಗಿದೆ.
+2. ಲಾರಿಂಗೋಸ್ಪಾಸ್ಮ್ ಚಿಕಿತ್ಸೆ: IV ಸ್ಥಳದಲ್ಲಿ ಇಲ್ಲದಿದ್ದಾಗ ಇಂಟ್ರಾವೆನಸ್ ಅಥವಾ ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಆಗಿ (3-4 ಮಿಗ್ರಾಂ/ಕೆಜಿ) ಲಾರಿಂಗೋಸ್ಪಾಸ್ಮ್ನ ನಿರ್ವಹಣೆಯ ಸಮಯದಲ್ಲಿ ಇದನ್ನು ನೀಡಬಹುದು. ಇದನ್ನು 2-3 ಮಿಗ್ರಾಂ/ಕೆಜಿ ಡೋಸ್‌ನಲ್ಲಿ ಸಬ್ಲಿಂಗುಯಲ್/ಇಂಟರ್ಲಿಂಗ್ಯುಯಲ್ ಆಗಿ ಚುಚ್ಚುಮದ್ದು ಮಾಡಬಹುದು. ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಆಗಿ ಚುಚ್ಚುಮದ್ದಿನ ಸಕ್ಸಿನೈಲ್ಕೋಲಿನ್ ಕ್ರಿಯೆಯ ಪ್ರಾರಂಭವು ಮೂರರಿಂದ ಐದು ನಿಮಿಷಗಳು ಮತ್ತು ಹತ್ತು ನಿಮಿಷಗಳವರೆಗೆ ಇರುತ್ತದೆ. IV ಸ್ಥಳದಲ್ಲಿದ್ದರೆ, ಲಾರಿಂಗೋಸ್ಪಾಸ್ಮ್ ಅನ್ನು ಮುರಿಯಲು ಅಗತ್ಯವಿರುವ ಡೋಸ್ ಕೇವಲ 0.1 - 0.3 ಮಿಗ್ರಾಂ / ಕೆಜಿ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-50, 100 ಮತ್ತು 500 mg ಸೀಸೆ (50 mg/ml).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ಆರಂಭದಲ್ಲಿ 1 mg/kg ದೇಹದ ತೂಕ, ಪ್ರತಿ 5 ರಿಂದ 10 ನಿಮಿಷಗಳ ಮಧ್ಯಂತರದಲ್ಲಿ 0.5 ರಿಂದ 1 mg/kg ದೇಹದ ತೂಕದ ನಿರ್ವಹಣೆ (ಗರಿಷ್ಠ 500 mg).
+ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+1 ರಿಂದ 2 ಮಿಗ್ರಾಂ/ಮಿಲಿ (0.1 ರಿಂದ 0.2%), ಮಗುವಿನ ಇನ್ಫ್ಯೂಷನ್ ದರವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ.
+
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. एंडोट्रैचियल इंट्यूबेशन: एंडोट्रैचियल इंट्यूबेशन की सुविधा के लिए सक्सिनिलकोलाइन का नियमित रूप से उपयोग किया जाता था। सक्सिनिलकोलाइन से जुड़ी जटिलताओं की बढ़ती पहचान और तेजी से काम करने वाले नॉन-डिपोलराइजिंग मसल रिलैक्सेंट की उपलब्धता के कारण यह चलन बदल गया है।
+2. लैरींगोस्पाज्म का उपचार: इसे लैरींगोस्पाज्म के प्रबंधन के दौरान अंतःशिरा या इंट्रामस्क्युलर रूप से (3-4 मिलीग्राम/किग्रा) दिया जा सकता है, जब IV मौजूद न हो। इसे 2-3 मिलीग्राम/किग्रा की खुराक में सबलिंगुअली/इंट्रालिंगुअली इंजेक्ट किया जा सकता है। इंट्रामस्क्युलर रूप से इंजेक्ट किए गए सक्सिनिलकोलाइन की क्रिया की शुरुआत तीन से पांच मिनट में होती है और यह दस मिनट तक चल सकती है। यदि IV मौजूद है, तो लैरींगोस्पाज्म को तोड़ने के लिए आवश्यक खुराक केवल 0.1 - 0.3 मिलीग्राम/किग्रा है।
+<strong>उपलब्धता :</strong>
+इंजेक्शन-50, 100 और 500 मिलीग्राम शीशी (50 मिलीग्राम/एमएल)।
+<strong>मात्रा :</strong>
+अंतःशिरा इंजेक्शन
+शुरू में 1 मिलीग्राम/किलोग्राम शरीर का वजन, हर 5 से 10 मिनट के अंतराल पर 0.5 से 1 मिलीग्राम/किलोग्राम शरीर के वजन के हिसाब से रखरखाव (अधिकतम 500 मिलीग्राम)।
+अंतःशिरा जलसेक
+1 से 2 मिलीग्राम/एमएल (0.1 से 0.2%), बच्चे में जलसेक दर कम करें।
+`
+},
+
+
+
+{
+    title: "SODIUM NITROPRUSSIDE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.To treat hypertension
+2.To induce hypotension
+3.To obtund hypertensive response to intubation
+4.In ergot alkaloid poisoning, to reverse the effects of ergot on vessels
+<strong>Availability :</strong>
+INJECTION-ampoule/vial 5 ml (50 mg/ml).
+<strong>Dosage :</strong>
+Intravenous infusion
+Adult- Hypertensive crisis: initially 0.3 µg/kg/ min, usual maintenance dose 0.5 to 6 µg/kg/ min, max. dose 8 µg/kg/min, stop infusion if response is unsatisfactory after 10 min at max. dose, lower doses in patients already being treated with antihypertensives.
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1. ಅಧಿಕ ರಕ್ತದೊತ್ತಡಕ್ಕೆ ಚಿಕಿತ್ಸೆ ನೀಡಲು
+2. ಹೈಪೊಟೆನ್ಷನ್ ಅನ್ನು ಪ್ರಚೋದಿಸಲು
+3.ಇನ್ಟುಬೇಶನ್‌ಗೆ ಅಧಿಕ ರಕ್ತದೊತ್ತಡದ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ತಡೆಯಲು
+4.ಎರ್ಗಾಟ್ ಆಲ್ಕಲಾಯ್ಡ್ ವಿಷದಲ್ಲಿ, ನಾಳಗಳ ಮೇಲೆ ಎರ್ಗೋಟ್ನ ಪರಿಣಾಮಗಳನ್ನು ಹಿಮ್ಮೆಟ್ಟಿಸಲು
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್-ಆಂಪೌಲ್ / ಸೀಸೆ 5 ಮಿಲಿ (50 ಮಿಗ್ರಾಂ / ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+ವಯಸ್ಕರು- ಅಧಿಕ ರಕ್ತದೊತ್ತಡದ ಬಿಕ್ಕಟ್ಟು: ಆರಂಭದಲ್ಲಿ 0.3 µg/kg/ min, ಸಾಮಾನ್ಯ ನಿರ್ವಹಣೆ ಪ್ರಮಾಣ 0.5 ರಿಂದ 6 µg/kg/ min, ಗರಿಷ್ಠ. ಡೋಸ್ 8 µg/kg/min, ಗರಿಷ್ಠ 10 ನಿಮಿಷಗಳ ನಂತರ ಪ್ರತಿಕ್ರಿಯೆ ಅತೃಪ್ತಿಕರವಾಗಿದ್ದರೆ ಕಷಾಯವನ್ನು ನಿಲ್ಲಿಸಿ. ಡೋಸ್, ಈಗಾಗಲೇ ಆಂಟಿಹೈಪರ್ಟೆನ್ಸಿವ್ಗಳೊಂದಿಗೆ ಚಿಕಿತ್ಸೆ ಪಡೆಯುತ್ತಿರುವ ರೋಗಿಗಳಲ್ಲಿ ಕಡಿಮೆ ಪ್ರಮಾಣದಲ್ಲಿ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. उच्च रक्तचाप का इलाज करने के लिए
+2. हाइपोटेंशन को प्रेरित करने के लिए
+3. इंट्यूबेशन के लिए उच्च रक्तचाप की प्रतिक्रिया को कम करने के लिए
+4. एर्गोट एल्कलॉइड विषाक्तता में, वाहिकाओं पर एर्गोट के प्रभावों को उलटने के लिए
+<strong>उपलब्धता :</strong>
+इंजेक्शन-एम्पुल/शीशी 5 मिली (50 मिलीग्राम/एमएल)।
+<strong>मात्रा :</strong>
+अंतःशिरा जलसेक
+वयस्क- उच्च रक्तचाप संकट: शुरू में 0.3 µg/kg/min, सामान्य रखरखाव खुराक 0.5 से 6 µg/kg/min, अधिकतम खुराक 8 µg/kg/min, अधिकतम खुराक पर 10 मिनट के बाद प्रतिक्रिया असंतोषजनक होने पर जलसेक रोक दें, पहले से ही एंटीहाइपरटेंसिव के साथ इलाज किए जा रहे रोगियों में कम खुराक।
+`
+},
+
+
+
+{
+title: "SALBUTAMOL",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.It is used mainly as a bronchodilator. 
+2.It may be used in the treatment of hyperkalaemia. 
+3.It is occasionally used to relax a pregnant uterus (tocolytic), either during cervical encirclage or during manual removal of placenta.
+<strong>Availability :</strong>
+TABLETS-2 and 4 mg
+SYRUP-2 mg/5 ml (100ml)
+CAPSULES-4 mg.
+INHALER-100, 200doses (100 µg per actuation).
+<strong>Dosage :</strong>
+Oral
+Adult- Chronic asthma (when inhalation is ineffective): 2 to 4 mg, 3 or 4 times daily, in some patients up to max. of 8 mg, 3 or 4 times daily.
+Child- Chronic asthma (when inhalation is ineffective): under 2 years, 100 µg/kg, 4 times daily. 2 to 6 years, 1 to 2 mg, 3 to 4 times daily.
+Slow intravenous injection
+Adult- Severe acute bronchospasm: 250 µg, repeated if necessary.
+Aerosol inhalation and intramuscular or subcutaneous injection
+Adult- Relief of acute bronchospasm: 100 to 200 µg (1 to 2 puffs) by aerosol inhalation and 500 µg by intramuscular or subcutaneous injection, repeated every 4 h if necessary.
+Child- Relief of acute bronchospasm: 100 µg (1 puff) increased to 200 µg (2 puffs), if necessary.
+Aerosol inhalation
+Adult- Prophylaxis of exercise-induced bronchospasm: 200 µg (2 puffs).
+Chronic asthma (as adjunct in stepped treatment): 100 to 200 µg (1 to 2 puffs), up to3 to 4 times daily.
+Child- Prophylaxis of exercise-induced bronchospasm: 100 µg (1 puff) increased to 200 µg (2 puffs), if required.
+Chronic asthma (as adjunct in stepped treatment): 100 µg (1 puff) 3 to 4 times daily,increased to 200 µg (2 puffs) 3 to 4 times daily, if necessary.
+Inhalation of nebulized solution
+Adult- Severe acute asthma or chronic bronchospasm unresponsive to conventional treatment: 2.5 mg repeated up to 4 times daily, may be increased to 5 mg, if necessary- medical assessment should be considered since alternative therapy may be indicated.
+Child- Severe acute asthma or chronic bronchospasm unresponsive to conventional treatment, over 18 months: 2.5 mg repeated up to 4 times daily, may be increased to 5 mg, if necessary- medical assessment should be considered since alternative therapy may be indicated. Under 18 months: clinical efficacy uncertain (transient hypoxaemia may occur- consider oxygen supplementation).
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಇದನ್ನು ಮುಖ್ಯವಾಗಿ ಬ್ರಾಂಕೋಡಿಲೇಟರ್ ಆಗಿ ಬಳಸಲಾಗುತ್ತದೆ.
+2.ಇದನ್ನು ಹೈಪರ್ಕಲೇಮಿಯಾ ಚಿಕಿತ್ಸೆಯಲ್ಲಿ ಬಳಸಬಹುದು.
+3. ಗರ್ಭಕಂಠದ ಸುತ್ತುವರಿದ ಸಮಯದಲ್ಲಿ ಅಥವಾ ಜರಾಯುವಿನ ಹಸ್ತಚಾಲಿತ ತೆಗೆದುಹಾಕುವಿಕೆಯ ಸಮಯದಲ್ಲಿ ಗರ್ಭಿಣಿ ಗರ್ಭಾಶಯವನ್ನು (ಟೊಕೊಲಿಟಿಕ್) ವಿಶ್ರಾಂತಿ ಮಾಡಲು ಇದನ್ನು ಸಾಂದರ್ಭಿಕವಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 2 ಮತ್ತು 4 ಮಿಗ್ರಾಂ
+ಸಿರಪ್-2 mg/5 ml (100ml)
+ಕ್ಯಾಪ್ಸುಲ್ಗಳು - 4 ಮಿಗ್ರಾಂ.
+ಇನ್ಹೇಲರ್-100, 200ಡೋಸ್‌ಗಳು (ಪ್ರತಿ ಪ್ರಚೋದನೆಗೆ 100 μg).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ವಯಸ್ಕರು- ದೀರ್ಘಕಾಲದ ಆಸ್ತಮಾ (ಇನ್ಹಲೇಷನ್ ನಿಷ್ಪರಿಣಾಮಕಾರಿಯಾದಾಗ): 2 ರಿಂದ 4 ಮಿಗ್ರಾಂ, ದಿನಕ್ಕೆ 3 ಅಥವಾ 4 ಬಾರಿ, ಕೆಲವು ರೋಗಿಗಳಲ್ಲಿ ಗರಿಷ್ಠ. 8 ಮಿಗ್ರಾಂ, ದಿನಕ್ಕೆ 3 ಅಥವಾ 4 ಬಾರಿ.
+ಮಗು - ದೀರ್ಘಕಾಲದ ಆಸ್ತಮಾ (ಇನ್ಹಲೇಷನ್ ನಿಷ್ಪರಿಣಾಮಕಾರಿಯಾದಾಗ): 2 ವರ್ಷಗಳ ಅಡಿಯಲ್ಲಿ, 100 µg/kg, ದಿನಕ್ಕೆ 4 ಬಾರಿ. 2 ರಿಂದ 6 ವರ್ಷಗಳು, 1 ರಿಂದ 2 ಮಿಗ್ರಾಂ, ದಿನಕ್ಕೆ 3 ರಿಂದ 4 ಬಾರಿ.
+ನಿಧಾನವಾದ ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು- ತೀವ್ರತರವಾದ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್: 250 μg, ಅಗತ್ಯವಿದ್ದರೆ ಪುನರಾವರ್ತಿಸಿ.
+ಏರೋಸಾಲ್ ಇನ್ಹಲೇಷನ್ ಮತ್ತು ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಅಥವಾ ಸಬ್ಕ್ಯುಟೇನಿಯಸ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು- ತೀವ್ರವಾದ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ನ ಪರಿಹಾರ: ಏರೋಸಾಲ್ ಇನ್ಹಲೇಷನ್ ಮೂಲಕ 100 ರಿಂದ 200 μg (1 ರಿಂದ 2 ಪಫ್ಸ್) ಮತ್ತು ಇಂಟ್ರಾಮಸ್ಕುಲರ್ ಅಥವಾ ಸಬ್ಕ್ಯುಟೇನಿಯಸ್ ಇಂಜೆಕ್ಷನ್ ಮೂಲಕ 500 μg, ಅಗತ್ಯವಿದ್ದರೆ ಪ್ರತಿ 4 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ ಪುನರಾವರ್ತಿಸಲಾಗುತ್ತದೆ.
+ಮಗು- ತೀವ್ರವಾದ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ನ ಪರಿಹಾರ: ಅಗತ್ಯವಿದ್ದರೆ 100 µg (1 ಪಫ್) 200 µg (2 ಪಫ್ಸ್) ಗೆ ಹೆಚ್ಚಾಗುತ್ತದೆ.
+ಏರೋಸಾಲ್ ಇನ್ಹಲೇಷನ್
+ವಯಸ್ಕರು- ವ್ಯಾಯಾಮ-ಪ್ರೇರಿತ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ನ ತಡೆಗಟ್ಟುವಿಕೆ: 200 µg (2 ಪಫ್ಗಳು).
+ದೀರ್ಘಕಾಲದ ಆಸ್ತಮಾ (ಹಂತದ ಚಿಕಿತ್ಸೆಯಲ್ಲಿ ಪೂರಕವಾಗಿ): 100 ರಿಂದ 200 μg (1 ರಿಂದ 2 ಪಫ್ಸ್), ದಿನಕ್ಕೆ 3 ರಿಂದ 4 ಬಾರಿ.
+ಮಗು- ವ್ಯಾಯಾಮ-ಪ್ರೇರಿತ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ನ ತಡೆಗಟ್ಟುವಿಕೆ: ಅಗತ್ಯವಿದ್ದರೆ 100 µg (1 ಪಫ್) 200 µg (2 ಪಫ್ಸ್) ಗೆ ಹೆಚ್ಚಾಗುತ್ತದೆ.
+ದೀರ್ಘಕಾಲದ ಆಸ್ತಮಾ (ಹಂತದ ಚಿಕಿತ್ಸೆಯಲ್ಲಿ ಪೂರಕವಾಗಿ): 100 µg (1 ಪಫ್) ದಿನಕ್ಕೆ 3 ರಿಂದ 4 ಬಾರಿ, ಅಗತ್ಯವಿದ್ದರೆ 3 ರಿಂದ 4 ಬಾರಿ ದಿನಕ್ಕೆ 200 µg (2 ಪಫ್ಸ್) ಹೆಚ್ಚಿಸಲಾಗಿದೆ.
+ನೆಬ್ಯುಲೈಸ್ಡ್ ದ್ರಾವಣದ ಇನ್ಹಲೇಷನ್
+ವಯಸ್ಕರು- ತೀವ್ರತರವಾದ ಆಸ್ತಮಾ ಅಥವಾ ಸಾಂಪ್ರದಾಯಿಕ ಚಿಕಿತ್ಸೆಗೆ ಸ್ಪಂದಿಸದ ದೀರ್ಘಕಾಲದ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್: 2.5 ಮಿಗ್ರಾಂ ದಿನಕ್ಕೆ 4 ಬಾರಿ ಪುನರಾವರ್ತನೆಯಾಗುತ್ತದೆ, ಅಗತ್ಯವಿದ್ದರೆ 5 ಮಿಗ್ರಾಂಗೆ ಹೆಚ್ಚಿಸಬಹುದು - ಪರ್ಯಾಯ ಚಿಕಿತ್ಸೆಯನ್ನು ಸೂಚಿಸುವುದರಿಂದ ವೈದ್ಯಕೀಯ ಮೌಲ್ಯಮಾಪನವನ್ನು ಪರಿಗಣಿಸಬೇಕು.
+ಮಗು- ತೀವ್ರತರವಾದ ಆಸ್ತಮಾ ಅಥವಾ ದೀರ್ಘಕಾಲದ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ ಸಾಂಪ್ರದಾಯಿಕ ಚಿಕಿತ್ಸೆಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುವುದಿಲ್ಲ, 18 ತಿಂಗಳಿಗಿಂತ ಹೆಚ್ಚು: 2.5 ಮಿಗ್ರಾಂ ದಿನಕ್ಕೆ 4 ಬಾರಿ ಪುನರಾವರ್ತಿಸಲಾಗುತ್ತದೆ, ಅಗತ್ಯವಿದ್ದರೆ 5 ಮಿಗ್ರಾಂಗೆ ಹೆಚ್ಚಿಸಬಹುದು - ಪರ್ಯಾಯ ಚಿಕಿತ್ಸೆಯನ್ನು ಸೂಚಿಸುವುದರಿಂದ ವೈದ್ಯಕೀಯ ಮೌಲ್ಯಮಾಪನವನ್ನು ಪರಿಗಣಿಸಬೇಕು. 18 ತಿಂಗಳೊಳಗೆ: ಕ್ಲಿನಿಕಲ್ ಪರಿಣಾಮಕಾರಿತ್ವವು ಅನಿಶ್ಚಿತವಾಗಿದೆ (ಅಸ್ಥಿರ ಹೈಪೊಕ್ಸೆಮಿಯಾ ಸಂಭವಿಸಬಹುದು- ಆಮ್ಲಜನಕದ ಪೂರೈಕೆಯನ್ನು ಪರಿಗಣಿಸಿ).
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. इसका उपयोग मुख्य रूप से ब्रोन्कोडायलेटर के रूप में किया जाता है। 2. इसका उपयोग हाइपरकेलेमिया के उपचार में किया जा सकता है। 3. इसका उपयोग कभी-कभी गर्भवती गर्भाशय (टोकोलिटिक) को आराम देने के लिए किया जाता है, या तो गर्भाशय ग्रीवा के घेरे के दौरान या प्लेसेंटा को मैन्युअल रूप से हटाने के दौरान।
+<strong>उपलब्धता :</strong>
+गोलियाँ-2 और 4 मि.ग्रा.
+सिरप-2 मि.ग्रा./5 मि.ग्रा. (100 मि.ग्रा.)
+कैप्सूल-4 मि.ग्रा.
+इनहेलर-100, 200 खुराकें (प्रति क्रिया 100 µg).
+<strong>मात्रा :</strong>
+मौखिक
+वयस्क- क्रोनिक अस्थमा (जब साँस लेना अप्रभावी होता है): 2 से 4 मिलीग्राम, प्रतिदिन 3 या 4 बार, कुछ रोगियों में अधिकतम 8 मिलीग्राम, प्रतिदिन 3 या 4 बार।
+बच्चे- क्रोनिक अस्थमा (जब साँस लेना अप्रभावी होता है): 2 वर्ष से कम, 100 µg/kg, प्रतिदिन 4 बार। 2 से 6 वर्ष, 1 से 2 मिलीग्राम, प्रतिदिन 3 से 4 बार।
+धीमी अंतःशिरा इंजेक्शन
+वयस्क- गंभीर तीव्र ब्रोन्कोस्पाज़्म: 250 µg, यदि आवश्यक हो तो दोहराया जाता है।
+एरोसोल साँस लेना और इंट्रामस्क्युलर या चमड़े के नीचे इंजेक्शन
+वयस्क- तीव्र ब्रोन्कोस्पाज़्म से राहत: एरोसोल साँस लेना द्वारा 100 से 200 µg (1 से 2 पफ) और इंट्रामस्क्युलर या चमड़े के नीचे इंजेक्शन द्वारा 500 µg, यदि आवश्यक हो तो हर 4 घंटे में दोहराया जाता है।
+बच्चा- तीव्र ब्रोन्कोस्पाज़्म से राहत: 100 µg (1 पफ) को बढ़ाकर 200 µg (2 पफ) किया जा सकता है, यदि आवश्यक हो।
+एरोसोल इनहेलेशन
+वयस्क- व्यायाम-प्रेरित ब्रोन्कोस्पाज़्म की रोकथाम: 200 µg (2 पफ)।
+क्रोनिक अस्थमा (चरणबद्ध उपचार में सहायक के रूप में): 100 से 200 µg (1 से 2 पफ), प्रतिदिन 3 से 4 बार तक।
+बच्चा- व्यायाम-प्रेरित ब्रोन्कोस्पाज़्म की रोकथाम: 100 µg (1 पफ) को बढ़ाकर 200 µg (2 पफ), यदि आवश्यक हो।
+क्रोनिक अस्थमा (चरणबद्ध उपचार में सहायक के रूप में): 100 µg (1 पफ) प्रतिदिन 3 से 4 बार, यदि आवश्यक हो तो 200 µg (2 पफ) प्रतिदिन 3 से 4 बार तक।
+नेबुलाइज्ड घोल का साँस लेना
+वयस्क- गंभीर तीव्र अस्थमा या क्रोनिक ब्रोन्कोस्पाज़्म जो पारंपरिक उपचार के प्रति अनुत्तरदायी है: 2.5 मिलीग्राम प्रतिदिन 4 बार तक दोहराया जाता है, यदि आवश्यक हो तो 5 मिलीग्राम तक बढ़ाया जा सकता है- चिकित्सा मूल्यांकन पर विचार किया जाना चाहिए क्योंकि वैकल्पिक चिकित्सा का संकेत दिया जा सकता है।
+बच्चा- गंभीर तीव्र अस्थमा या क्रोनिक ब्रोन्कोस्पाज़्म जो पारंपरिक उपचार के प्रति अनुत्तरदायी है, 18 महीने से अधिक: 2.5 मिलीग्राम प्रतिदिन 4 बार तक दोहराया जाता है, यदि आवश्यक हो तो 5 मिलीग्राम तक बढ़ाया जा सकता है- चिकित्सा मूल्यांकन पर विचार किया जाना चाहिए क्योंकि वैकल्पिक चिकित्सा का संकेत दिया जा सकता है। 18 महीने से कम: नैदानिक ​​प्रभावकारिता अनिश्चित (क्षणिक हाइपोक्सिमिया हो सकता है- ऑक्सीजन अनुपूरण पर विचार करें)।
+`
+},
+
+
+
+
+{
+    title: "SODIUM BICARBONATE",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.To treat hyperkalaemia, by inducing metabolic alkalosis or countering metabolic acidosis. As a component of forced alkaline diuresis.
+<strong>Availability :</strong>
+INJECTION -10  ml  ampoule  (1.4%w/v),(8.4%w/v).
+<strong>Dosage :</strong>
+Slow intravenous infusion
+Adult and Child-Metabolic acidosis: a strong solution (up to 8.4%), an amount appropriate to the body base deficit.
+Continuous intravenous infusion
+Adult and Child- a weaker solution (up to 1.4%), an amount appropriate to the body base deficit.
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಹೈಪರ್‌ಕಲೇಮಿಯಾ ಚಿಕಿತ್ಸೆಗಾಗಿ, ಚಯಾಪಚಯ ಕ್ಷಾರವನ್ನು ಪ್ರಚೋದಿಸುವ ಮೂಲಕ ಅಥವಾ ಚಯಾಪಚಯ ಆಮ್ಲವ್ಯಾಧಿಯನ್ನು ಎದುರಿಸುವ ಮೂಲಕ. ಬಲವಂತದ ಕ್ಷಾರೀಯ ಮೂತ್ರವರ್ಧಕದ ಒಂದು ಅಂಶವಾಗಿ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಇಂಜೆಕ್ಷನ್ -10 ಮಿಲಿ ampoule (1.4%w/v),(8.4%w/v).
+<strong>ಪ್ರಮಾಣ :</strong>ನಿಧಾನವಾದ ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+ವಯಸ್ಕ ಮತ್ತು ಮಕ್ಕಳ-ಚಯಾಪಚಯ ಆಮ್ಲವ್ಯಾಧಿ: ಬಲವಾದ ಪರಿಹಾರ (8.4% ವರೆಗೆ), ದೇಹದ ಮೂಲದ ಕೊರತೆಗೆ ಸೂಕ್ತವಾದ ಪ್ರಮಾಣ.
+ನಿರಂತರ ಇಂಟ್ರಾವೆನಸ್ ಇನ್ಫ್ಯೂಷನ್
+ವಯಸ್ಕ ಮತ್ತು ಮಗು- ದುರ್ಬಲ ಪರಿಹಾರ (1.4% ವರೆಗೆ), ದೇಹದ ಮೂಲ ಕೊರತೆಗೆ ಸೂಕ್ತವಾದ ಮೊತ್ತ.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. मेटाबोलिक अल्कलोसिस को प्रेरित करके या मेटाबोलिक एसिडोसिस का मुकाबला करके हाइपरकेलेमिया का इलाज करना। फोर्स्ड एल्कलाइन डाययूरेसिस के एक घटक के रूप में।
+<strong>उपलब्धता :</strong>
+इंजेक्शन -10 मिली एम्पुल (1.4%w/v),(8.4%w/v).
+<strong>मात्रा :</strong>
+धीमी अंतःशिरा जलसेक
+वयस्क और बच्चे-मेटाबोलिक एसिडोसिस: एक मजबूत समाधान (8.4% तक), शरीर के आधार घाटे के लिए उपयुक्त मात्रा।
+निरंतर अंतःशिरा जलसेक
+वयस्क और बच्चे- एक कमजोर समाधान (1.4% तक), शरीर के आधार घाटे के लिए उपयुक्त मात्रा।
+`
+},
+
+
+
+{
+title: "TRAMADOL",
+informationInEnglish: `
+<strong>Uses :</strong>
+1.Central nervous system (CNS): Initially it causes euphoria and then sedation. It is a good analgesic. Later, it produces dose-dependent depression of the CNS. The pattern of respiratory depression is similar to morphine. 
+2.Cardiovascular system: It causes less histamine release and produces less hypotension.
+3.Respiratory system: It produces dose-dependent reduction in respiratory rate and in large doses, apnoea. The tidal volume is well-maintained till late. Minute ventilation reduces causing hypercarbia. It obtunds the airway reflexes well. It can cause bronchospasm through histamine release.
+4.Gastrointestinal system: It has emetic properties (high incidence), delays gastric emptying and produces constipation.
+<strong>Availability :</strong>
+TABLETS-50 mg and 100 mg SR.
+CAPSULE-50 and 100 mg SR. 
+INJECTION-1 and 2 ml ampoule (50 mg/ml).
+<strong>Dosage :</strong>
+Adult- Moderate to severe pain: 50 to 100 mg, 4 to 6 hourly (max 400 mg/day).
+Post operative pain: 100 mg i.v. initially followed by 50 mg every 10 to 20 min upto max. of 250 mg in the 1st h. Maintenance dose 50 to 100 mg, 4 to 6 hourly (max 600 mg/day).
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+1.ಸೆಂಟ್ರಲ್ ನರವ್ಯೂಹ (CNS): ಆರಂಭದಲ್ಲಿ ಇದು ಯೂಫೋರಿಯಾ ಮತ್ತು ನಂತರ ನಿದ್ರಾಜನಕವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಇದು ಉತ್ತಮ ನೋವು ನಿವಾರಕವಾಗಿದೆ. ನಂತರ, ಇದು CNS ನ ಡೋಸ್-ಅವಲಂಬಿತ ಖಿನ್ನತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ಉಸಿರಾಟದ ಖಿನ್ನತೆಯ ಮಾದರಿಯು ಮಾರ್ಫಿನ್ ಅನ್ನು ಹೋಲುತ್ತದೆ.
+2.ಹೃದಯರಕ್ತನಾಳದ ವ್ಯವಸ್ಥೆ: ಇದು ಕಡಿಮೆ ಹಿಸ್ಟಮಿನ್ ಬಿಡುಗಡೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ ಮತ್ತು ಕಡಿಮೆ ರಕ್ತದೊತ್ತಡವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.
+3.ಉಸಿರಾಟ ವ್ಯವಸ್ಥೆ: ಇದು ಉಸಿರಾಟದ ದರದಲ್ಲಿ ಡೋಸ್-ಅವಲಂಬಿತ ಕಡಿತವನ್ನು ಮತ್ತು ದೊಡ್ಡ ಪ್ರಮಾಣದಲ್ಲಿ ಉಸಿರುಕಟ್ಟುವಿಕೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ. ಉಬ್ಬರವಿಳಿತದ ಪ್ರಮಾಣವು ತಡವಾಗಿ ತನಕ ಉತ್ತಮವಾಗಿ ನಿರ್ವಹಿಸಲ್ಪಡುತ್ತದೆ. ನಿಮಿಷದ ವಾತಾಯನವು ಹೈಪರ್ಕಾರ್ಬಿಯಾವನ್ನು ಉಂಟುಮಾಡುವುದನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ. ಇದು ಶ್ವಾಸನಾಳದ ಪ್ರತಿವರ್ತನವನ್ನು ಚೆನ್ನಾಗಿ ತಡೆಯುತ್ತದೆ. ಇದು ಹಿಸ್ಟಮೈನ್ ಬಿಡುಗಡೆಯ ಮೂಲಕ ಬ್ರಾಂಕೋಸ್ಪಾಸ್ಮ್ಗೆ ಕಾರಣವಾಗಬಹುದು.
+4.ಜಠರಗರುಳಿನ ವ್ಯವಸ್ಥೆ: ಇದು ಎಮೆಟಿಕ್ ಗುಣಲಕ್ಷಣಗಳನ್ನು ಹೊಂದಿದೆ (ಹೆಚ್ಚಿನ ಸಂಭವ), ಗ್ಯಾಸ್ಟ್ರಿಕ್ ಖಾಲಿಯಾಗುವುದನ್ನು ವಿಳಂಬಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಮಲಬದ್ಧತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು - 50 mg ಮತ್ತು 100 mg SR.
+ಕ್ಯಾಪ್ಸುಲ್-50 ಮತ್ತು 100 ಮಿಗ್ರಾಂ ಎಸ್ಆರ್.
+ಇಂಜೆಕ್ಷನ್-1 ಮತ್ತು 2 ಮಿಲಿ ampoule (50 mg/ml).
+<strong>ಪ್ರಮಾಣ :</strong>
+ವಯಸ್ಕರು- ಮಧ್ಯಮದಿಂದ ತೀವ್ರವಾದ ನೋವು: 50 ರಿಂದ 100 ಮಿಗ್ರಾಂ, 4 ರಿಂದ 6 ಗಂಟೆಗಳವರೆಗೆ (ಗರಿಷ್ಠ 400 ಮಿಗ್ರಾಂ / ದಿನ).
+ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ನಂತರದ ನೋವು: 100 ಮಿಗ್ರಾಂ i.v. ಆರಂಭದಲ್ಲಿ 50 ಮಿಗ್ರಾಂ ಪ್ರತಿ 10 ರಿಂದ 20 ನಿಮಿಷಗಳವರೆಗೆ ಗರಿಷ್ಠ. 1 ನೇ ಗಂಟೆಯಲ್ಲಿ 250 ಮಿಗ್ರಾಂ. ನಿರ್ವಹಣೆ ಡೋಸ್ 50 ರಿಂದ 100 ಮಿಗ್ರಾಂ, 4 ರಿಂದ 6 ಗಂಟೆಗೆ (ಗರಿಷ್ಠ 600 ಮಿಗ್ರಾಂ / ದಿನ).
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+1. केंद्रीय तंत्रिका तंत्र (सीएनएस): शुरू में यह उत्साह और फिर बेहोशी का कारण बनता है। यह एक अच्छा एनाल्जेसिक है। बाद में, यह सीएनएस के खुराक-निर्भर अवसाद का उत्पादन करता है। श्वसन अवसाद का पैटर्न मॉर्फिन के समान है। 2. कार्डियोवैस्कुलर सिस्टम: यह कम हिस्टामाइन रिलीज का कारण बनता है और कम हाइपोटेंशन पैदा करता है। 3. श्वसन प्रणाली: यह श्वसन दर में खुराक-निर्भर कमी और बड़ी खुराक में श्वासावरोध पैदा करता है। ज्वारीय मात्रा देर तक अच्छी तरह से बनाए रखी जाती है। मिनट वेंटिलेशन हाइपरकार्बिया को कम करता है। यह वायुमार्ग की सजगता को अच्छी तरह से बाधित करता है। यह हिस्टामाइन रिलीज के माध्यम से ब्रोन्कोस्पाज्म का कारण बन सकता है। 4. गैस्ट्रोइंटेस्टाइनल सिस्टम: इसमें उबकाई लाने वाले गुण (उच्च घटना) होते हैं, गैस्ट्रिक खाली करने में देरी करता है और कब्ज पैदा करता है।
+<strong>उपलब्धता :</strong>
+गोलियाँ-50 मिलीग्राम और 100 मिलीग्राम एसआर।
+कैप्सूल-50 और 100 मिलीग्राम एसआर।
+इंजेक्शन-1 और 2 मिली एम्पुल (50 मिलीग्राम/एमएल)।
+<strong>मात्रा :</strong>
+वयस्क- मध्यम से गंभीर दर्द: 50 से 100 मिलीग्राम, 4 से 6 घंटे (अधिकतम 400 मिलीग्राम/दिन)। ऑपरेशन के बाद का दर्द: शुरुआत में 100 मिलीग्राम आई.वी., उसके बाद हर 10 से 20 मिनट में 50 मिलीग्राम, पहले घंटे में अधिकतम 250 मिलीग्राम तक। रखरखाव खुराक 50 से 100 मिलीग्राम, 4 से 6 घंटे (अधिकतम 600 मिलीग्राम/दिन)।
+`
+},
+
+
+
+{
+    title: "VERAPAMIL",
+informationInEnglish: `
+<strong>Uses :</strong>
+To treat supraventricular tachycardia
+<strong>Availability :</strong>
+TABLETS-40, 80, 120 and 240 mg (SR),
+INJECTION-2 ml (5 mg/2 ml).
+<strong>Dosage :</strong>
+oral
+Adult- 80 to 120 mg 3 times daily (120 mg 3 times daily usually required in Prinzmetal angina).
+Supraventricular arrhythmias: 40 to 120 mg 3 times daily.
+Intravenous injection
+Adult- Supraventricular arrhythmias: 5 to 10 mg over 2 min (preferably with ECG monitoring).
+Elderly- Paroxysmal tachyarrhythmias: 5 to 10 mg over 3 min, further 5 mg may be given after 5 to 10 min if required.
+`,
+
+
+
+
+informationInKannada:`
+<strong>ಉಪಯೋಗಗಳು :</strong>
+ಸುಪ್ರಾವೆಂಟ್ರಿಕ್ಯುಲರ್ ಟಾಕಿಕಾರ್ಡಿಯಾ ಚಿಕಿತ್ಸೆಗಾಗಿ
+<strong>ಲಭ್ಯತೆ :</strong>
+ಮಾತ್ರೆಗಳು-40, 80, 120 ಮತ್ತು 240 mg (SR),
+ಇಂಜೆಕ್ಷನ್-2 ಮಿಲಿ (5 ಮಿಗ್ರಾಂ/2 ಮಿಲಿ).
+<strong>ಪ್ರಮಾಣ :</strong>
+ಮೌಖಿಕ
+ವಯಸ್ಕರು - ದಿನಕ್ಕೆ 80 ರಿಂದ 120 ಮಿಗ್ರಾಂ 3 ಬಾರಿ (120 ಮಿಗ್ರಾಂ 3 ಬಾರಿ ಸಾಮಾನ್ಯವಾಗಿ ಪ್ರಿಂಜ್ಮೆಟಲ್ ಆಂಜಿನಾದಲ್ಲಿ ಅಗತ್ಯವಿದೆ).
+ಸುಪ್ರಾವೆಂಟ್ರಿಕ್ಯುಲರ್ ಆರ್ಹೆತ್ಮಿಯಾಸ್: ದಿನಕ್ಕೆ 40 ರಿಂದ 120 ಮಿಗ್ರಾಂ 3 ಬಾರಿ.
+ಇಂಟ್ರಾವೆನಸ್ ಇಂಜೆಕ್ಷನ್
+ವಯಸ್ಕರು- ಸುಪ್ರಾವೆಂಟ್ರಿಕ್ಯುಲರ್ ಆರ್ಹೆತ್ಮಿಯಾಸ್: 2 ನಿಮಿಷಗಳಲ್ಲಿ 5 ರಿಂದ 10 ಮಿಗ್ರಾಂ (ಮೇಲಾಗಿ ಇಸಿಜಿ ಮೇಲ್ವಿಚಾರಣೆಯೊಂದಿಗೆ).
+ವಯಸ್ಸಾದವರು- ಪ್ಯಾರೊಕ್ಸಿಸ್ಮಲ್ ಟ್ಯಾಕಿಯಾರಿಥ್ಮಿಯಾಸ್: 3 ನಿಮಿಷಗಳಲ್ಲಿ 5 ರಿಂದ 10 ಮಿಗ್ರಾಂ, ಅಗತ್ಯವಿದ್ದರೆ 5 ರಿಂದ 10 ನಿಮಿಷಗಳ ನಂತರ 5 ಮಿಗ್ರಾಂ ನೀಡಬಹುದು.
+`,
+informationInHindi:`
+<strong>उपयोग :</strong>
+सुप्रावेंट्रीकुलर टैचीकार्डिया का इलाज करने के लिए
+<strong>उपलब्धता :</strong>
+गोलियाँ-40, 80, 120 और 240 मिग्रा (एसआर), इंजेक्शन-2 मिली (5 मिग्रा/2 मिली)।
+<strong>मात्रा :</strong>
+मौखिक
+वयस्क- 80 से 120 मिलीग्राम प्रतिदिन 3 बार (प्रिंज़मेटल एनजाइना में आमतौर पर 120 मिलीग्राम प्रतिदिन 3 बार की आवश्यकता होती है)।
+सुप्रावेंट्रिकुलर अतालता: 40 से 120 मिलीग्राम प्रतिदिन 3 बार।
+अंतःशिरा इंजेक्शन
+वयस्क- सुप्रावेंट्रिकुलर अतालता: 2 मिनट में 5 से 10 मिलीग्राम (अधिमानतः ईसीजी निगरानी के साथ)।
+बुजुर्ग- पैरोक्सिस्मल टैचीअरिथमिया: 3 मिनट में 5 से 10 मिलीग्राम, यदि आवश्यक हो तो 5 से 10 मिनट के बाद 5 मिलीग्राम और दिया जा सकता है।
+`
+}];
+    function getQueryVariable(variable) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(variable)?.trim().toLowerCase() || '';
+    }
+
+    const searchTerm = getQueryVariable('DrugName');
+
+    if (searchTerm) {
+      let DrugDetails = '';
+      for (const Drug of Drugs) {
+        if (Drug.title.toLowerCase().includes(searchTerm)) {
+          DrugDetails += `
+            <div>
+              <h2>${Drug.title}:</h2>
+              <h3><strong>Information in English:</strong></h3>
+              <pre>${Drug.informationInEnglish}</pre>
+              <h3><strong>Information in Hindi:</strong></h3>
+              <pre>${Drug.informationInHindi}</pre>
+              <h3><strong>Information in Kannada:</strong></h3>
+              <pre>${Drug.informationInKannada}</pre>
+              <hr>
+            </div>
+          `;
+        }
+      }
+
+      if (DrugDetails) {
+        document.getElementById('DrugInfo').innerHTML = DrugDetails;
+      } else {
+        document.getElementById('DrugInfo').innerHTML = '<p>No Drugs matching your search. Please try again.</p>';
+      }
+    }
+  </script>
+</body>
+</html>
