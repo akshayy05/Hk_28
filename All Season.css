@@ -1,0 +1,58 @@
+body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+            h2 {
+                color: #007bff;
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 200%;
+            
+        }
+        .symptom-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .symptom-card:hover {
+            background: #e9f5ff;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .symptom-card h2 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+        .symptom {
+            margin-bottom: 15px;
+        }
+        .symptom label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .symptom p {
+            margin: 0;
+        }
+        
