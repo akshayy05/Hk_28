@@ -2,14 +2,76 @@
 <html>
     <link rel="stylesheet" href="Main.css">
 </html>
-    
+        
+
+</head>
 <body>
     <div class="container">
-      <img src="logo.png" alt="Logo" class="logo">
-      <h2>औषधारोग्य</h2>
-      <h1>Welcome to Our Website!</h1>
-      <h3>Learn more about us and get started.</h3>
-      <a style=color:white href="Season.html" class="btn">Get Started</a>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2>औषधारोग्य</h2>
+        <h1>Welcome to Our Website!</h1>
+        <h3>Learn more about us and get started.</h3>
+        <a href="Season.html" class="btn">Get Started</a>
     </div>
-    </body>
-<html>
+
+    <div id="weather-container">
+        <div id="search">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="location"></div>
+        <div id="temperature"></div>
+        <div id="description"></div>
+        <div id="health-warning"></div>
+    </div>
+
+    <script>
+        const apiKey = '40382c0284e3dde1b4a91ab9d2b6048a'; // Replace with your OpenWeatherMap API key
+
+        async function getWeather() {
+            const city = document.getElementById('city-input').value;
+            if (!city) return alert('Please enter a city name.');
+
+            try {
+                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
+                if (!response.ok) return alert('City not found.');
+
+                const data = await response.json();
+                document.getElementById('location').textContent = `${data.name}, ${data.sys.country}`;
+                document.getElementById('temperature').textContent = `${Math.round(data.main.temp)}°C`;
+                document.getElementById('description').textContent = data.weather[0].description;
+
+                const temperature = Math.round(data.main.temp);
+                const description = data.weather[0].description.toLowerCase();
+                let healthWarning = '';
+
+                // Determine health warnings based on temperature ranges
+                if (temperature < 20) {
+                    healthWarning = 'Temperature is cool. Dress in layers and stay warm if you feel chilly.';
+                } else if (temperature < 40) {
+                    healthWarning = 'Temperature is moderate. Ensure adequate hydration and avoid overheating.';
+                } else {
+                    healthWarning = 'Warning: Extremely hot weather. Stay hydrated, avoid strenuous activities, and stay indoors during peak sun hours.';
+                }
+
+                // Additional warnings based on weather description
+                if (description.includes('rain')) {
+                    healthWarning += ' Also, beware of slippery roads and surfaces, and carry an umbrella.';
+                } else if (description.includes('storm')) {
+                    healthWarning += ' Also, stay indoors, avoid travel if possible, and stay away from windows.';
+                } else if (description.includes('snow')) {
+                    healthWarning += ' Also, drive carefully, dress warmly, and be cautious of icy surfaces.';
+                } else if (description.includes('fog')) {
+                    healthWarning += ' Also, reduce speed while driving, use fog lights, and increase following distance.';
+                } else if (description.includes('wind')) {
+                    healthWarning += ' Also, secure outdoor items, be cautious of falling branches, and avoid excessive outdoor activities.';
+                }
+
+                document.getElementById('health-warning').textContent = healthWarning;
+            } catch (error) {
+                alert('An error occurred while fetching the weather data.');
+            }
+        }
+    </script>
+</body>
+</html>
