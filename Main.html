@@ -45,7 +45,7 @@
                 const description = data.weather[0].description.toLowerCase();
                 let healthWarning = '';
 
-                // Determine health warnings based on temperature ranges
+               
                 if (temperature < 20) {
                     healthWarning = 'Temperature is cool. Dress in layers and stay warm if you feel chilly.';
                 } else if (temperature < 40) {
@@ -54,7 +54,7 @@
                     healthWarning = 'Warning: Extremely hot weather. Stay hydrated, avoid strenuous activities, and stay indoors during peak sun hours.';
                 }
 
-                // Additional warnings based on weather description
+          
                 if (description.includes('rain')) {
                     healthWarning += ' Also, beware of slippery roads and surfaces, and carry an umbrella.';
                 } else if (description.includes('storm')) {
